@@ -31,6 +31,9 @@ export interface DomainConfig {
     longitude: number;
   };
 
+  // Geo region code for meta tags (e.g. "US-AZ", "US-CA", "SG")
+  geoRegionCode?: string;
+
   // Google Tag Manager
   gtmId?: string;
 
@@ -127,5 +130,6 @@ export const defaultConfig: DomainConfig = {
     latitude: 33.4484,
     longitude: -112.074,
   },
+  geoRegionCode: "US-AZ",
   gtmId: "GTM-MG2LRHKS",
 };

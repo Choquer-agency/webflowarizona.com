@@ -10,13 +10,12 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: config.metaTitle,
     description: config.metaDescription,
-    keywords:
-      "Webflow agency Phoenix, Webflow developer Arizona, Webflow design Phoenix, Webflow CMS development, WordPress to Webflow migration, web design Phoenix AZ, Webflow e-commerce Arizona",
+    keywords: `Webflow agency ${config.region}, Webflow developer ${config.region}, Webflow design ${config.schemaAddress?.locality || config.region}, Webflow CMS development, WordPress to Webflow migration, web design ${config.schemaAddress?.locality || config.region}, Webflow e-commerce ${config.region}`,
     openGraph: {
       title: config.metaTitle,
       description: config.metaDescription,
       url: `https://${config.domain}`,
-      siteName: "Phoenix Webflow Agency",
+      siteName: `${config.region} Webflow Agency`,
       images: [
         {
           url: config.ogImage || "/images/og-default.jpg",
@@ -35,10 +34,14 @@ export async function generateMetadata(): Promise<Metadata> {
       canonical: `https://${config.domain}`,
     },
     other: {
-      "geo.region": "US-AZ",
-      "geo.placename": "Phoenix",
-      "geo.position": "33.4484;-112.0740",
-      ICBM: "33.4484, -112.0740",
+      "geo.region": config.geoRegionCode || "US-AZ",
+      "geo.placename": config.schemaAddress?.locality || "Phoenix",
+      "geo.position": config.geoCoordinates
+        ? `${config.geoCoordinates.latitude};${config.geoCoordinates.longitude}`
+        : "33.4484;-112.0740",
+      ICBM: config.geoCoordinates
+        ? `${config.geoCoordinates.latitude}, ${config.geoCoordinates.longitude}`
+        : "33.4484, -112.0740",
     },
   };
 }
