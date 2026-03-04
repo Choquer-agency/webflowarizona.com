@@ -201,7 +201,7 @@ export function Portfolio() {
       <div className="md:flex-1 md:min-h-0 overflow-hidden">
         <div
           ref={trackRef}
-          className="flex gap-5 md:h-full overflow-x-auto snap-x snap-mandatory md:snap-none md:overflow-x-hidden scrollbar-hide pb-4 md:pb-0 px-[7.5vw] md:px-8"
+          className="flex gap-[1.5625rem] md:h-full overflow-x-auto snap-x snap-mandatory md:snap-none md:overflow-x-hidden scrollbar-hide pb-4 md:pb-0 px-[7.5vw] md:px-8"
           style={{
             scrollbarWidth: "none",
             msOverflowStyle: "none",
