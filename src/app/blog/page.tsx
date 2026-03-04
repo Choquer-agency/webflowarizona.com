@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getDomainConfig } from "@/lib/getDomainConfig";
 import { getBlogPostsByRegion } from "@/content/blog";
+import { Nav } from "@/components/Nav";
+import { Footer } from "@/components/Footer";
 
 export const dynamic = "force-dynamic";
 
@@ -31,6 +33,8 @@ export default async function BlogIndex() {
   const posts = await getBlogPostsByRegion(config.region);
 
   return (
+    <>
+    <Nav locality={config.locality} />
     <main className="pt-32 pb-20" style={{ backgroundColor: "#FFF9F0" }}>
       <div className="u-container max-w-4xl">
         <p className="eyebrow text-brand mb-4">Blog</p>
@@ -90,5 +94,7 @@ export default async function BlogIndex() {
         </div>
       </div>
     </main>
+    <Footer locality={config.locality} />
+    </>
   );
 }

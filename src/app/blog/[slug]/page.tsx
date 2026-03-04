@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { getDomainConfig } from "@/lib/getDomainConfig";
 import { getBlogPostBySlug, getBlogPostsByRegion } from "@/content/blog";
 import { generateBlogPostSchema } from "@/lib/schema-blog";
+import { Nav } from "@/components/Nav";
+import { Footer } from "@/components/Footer";
 
 export const dynamic = "force-dynamic";
 
@@ -65,6 +67,8 @@ export default async function BlogPostPage({ params }: PageProps) {
     .slice(0, 3);
 
   return (
+    <>
+    <Nav locality={config.locality} />
     <main className="pt-32 pb-20">
       {/* Schema.org JSON-LD */}
       <script
@@ -233,5 +237,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         </div>
       </article>
     </main>
+    <Footer locality={config.locality} />
+    </>
   );
 }
