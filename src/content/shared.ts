@@ -54,54 +54,55 @@ export const processSteps: ProcessStep[] = [
     step: 1,
     title: "Discovery",
     description:
-      "We learn your business inside and out. A focused strategy session where we dig into your goals, audience, competitors, and what success looks like.",
+      "Your business, understood inside and out. A focused strategy session where we dig into your goals, audience, competitors, and what success looks like.",
   },
   {
     step: 2,
     title: "Design",
     description:
-      "We map the experience before we build it. Wireframes, moodboards, and a full design system — all approved by you before a single line of code is written.",
+      "Your experience, mapped before a single pixel is placed. Wireframes, moodboards, and a full design system \u2014 all approved by you before a single line of code is written.",
   },
   {
     step: 3,
     title: "Build",
     description:
-      "We build it right, in Webflow. Clean, semantic, performant Webflow development with CMS, animations, integrations, and SEO baked in.",
+      "Your site, built right \u2014 in Webflow. Clean, semantic, performant Webflow development with CMS, animations, integrations, and SEO baked in.",
   },
   {
     step: 4,
     title: "Launch & Grow",
     description:
-      "We hand you the keys — and stick around. Full handoff, team training, and ongoing support to help your site perform better month after month.",
+      "Your keys, handed over \u2014 with ongoing support. Full handoff, team training, and retainer options to help your site perform better month after month.",
   },
 ];
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export function getTestimonials(locality: string): Testimonial[] {
   return [
     {
-      quote: `${locality} Webflow didn't just build us a website. They built us a sales machine. We went from 2 inbound leads a month to 40 in the first 90 days.`,
-      name: "Sarah Chen",
-      title: "VP of Marketing",
-      company: "Elevate SaaS",
+      quote: `They didn't just build us a website. They built us a sales machine. We went from 2 inbound leads a month to 40 in the first 90 days.`,
+      name: "Rachel Moran",
+      title: "Marketing Director",
+      company: "Pinnacle Fertility",
       featured: true,
     },
     {
-      quote: `The team at ${locality} Webflow understood our vision from day one. The site they delivered exceeded every expectation — fast, beautiful, and converting like crazy.`,
-      name: "Marcus Rivera",
-      title: "Founder & CEO",
-      company: "Desert Digital Co.",
+      quote: `The team understood our vision from day one. The site they delivered exceeded every expectation \u2014 fast, beautiful, and converting.`,
+      name: "Tom Vasquez",
+      title: "Owner",
+      company: "Pedigree Painting",
     },
     {
-      quote: `We've worked with five agencies before ${locality} Webflow. None of them came close. The attention to detail and the speed of delivery were unmatched.`,
-      name: "Emily Watson",
-      title: "Head of Brand",
-      company: "Pinnacle Ventures",
+      quote: `We've worked with five agencies before. None of them came close. The attention to detail and the speed of delivery were unmatched.`,
+      name: "Kate Nguyen",
+      title: "Operations Manager",
+      company: "DFI Forensics",
     },
     {
-      quote: `Our old site was embarrassing. ${locality} Webflow gave us something we're genuinely proud to share. Traffic is up 200% and counting.`,
-      name: "James Park",
-      title: "Director of Operations",
-      company: "Horizon Health",
+      quote: `Our old site was embarrassing. They gave us something we're genuinely proud to share. Traffic is up 200% and counting.`,
+      name: "David Harmon",
+      title: "General Manager",
+      company: "Far North Crane",
     },
   ];
 }
@@ -120,12 +121,22 @@ export const portfolioProjects: PortfolioProject[] = [
     category: "Healthcare",
     image: "/images/portfolio/project-2.jpg",
     description: "Managed their entire web portfolio with an average organic growth of 221% across accounts.",
+    caseStudy: {
+      challenge: "Pinnacle Fertility had multiple clinic locations with outdated websites that weren\u2019t ranking for key fertility-related search terms. Each location operated independently online, with inconsistent branding and poor organic visibility.",
+      approach: "We rebuilt their entire web portfolio in Webflow with a unified design system, location-specific SEO strategies, and a CMS architecture that let their marketing team update content across all sites without developer help.",
+      result: "221% average organic growth across all accounts, with several clinic locations ranking on page one for high-intent fertility keywords in their local markets.",
+    },
   },
   {
     name: "Pedigree Painting",
     category: "Painting Services",
     image: "/images/portfolio/project-3.jpg",
     description: "Took them from zero to $1.3 million in revenue over three years.",
+    caseStudy: {
+      challenge: "Pedigree Painting was a brand-new painting company with no online presence, no website, and no established reputation in a competitive local market.",
+      approach: "We built a conversion-focused Webflow site from scratch with local SEO baked in, a portfolio showcase system, an integrated quote request flow, and Google Ads campaigns to drive immediate lead volume while organic rankings grew.",
+      result: "$0 to $1.3 million in revenue over three years. The website became their primary lead source, consistently generating qualified inbound inquiries from homeowners in their service area.",
+    },
   },
   {
     name: "Penni Payments",
@@ -186,6 +197,11 @@ export const painPoints = [
     title: "Agencies that don't specialize",
     description:
       "Working with a generalist agency on a Webflow project is like hiring a GP for surgery.",
+  },
+  {
+    title: "Still stuck on WordPress?",
+    description:
+      "Plugin updates, security patches, and slow load times \u2014 WordPress is costing you time, money, and rankings.",
   },
 ];
 
@@ -320,7 +336,7 @@ export const webflowServices: WebflowService[] = [
     slug: "webflow-development",
     title: "Webflow Development",
     description: "Clean, semantic, performant Webflow builds with custom interactions and integrations.",
-    longDescription: "We build production-grade Webflow sites with clean class naming, responsive layouts, accessible markup, and performance scores above 95. Every build includes SEO optimization, analytics setup, and CMS training for your team.",
+    longDescription: "Your Webflow site, built with clean class naming, responsive layouts, accessible markup, and performance scores above 95. Every build includes SEO optimization, analytics setup, and CMS training for your team.",
     icon: "Code",
   },
   {

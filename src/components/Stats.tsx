@@ -6,21 +6,21 @@ import { gsap } from "@/lib/gsap-register";
 
 const stats = [
   {
-    number: "47%",
-    heading: "More Website Traffic in 6 Months",
-    body: "We optimize for both search engines and users, driving quality traffic that converts.",
+    number: "$1.3M",
+    heading: "Client Revenue Generated",
+    body: "One client went from zero online presence to $1.3 million in revenue over three years \u2014 powered by a Webflow site built to convert.",
     color: "#F79C42",
   },
   {
-    number: "3x",
-    heading: "Leads with CRO Optimization",
-    body: "CRO and strategic website design helped our clients triple their inbound leads.",
+    number: "221%",
+    heading: "Average Organic Growth",
+    body: "Across multiple accounts, our Webflow builds and SEO strategy drove an average organic traffic increase of 221%.",
     color: "#BCEFFF",
   },
   {
-    number: "23%",
-    heading: "Increase in Contact Page Conversions",
-    body: "Every element of your site is designed to convert visitors into leads.",
+    number: "#1",
+    heading: "Local Search Rankings",
+    body: "Multiple clients rank #1 in their local markets \u2014 because your Webflow site is built for search engines from day one.",
     color: "#C4EF7A",
   },
 ];

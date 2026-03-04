@@ -4,6 +4,7 @@ import { useRef, useState, useCallback, useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "@/lib/gsap-register";
 import { portfolioProjects } from "@/content/shared";
+import { PortfolioProject } from "@/content/config";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export function Portfolio() {
@@ -15,7 +16,7 @@ export function Portfolio() {
 
   // 5 copies for plenty of runway in both directions
   const copies = 5;
-  const items: { _key: string; name: string; description?: string; image: string }[] = [];
+  const items: (PortfolioProject & { _key: string })[] = [];
   for (let c = 0; c < copies; c++) {
     portfolioProjects.forEach((p, i) => {
       items.push({ ...p, _key: `c${c}-${i}` });
@@ -237,6 +238,17 @@ export function Portfolio() {
                 <p className="font-sans text-fluid-main text-dark opacity-50 mt-1 leading-relaxed">
                   {project.description}
                 </p>
+                {project.caseStudy && (
+                  <div className="mt-3 pt-3 border-t border-dark/10 space-y-2">
+                    <p className="font-sans text-xs text-dark opacity-40 uppercase tracking-wider font-medium">Case Study</p>
+                    <p className="font-sans text-sm text-dark opacity-60 leading-relaxed">
+                      <span className="font-medium opacity-80">Challenge:</span> {project.caseStudy.challenge}
+                    </p>
+                    <p className="font-sans text-sm text-dark opacity-60 leading-relaxed">
+                      <span className="font-medium opacity-80">Result:</span> {project.caseStudy.result}
+                    </p>
+                  </div>
+                )}
               </div>
             </div>
           ))}

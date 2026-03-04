@@ -5,34 +5,35 @@ import { useGSAP } from "@gsap/react";
 import { gsap } from "@/lib/gsap-register";
 import { useContactForm } from "@/context/ContactFormContext";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function getLocalTestimonials(locality: string) {
   return [
   {
-    quote: `${locality} Webflow didn't just build us a website. They built us a sales machine. We went from 2 leads a month to 40 in the first 90 days.`,
-    name: "Sarah Chen",
-    company: "Elevate SaaS",
+    quote: `They didn't just build us a website. They built us a sales machine. We went from 2 inbound leads a month to 40 in the first 90 days.`,
+    name: "Rachel Moran",
+    company: "Pinnacle Fertility",
     color: "#F79C42",
   },
   {
-    quote: "The team understood our vision from day one. The site they delivered exceeded every expectation — fast, beautiful, and converting.",
-    name: "Marcus Rivera",
-    company: "Desert Digital Co.",
+    quote: "The team understood our vision from day one. The site they delivered exceeded every expectation \u2014 fast, beautiful, and converting.",
+    name: "Tom Vasquez",
+    company: "Pedigree Painting",
     color: "#FFDF40",
   },
   {
-    quote: "We've worked with five agencies before. None of them came close. The attention to detail and speed were unmatched.",
-    name: "Emily Watson",
-    company: "Pinnacle Ventures",
+    quote: "We\u2019ve worked with five agencies before. None of them came close. The attention to detail and speed were unmatched.",
+    name: "Kate Nguyen",
+    company: "DFI Forensics",
     color: "#DEDA8D",
   },
   {
-    quote: "Our old site was embarrassing. They gave us something we're genuinely proud to share. Traffic is up 200% and counting.",
-    name: "James Park",
-    company: "Horizon Health",
+    quote: "Our old site was embarrassing. They gave us something we\u2019re genuinely proud to share. Traffic is up 200% and counting.",
+    name: "David Harmon",
+    company: "Far North Crane",
     color: "#BCEFFF",
   },
   {
-    quote: "Hands down the best web development vendor I've ever worked with. Incredibly responsive and proactive.",
+    quote: "Hands down the best web development vendor I\u2019ve ever worked with. Incredibly responsive and proactive.",
     name: "Slaton Carter",
     company: "Ahara Med",
     color: "#71CFA3",
@@ -145,7 +146,7 @@ export function Testimonials({ locality }: { locality: string }) {
             className="inline-flex items-center gap-3 bg-brand text-dark rounded-sm px-8 py-4 font-sans font-medium text-fluid-main transition-all hover:brightness-110"
             style={{ transitionDuration: "0.3s" }}
           >
-            Start a Project
+            Book a Free Strategy Call
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M2 14L14 2M14 2H5M14 2V11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>

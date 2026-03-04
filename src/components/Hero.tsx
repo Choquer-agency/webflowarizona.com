@@ -63,9 +63,10 @@ const features = [
 interface HeroProps {
   h1: string;
   subhead: string;
+  region: string;
 }
 
-export function Hero({ h1, subhead }: HeroProps) {
+export function Hero({ h1, subhead, region }: HeroProps) {
   const ref = useRef<HTMLElement>(null);
 
   useGSAP(
@@ -114,8 +115,13 @@ export function Hero({ h1, subhead }: HeroProps) {
           </h1>
 
           {/* Body text — ~80% of H1 width */}
-          <p className="hero-body font-sans text-fluid-large text-dark opacity-60 max-w-[42ch] mb-16 leading-relaxed">
+          <p className="hero-body font-sans text-fluid-large text-dark opacity-60 max-w-[42ch] mb-6 leading-relaxed">
             {subhead}
+          </p>
+
+          {/* Qualifier */}
+          <p className="hero-body font-sans text-fluid-main text-dark opacity-40 max-w-[50ch] mb-16 leading-relaxed">
+            Built for growing businesses in {region} ready to invest in a Webflow website that drives real results.
           </p>
 
           {/* Feature items row with SVG icons */}

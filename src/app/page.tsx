@@ -31,6 +31,7 @@ export default function Home() {
       <Hero
         h1={config.heroH1}
         subhead={config.heroSubhead}
+        region={config.region}
       />
       <Problem />
       <MobileCta />
@@ -42,7 +43,6 @@ export default function Home() {
       <MobileCta />
       <WebflowServicesBreakdown />
       <WebflowVsWordPress />
-      <MobileCta />
       <Services />
       <Industries locality={config.locality} region={config.region} />
       <Process />

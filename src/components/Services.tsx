@@ -160,8 +160,9 @@ export function Services() {
           </h2>
         </div>
 
+        {/* Core Webflow Services */}
         <div>
-          {serviceItems.map((svc, i) => {
+          {serviceItems.slice(0, 2).map((svc, i) => {
             const isActive = hoveredIndex === i;
             return (
               <div
@@ -195,13 +196,55 @@ export function Services() {
           })}
         </div>
 
+        {/* Supporting Services */}
+        <div className="mt-12 mb-2">
+          <p className="font-mono text-fluid-small uppercase tracking-wider text-light opacity-30 mb-6">
+            Beyond Webflow &mdash; how we support your growth after launch
+          </p>
+        </div>
+        <div>
+          {serviceItems.slice(2).map((svc, i) => {
+            const idx = i + 2;
+            const isActive = hoveredIndex === idx;
+            return (
+              <div
+                key={svc.name}
+                className="flex items-center gap-4 lg:gap-6 cursor-pointer"
+                onMouseEnter={() => setHoveredIndex(idx)}
+                onMouseLeave={() => setHoveredIndex(null)}
+              >
+                <div
+                  className="flex-shrink-0 transition-all duration-400 overflow-hidden"
+                  style={{
+                    color: svc.color,
+                    width: isActive ? "3rem" : "0px",
+                    height: "3rem",
+                    opacity: isActive ? 1 : 0,
+                  }}
+                >
+                  {svc.icon}
+                </div>
+                <span
+                  className="font-sans font-normal leading-[1.05] block transition-colors duration-500"
+                  style={{
+                    fontSize: "clamp(1.2rem, 2vw + 0.5rem, 3.5rem)",
+                    color: isActive ? svc.color : "rgba(255,255,255,0.1)",
+                  }}
+                >
+                  {svc.name}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+
         <div className="mt-16">
           <button
             onClick={openModal}
             className="inline-flex items-center gap-3 bg-brand text-dark rounded-sm px-8 py-4 font-sans font-medium text-fluid-main transition-all hover:brightness-110"
             style={{ transitionDuration: "0.3s" }}
           >
-            Start a Project
+            Book a Free Strategy Call
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M2 14L14 2M14 2H5M14 2V11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>

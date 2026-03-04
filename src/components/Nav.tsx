@@ -104,7 +104,7 @@ export function Nav({ locality }: { locality: string }) {
                 borderColor: '#ff9500',
               }}
             >
-              <span className="text-sm">Start a Project</span>
+              <span className="text-sm">Book a Free Strategy Call</span>
               <span
                 className="btn-arrow"
                 style={{ background: 'rgba(255,255,255,0.2)' }}
@@ -161,7 +161,7 @@ export function Nav({ locality }: { locality: string }) {
           onClick={() => { setMobileOpen(false); openModal(); }}
           className="btn-secondary text-base"
         >
-          Start a Project
+          Book a Free Strategy Call
         </button>
       </div>
     </>

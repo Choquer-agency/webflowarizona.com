@@ -98,6 +98,11 @@ export interface PortfolioProject {
   image: string;
   url?: string;
   description?: string;
+  caseStudy?: {
+    challenge: string;
+    approach: string;
+    result: string;
+  };
 }
 
 export interface ServiceItem {
@@ -126,7 +131,7 @@ export const defaultConfig: DomainConfig = {
   nearbyAreas: "Scottsdale, Tempe, Mesa, Chandler, and Gilbert",
   heroH1: "Arizona's Premier Webflow Agency",
   heroSubhead:
-    "We design, build, and launch high-performance Webflow websites for Arizona businesses ready to grow. No templates. No shortcuts.",
+    "Webflow sites that rank on Google, convert visitors into leads, and grow your business \u2014 built by a certified Webflow Expert Partner.",
   schemaAddress: {
     locality: "Phoenix",
     region: "AZ",

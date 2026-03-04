@@ -49,11 +49,30 @@ export function CtaBanner() {
             className="inline-flex items-center gap-3 bg-brand text-dark rounded-sm px-8 py-4 font-sans font-medium text-fluid-main transition-all hover:brightness-110"
             style={{ transitionDuration: "0.3s" }}
           >
-            Start a Project
+            Book a Free Strategy Call
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M2 14L14 2M14 2H5M14 2V11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </button>
+          <p className="font-sans text-fluid-small text-dark opacity-40 mt-6">
+            We take on a limited number of projects each month.
+          </p>
+
+          {/* Founder */}
+          <div className="flex items-center justify-center gap-4 mt-10 pt-8 border-t" style={{ borderColor: "rgba(0,0,0,0.1)" }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/founder.jpg"
+              alt="Bryce Choquer"
+              className="w-12 h-12 rounded-full object-cover"
+            />
+            <div className="text-left">
+              <p className="font-sans font-medium text-sm text-dark">Bryce Choquer, Founder</p>
+              <p className="font-sans text-xs text-dark opacity-50">
+                Certified Webflow Expert Partner &middot; 8+ years &middot; 150+ projects
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
