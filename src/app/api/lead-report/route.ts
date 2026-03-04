@@ -56,7 +56,7 @@ export async function GET(request: NextRequest) {
 
     if (leads.length === 0) {
       await resend.emails.send({
-        from: "Lead Reports <reports@choquer.agency>",
+        from: "Ollie Hours <noreply@ollieinvoice.com>",
         to: process.env.REPORT_EMAIL!,
         subject: `Lead Report — ${monthLabel} (No leads)`,
         html: `<p>No leads were received in ${monthLabel}.</p>`,
@@ -143,7 +143,7 @@ export async function GET(request: NextRequest) {
     `;
 
     await resend.emails.send({
-      from: "Lead Reports <reports@choquer.agency>",
+      from: "Ollie Hours <noreply@ollieinvoice.com>",
       to: process.env.REPORT_EMAIL!,
       subject: `Lead Report — ${monthLabel} — ${leads.length} leads`,
       html,
