@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Services", href: "#webflow-services" },
   { label: "Work", href: "#portfolio" },
   { label: "Pricing", href: "#pricing" },
+  { label: "Blog", href: "/blog", isPage: true },
   { label: "FAQ", href: "#faq" },
 ];
 
@@ -70,16 +71,27 @@ export function Nav({ locality }: { locality: string }) {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <button
-                key={link.href}
-                onClick={() => scrollTo(link.href)}
-                className="text-fluid-main font-sans opacity-60 hover:opacity-100 transition-opacity"
-                style={{ transitionDuration: "0.35s" }}
-              >
-                {link.label}
-              </button>
-            ))}
+            {navLinks.map((link) =>
+              "isPage" in link && link.isPage ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-fluid-main font-sans opacity-60 hover:opacity-100 transition-opacity"
+                  style={{ transitionDuration: "0.35s" }}
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <button
+                  key={link.href}
+                  onClick={() => scrollTo(link.href)}
+                  className="text-fluid-main font-sans opacity-60 hover:opacity-100 transition-opacity"
+                  style={{ transitionDuration: "0.35s" }}
+                >
+                  {link.label}
+                </button>
+              )
+            )}
           </div>
 
           {/* Desktop CTA */}
@@ -126,15 +138,26 @@ export function Nav({ locality }: { locality: string }) {
         )}
         style={{ transitionDuration: "var(--duration-half)" }}
       >
-        {navLinks.map((link) => (
-          <button
-            key={link.href}
-            onClick={() => scrollTo(link.href)}
-            className="text-fluid-h3 font-sans font-medium text-dark"
-          >
-            {link.label}
-          </button>
-        ))}
+        {navLinks.map((link) =>
+          "isPage" in link && link.isPage ? (
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-fluid-h3 font-sans font-medium text-dark"
+              onClick={() => setMobileOpen(false)}
+            >
+              {link.label}
+            </a>
+          ) : (
+            <button
+              key={link.href}
+              onClick={() => scrollTo(link.href)}
+              className="text-fluid-h3 font-sans font-medium text-dark"
+            >
+              {link.label}
+            </button>
+          )
+        )}
         <button
           onClick={() => { setMobileOpen(false); openModal(); }}
           className="btn-secondary text-base"
