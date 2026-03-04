@@ -229,4 +229,415 @@ export const domainMap: Record<string, DomainConfig> = {
     geoRegionCode: "HK",
     gtmId: "GTM-NLLTXLFS",
   },
+
+  // ── Washington ──
+  "webflowwashington.com": {
+    ...defaultConfig,
+    slug: "washington",
+    domain: "webflowwashington.com",
+    region: "Washington",
+    regionAdjective: "Washington-based",
+    locality: "Seattle",
+    stateCode: "WA",
+    nearbyAreas: "Bellevue, Tacoma, Redmond, Kirkland, and Olympia",
+    metaTitle: "Webflow Agency Washington | Expert Webflow Design & Development",
+    metaDescription:
+      "Washington's premier Webflow agency. We design, build, and launch high-performance Webflow websites for businesses across the Pacific Northwest. Get a free strategy call today.",
+    heroH1: "Washington's Premier Webflow Agency",
+    heroSubhead:
+      "We design, build, and launch high-performance Webflow websites for Washington businesses ready to grow. No templates. No shortcuts.",
+    schemaAddress: { locality: "Seattle", region: "WA", country: "US" },
+    geoCoordinates: { latitude: 47.6062, longitude: -122.3321 },
+    geoRegionCode: "US-WA",
+    gtmId: "GTM-PSZHCGXH",
+  },
+
+  // ── Hawaii ──
+  "webflowhawaii.com": {
+    ...defaultConfig,
+    slug: "hawaii",
+    domain: "webflowhawaii.com",
+    region: "Hawaii",
+    regionAdjective: "Hawaii-based",
+    locality: "Honolulu",
+    stateCode: "HI",
+    nearbyAreas: "Waikiki, Maui, Kailua, Pearl City, and Hilo",
+    metaTitle: "Webflow Agency Hawaii | Expert Webflow Design & Development",
+    metaDescription:
+      "Hawaii's premier Webflow agency. We design, build, and launch high-performance Webflow websites for island businesses ready to grow. Get a free strategy call today.",
+    heroH1: "Hawaii's Premier Webflow Agency",
+    heroSubhead:
+      "We design, build, and launch high-performance Webflow websites for Hawaii businesses ready to grow. No templates. No shortcuts.",
+    schemaAddress: { locality: "Honolulu", region: "HI", country: "US" },
+    geoCoordinates: { latitude: 21.3069, longitude: -157.8583 },
+    geoRegionCode: "US-HI",
+    gtmId: "GTM-KNN7CW6T",
+  },
+
+  // ── Texas ──
+  "webflowtexas.com": {
+    ...defaultConfig,
+    slug: "texas",
+    domain: "webflowtexas.com",
+    region: "Texas",
+    regionAdjective: "Texas-based",
+    locality: "Austin",
+    stateCode: "TX",
+    nearbyAreas: "Dallas, Houston, San Antonio, Fort Worth, and Round Rock",
+    metaTitle: "Webflow Agency Texas | Expert Webflow Design & Development",
+    metaDescription:
+      "Texas's premier Webflow agency. We design, build, and launch high-performance Webflow websites for businesses across the Lone Star State. Get a free strategy call today.",
+    heroH1: "Texas's Premier Webflow Agency",
+    heroSubhead:
+      "We design, build, and launch high-performance Webflow websites for Texas businesses ready to grow. No templates. No shortcuts.",
+    schemaAddress: { locality: "Austin", region: "TX", country: "US" },
+    geoCoordinates: { latitude: 30.2672, longitude: -97.7431 },
+    geoRegionCode: "US-TX",
+    gtmId: "GTM-5FBZVRPT",
+  },
+
+  // ── Ontario ──
+  "webflowontario.com": {
+    ...defaultConfig,
+    slug: "ontario",
+    domain: "webflowontario.com",
+    region: "Ontario",
+    regionAdjective: "Ontario-based",
+    country: "CA",
+    locality: "Toronto",
+    stateCode: "ON",
+    nearbyAreas: "Mississauga, Ottawa, Hamilton, Brampton, and Markham",
+    metaTitle: "Webflow Agency Ontario | Expert Webflow Design & Development",
+    metaDescription:
+      "Ontario's premier Webflow agency. We design, build, and launch high-performance Webflow websites for businesses across Canada's most populous province. Get a free strategy call today.",
+    heroH1: "Ontario's Premier Webflow Agency",
+    heroSubhead:
+      "We design, build, and launch high-performance Webflow websites for Ontario businesses ready to grow. No templates. No shortcuts.",
+    schemaAddress: { locality: "Toronto", region: "ON", country: "CA" },
+    geoCoordinates: { latitude: 43.6532, longitude: -79.3832 },
+    geoRegionCode: "CA-ON",
+    gtmId: "GTM-PS6CG2CZ",
+  },
+
+  // ── Canada ──
+  "webflowcanada.com": {
+    ...defaultConfig,
+    slug: "canada",
+    domain: "webflowcanada.com",
+    region: "Canada",
+    regionAdjective: "Canada-based",
+    country: "CA",
+    locality: "Toronto",
+    stateCode: "ON",
+    nearbyAreas: "Vancouver, Montreal, Calgary, Ottawa, and Edmonton",
+    metaTitle: "Webflow Agency Canada | Expert Webflow Design & Development",
+    metaDescription:
+      "Canada's premier Webflow agency. We design, build, and launch high-performance Webflow websites for Canadian businesses ready to grow. Get a free strategy call today.",
+    heroH1: "Canada's Premier Webflow Agency",
+    heroSubhead:
+      "We design, build, and launch high-performance Webflow websites for Canadian businesses ready to grow. No templates. No shortcuts.",
+    schemaAddress: { locality: "Toronto", region: "ON", country: "CA" },
+    geoCoordinates: { latitude: 43.6532, longitude: -79.3832 },
+    geoRegionCode: "CA-ON",
+    gtmId: "GTM-W77CLV99",
+  },
+
+  // ── Vancouver ──
+  "webflowvancouver.com": {
+    ...defaultConfig,
+    slug: "vancouver",
+    domain: "webflowvancouver.com",
+    region: "Vancouver",
+    regionAdjective: "Vancouver-based",
+    country: "CA",
+    locality: "Vancouver",
+    stateCode: "BC",
+    nearbyAreas: "Burnaby, Surrey, Richmond, North Vancouver, and Coquitlam",
+    metaTitle: "Webflow Agency Vancouver | Expert Webflow Design & Development",
+    metaDescription:
+      "Vancouver's premier Webflow agency. We design, build, and launch high-performance Webflow websites for businesses across British Columbia. Get a free strategy call today.",
+    heroH1: "Vancouver's Premier Webflow Agency",
+    heroSubhead:
+      "We design, build, and launch high-performance Webflow websites for Vancouver businesses ready to grow. No templates. No shortcuts.",
+    schemaAddress: { locality: "Vancouver", region: "BC", country: "CA" },
+    geoCoordinates: { latitude: 49.2827, longitude: -123.1207 },
+    geoRegionCode: "CA-BC",
+    gtmId: "GTM-KK435ZQC",
+  },
+
+  // ── Norway ──
+  "webflownorway.com": {
+    ...defaultConfig,
+    slug: "norway",
+    domain: "webflownorway.com",
+    region: "Norway",
+    regionAdjective: "Norway-based",
+    country: "NO",
+    locality: "Oslo",
+    stateCode: "NO",
+    nearbyAreas: "Bergen, Stavanger, Trondheim, Drammen, and Fredrikstad",
+    metaTitle: "Webflow Agency Norway | Expert Webflow Design & Development",
+    metaDescription:
+      "Norway's premier Webflow agency. We design, build, and launch high-performance Webflow websites for Norwegian businesses ready to grow. Get a free strategy call today.",
+    heroH1: "Norway's Premier Webflow Agency",
+    heroSubhead:
+      "We design, build, and launch high-performance Webflow websites for Norwegian businesses ready to grow. No templates. No shortcuts.",
+    schemaAddress: { locality: "Oslo", region: "Oslo", country: "NO" },
+    geoCoordinates: { latitude: 59.9139, longitude: 10.7522 },
+    geoRegionCode: "NO",
+    gtmId: "GTM-T37VPCTN",
+  },
+
+  // ── Switzerland ──
+  "webflowswitzerland.com": {
+    ...defaultConfig,
+    slug: "switzerland",
+    domain: "webflowswitzerland.com",
+    region: "Switzerland",
+    regionAdjective: "Switzerland-based",
+    country: "CH",
+    locality: "Zurich",
+    stateCode: "CH",
+    nearbyAreas: "Geneva, Basel, Bern, Lausanne, and Lucerne",
+    metaTitle: "Webflow Agency Switzerland | Expert Webflow Design & Development",
+    metaDescription:
+      "Switzerland's premier Webflow agency. We design, build, and launch high-performance Webflow websites for Swiss businesses ready to grow. Get a free strategy call today.",
+    heroH1: "Switzerland's Premier Webflow Agency",
+    heroSubhead:
+      "We design, build, and launch high-performance Webflow websites for Swiss businesses ready to grow. No templates. No shortcuts.",
+    schemaAddress: { locality: "Zurich", region: "ZH", country: "CH" },
+    geoCoordinates: { latitude: 47.3769, longitude: 8.5417 },
+    geoRegionCode: "CH",
+    gtmId: "GTM-T6WQCGN9",
+  },
+
+  // ── France ──
+  "webflowfrance.com": {
+    ...defaultConfig,
+    slug: "france",
+    domain: "webflowfrance.com",
+    region: "France",
+    regionAdjective: "France-based",
+    country: "FR",
+    locality: "Paris",
+    stateCode: "FR",
+    nearbyAreas: "Lyon, Marseille, Toulouse, Nice, and Bordeaux",
+    metaTitle: "Webflow Agency France | Expert Webflow Design & Development",
+    metaDescription:
+      "France's premier Webflow agency. We design, build, and launch high-performance Webflow websites for French businesses ready to grow. Get a free strategy call today.",
+    heroH1: "France's Premier Webflow Agency",
+    heroSubhead:
+      "We design, build, and launch high-performance Webflow websites for French businesses ready to grow. No templates. No shortcuts.",
+    schemaAddress: { locality: "Paris", region: "Île-de-France", country: "FR" },
+    geoCoordinates: { latitude: 48.8566, longitude: 2.3522 },
+    geoRegionCode: "FR",
+    gtmId: "GTM-MVW29Q94",
+  },
+
+  // ── Belgium ──
+  "webflowbelgium.com": {
+    ...defaultConfig,
+    slug: "belgium",
+    domain: "webflowbelgium.com",
+    region: "Belgium",
+    regionAdjective: "Belgium-based",
+    country: "BE",
+    locality: "Brussels",
+    stateCode: "BE",
+    nearbyAreas: "Antwerp, Ghent, Bruges, Leuven, and Liège",
+    metaTitle: "Webflow Agency Belgium | Expert Webflow Design & Development",
+    metaDescription:
+      "Belgium's premier Webflow agency. We design, build, and launch high-performance Webflow websites for Belgian businesses ready to grow. Get a free strategy call today.",
+    heroH1: "Belgium's Premier Webflow Agency",
+    heroSubhead:
+      "We design, build, and launch high-performance Webflow websites for Belgian businesses ready to grow. No templates. No shortcuts.",
+    schemaAddress: { locality: "Brussels", region: "Brussels", country: "BE" },
+    geoCoordinates: { latitude: 50.8503, longitude: 4.3517 },
+    geoRegionCode: "BE",
+    gtmId: "GTM-K2BPHBPD",
+  },
+
+  // ── Netherlands ──
+  "webflownetherlands.com": {
+    ...defaultConfig,
+    slug: "netherlands",
+    domain: "webflownetherlands.com",
+    region: "Netherlands",
+    regionAdjective: "Netherlands-based",
+    country: "NL",
+    locality: "Amsterdam",
+    stateCode: "NL",
+    nearbyAreas: "Rotterdam, The Hague, Utrecht, Eindhoven, and Groningen",
+    metaTitle: "Webflow Agency Netherlands | Expert Webflow Design & Development",
+    metaDescription:
+      "The Netherlands' premier Webflow agency. We design, build, and launch high-performance Webflow websites for Dutch businesses ready to grow. Get a free strategy call today.",
+    heroH1: "The Netherlands' Premier Webflow Agency",
+    heroSubhead:
+      "We design, build, and launch high-performance Webflow websites for Dutch businesses ready to grow. No templates. No shortcuts.",
+    schemaAddress: { locality: "Amsterdam", region: "North Holland", country: "NL" },
+    geoCoordinates: { latitude: 52.3676, longitude: 4.9041 },
+    geoRegionCode: "NL",
+    gtmId: "GTM-NJTNJN43",
+  },
+
+  // ── New Zealand ──
+  "webflownewzealand.com": {
+    ...defaultConfig,
+    slug: "new-zealand",
+    domain: "webflownewzealand.com",
+    region: "New Zealand",
+    regionAdjective: "New Zealand-based",
+    country: "NZ",
+    locality: "Auckland",
+    stateCode: "NZ",
+    nearbyAreas: "Wellington, Christchurch, Hamilton, Queenstown, and Tauranga",
+    metaTitle: "Webflow Agency New Zealand | Expert Webflow Design & Development",
+    metaDescription:
+      "New Zealand's premier Webflow agency. We design, build, and launch high-performance Webflow websites for Kiwi businesses ready to grow. Get a free strategy call today.",
+    heroH1: "New Zealand's Premier Webflow Agency",
+    heroSubhead:
+      "We design, build, and launch high-performance Webflow websites for New Zealand businesses ready to grow. No templates. No shortcuts.",
+    schemaAddress: { locality: "Auckland", region: "Auckland", country: "NZ" },
+    geoCoordinates: { latitude: -36.8485, longitude: 174.7633 },
+    geoRegionCode: "NZ",
+    gtmId: "GTM-P86MX9HJ",
+  },
+
+  // ── Sweden ──
+  "webflowsweden.com": {
+    ...defaultConfig,
+    slug: "sweden",
+    domain: "webflowsweden.com",
+    region: "Sweden",
+    regionAdjective: "Sweden-based",
+    country: "SE",
+    locality: "Stockholm",
+    stateCode: "SE",
+    nearbyAreas: "Gothenburg, Malmö, Uppsala, Linköping, and Västerås",
+    metaTitle: "Webflow Agency Sweden | Expert Webflow Design & Development",
+    metaDescription:
+      "Sweden's premier Webflow agency. We design, build, and launch high-performance Webflow websites for Swedish businesses ready to grow. Get a free strategy call today.",
+    heroH1: "Sweden's Premier Webflow Agency",
+    heroSubhead:
+      "We design, build, and launch high-performance Webflow websites for Swedish businesses ready to grow. No templates. No shortcuts.",
+    schemaAddress: { locality: "Stockholm", region: "Stockholm", country: "SE" },
+    geoCoordinates: { latitude: 59.3293, longitude: 18.0686 },
+    geoRegionCode: "SE",
+    gtmId: "GTM-NQZJP6TC",
+  },
+
+  // ── Canadian Agency ──
+  "webflowagency.ca": {
+    ...defaultConfig,
+    slug: "agency-ca",
+    domain: "webflowagency.ca",
+    region: "Canadian Agency",
+    regionAdjective: "Canadian",
+    country: "CA",
+    locality: "Toronto",
+    stateCode: "ON",
+    nearbyAreas: "Vancouver, Montreal, Calgary, Ottawa, and Edmonton",
+    metaTitle: "Webflow Agency Canada | Your Trusted Canadian Webflow Partner",
+    metaDescription:
+      "Your trusted Canadian Webflow agency. We design, build, and launch high-performance Webflow websites for businesses across Canada. Get a free strategy call today.",
+    heroH1: "Your Trusted Canadian Webflow Agency",
+    heroSubhead:
+      "We design, build, and launch high-performance Webflow websites for Canadian businesses ready to grow. Expert Webflow development from coast to coast.",
+    schemaAddress: { locality: "Toronto", region: "ON", country: "CA" },
+    geoCoordinates: { latitude: 43.6532, longitude: -79.3832 },
+    geoRegionCode: "CA-ON",
+    gtmId: "GTM-TLPKRLDR",
+  },
+
+  // ── UK Agency ──
+  "webflowagency.uk": {
+    ...defaultConfig,
+    slug: "agency-uk",
+    domain: "webflowagency.uk",
+    region: "UK Agency",
+    regionAdjective: "UK-based",
+    country: "UK",
+    locality: "London",
+    stateCode: "UK",
+    nearbyAreas: "Manchester, Birmingham, Leeds, Bristol, and Edinburgh",
+    metaTitle: "Webflow Agency UK | Your Trusted British Webflow Partner",
+    metaDescription:
+      "The UK's premier Webflow agency. We design, build, and launch high-performance Webflow websites for British businesses ready to grow. Get a free strategy call today.",
+    heroH1: "The UK's Premier Webflow Agency",
+    heroSubhead:
+      "We design, build, and launch high-performance Webflow websites for UK businesses ready to grow. No templates. No shortcuts.",
+    schemaAddress: { locality: "London", region: "England", country: "GB" },
+    geoCoordinates: { latitude: 51.5074, longitude: -0.1278 },
+    geoRegionCode: "GB",
+    gtmId: "GTM-5HTD29LN",
+  },
+
+  // ── European Agency ──
+  "webflowagency.eu": {
+    ...defaultConfig,
+    slug: "agency-eu",
+    domain: "webflowagency.eu",
+    region: "European Agency",
+    regionAdjective: "Europe-based",
+    country: "EU",
+    locality: "Amsterdam",
+    stateCode: "EU",
+    nearbyAreas: "London, Paris, Berlin, Brussels, and Zurich",
+    metaTitle: "Webflow Agency Europe | Your Trusted European Webflow Partner",
+    metaDescription:
+      "Europe's premier Webflow agency. We design, build, and launch high-performance Webflow websites for European businesses ready to grow. Get a free strategy call today.",
+    heroH1: "Europe's Premier Webflow Agency",
+    heroSubhead:
+      "We design, build, and launch high-performance Webflow websites for European businesses ready to grow. No templates. No shortcuts.",
+    schemaAddress: { locality: "Amsterdam", region: "North Holland", country: "NL" },
+    geoCoordinates: { latitude: 52.3676, longitude: 4.9041 },
+    geoRegionCode: "EU",
+    gtmId: "GTM-MPFHKMMZ",
+  },
+
+  // ── European Expert ──
+  "webflowexpert.eu": {
+    ...defaultConfig,
+    slug: "expert-eu",
+    domain: "webflowexpert.eu",
+    region: "European Expert",
+    regionAdjective: "Europe-based",
+    country: "EU",
+    locality: "Amsterdam",
+    stateCode: "EU",
+    nearbyAreas: "London, Paris, Berlin, Brussels, and Zurich",
+    metaTitle: "Webflow Expert Europe | Certified Webflow Development",
+    metaDescription:
+      "Europe's trusted Webflow expert. We deliver pixel-perfect, high-performance Webflow websites for European businesses. Certified Webflow development. Get a free strategy call today.",
+    heroH1: "Europe's Trusted Webflow Expert",
+    heroSubhead:
+      "Certified Webflow expertise for European businesses. We deliver pixel-perfect, high-performance websites that drive results. No templates. No shortcuts.",
+    schemaAddress: { locality: "Amsterdam", region: "North Holland", country: "NL" },
+    geoCoordinates: { latitude: 52.3676, longitude: 4.9041 },
+    geoRegionCode: "EU",
+    gtmId: "GTM-P7H37JG9",
+  },
+
+  // ── Canadian Expert ──
+  "webflowexpert.ca": {
+    ...defaultConfig,
+    slug: "expert-ca",
+    domain: "webflowexpert.ca",
+    region: "Canadian Expert",
+    regionAdjective: "Canadian",
+    country: "CA",
+    locality: "Toronto",
+    stateCode: "ON",
+    nearbyAreas: "Vancouver, Montreal, Calgary, Ottawa, and Edmonton",
+    metaTitle: "Webflow Expert Canada | Certified Webflow Development",
+    metaDescription:
+      "Canada's trusted Webflow expert. We deliver pixel-perfect, high-performance Webflow websites for Canadian businesses. Certified Webflow development. Get a free strategy call today.",
+    heroH1: "Canada's Trusted Webflow Expert",
+    heroSubhead:
+      "Certified Webflow expertise for Canadian businesses. We deliver pixel-perfect, high-performance websites that drive results. No templates. No shortcuts.",
+    schemaAddress: { locality: "Toronto", region: "ON", country: "CA" },
+    geoCoordinates: { latitude: 43.6532, longitude: -79.3832 },
+    geoRegionCode: "CA-ON",
+    gtmId: "GTM-PX3FF6XD",
+  },
 };

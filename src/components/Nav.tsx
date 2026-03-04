@@ -9,7 +9,6 @@ const navLinks = [
   { label: "Services", href: "#webflow-services" },
   { label: "Work", href: "#portfolio" },
   { label: "Pricing", href: "#pricing" },
-  { label: "Blog", href: "/blog", isPage: true },
   { label: "FAQ", href: "#faq" },
 ];
 
@@ -99,16 +98,16 @@ export function Nav({ locality }: { locality: string }) {
             <button
               onClick={openModal}
               className="btn"
-              style={scrolled ? {
+              style={{
                 background: '#ff9500',
                 color: '#fff',
                 borderColor: '#ff9500',
-              } : undefined}
+              }}
             >
               <span className="text-sm">Start a Project</span>
               <span
                 className="btn-arrow"
-                style={scrolled ? { background: 'rgba(255,255,255,0.2)' } : undefined}
+                style={{ background: 'rgba(255,255,255,0.2)' }}
               >
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                   <path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>

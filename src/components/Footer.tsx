@@ -74,9 +74,17 @@ export function Footer({ locality }: { locality: string }) {
               />
               {brandName}
             </span>
-            <p className="font-sans text-fluid-small opacity-40">
-              &copy; {new Date().getFullYear()} {brandName}. All rights reserved.
-            </p>
+            <div className="flex items-center gap-6">
+              <a
+                href="/blog"
+                className="font-sans text-fluid-small opacity-60 hover:opacity-100 transition-opacity"
+              >
+                Blog
+              </a>
+              <p className="font-sans text-fluid-small opacity-40">
+                &copy; {new Date().getFullYear()} {brandName}. All rights reserved.
+              </p>
+            </div>
           </div>
         </div>
       </div>
