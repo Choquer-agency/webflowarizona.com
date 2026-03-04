@@ -15,6 +15,9 @@ export const domainMap: Record<string, DomainConfig> = {
     domain: "webflowcalifornia.com",
     region: "California",
     regionAdjective: "California-based",
+    locality: "Los Angeles",
+    stateCode: "CA",
+    nearbyAreas: "Santa Monica, Beverly Hills, Pasadena, Long Beach, and Burbank",
     metaTitle: "Webflow Agency California | Expert Webflow Design & Development",
     metaDescription:
       "California's premier Webflow agency. We design, build, and launch high-performance Webflow websites for businesses ready to grow. Get a free strategy call today.",
@@ -34,6 +37,9 @@ export const domainMap: Record<string, DomainConfig> = {
     domain: "webflowsanfrancisco.com",
     region: "San Francisco",
     regionAdjective: "San Francisco-based",
+    locality: "San Francisco",
+    stateCode: "CA",
+    nearbyAreas: "Oakland, Berkeley, San Jose, Palo Alto, and Marin County",
     metaTitle: "Webflow Agency San Francisco | Expert Webflow Design & Development",
     metaDescription:
       "San Francisco's premier Webflow agency. We design, build, and launch high-performance Webflow websites for businesses ready to grow. Get a free strategy call today.",
@@ -53,6 +59,9 @@ export const domainMap: Record<string, DomainConfig> = {
     domain: "webflowcolorado.com",
     region: "Colorado",
     regionAdjective: "Colorado-based",
+    locality: "Denver",
+    stateCode: "CO",
+    nearbyAreas: "Boulder, Aurora, Colorado Springs, Fort Collins, and Lakewood",
     metaTitle: "Webflow Agency Colorado | Expert Webflow Design & Development",
     metaDescription:
       "Colorado's premier Webflow agency. We design, build, and launch high-performance Webflow websites for businesses ready to grow. Get a free strategy call today.",
@@ -72,6 +81,9 @@ export const domainMap: Record<string, DomainConfig> = {
     domain: "webflowflorida.com",
     region: "Florida",
     regionAdjective: "Florida-based",
+    locality: "Miami",
+    stateCode: "FL",
+    nearbyAreas: "Fort Lauderdale, Tampa, Orlando, Jacksonville, and West Palm Beach",
     metaTitle: "Webflow Agency Florida | Expert Webflow Design & Development",
     metaDescription:
       "Florida's premier Webflow agency. We design, build, and launch high-performance Webflow websites for businesses ready to grow. Get a free strategy call today.",
@@ -91,6 +103,9 @@ export const domainMap: Record<string, DomainConfig> = {
     domain: "webflowidaho.com",
     region: "Idaho",
     regionAdjective: "Idaho-based",
+    locality: "Boise",
+    stateCode: "ID",
+    nearbyAreas: "Meridian, Nampa, Idaho Falls, Pocatello, and Twin Falls",
     metaTitle: "Webflow Agency Idaho | Expert Webflow Design & Development",
     metaDescription:
       "Idaho's premier Webflow agency. We design, build, and launch high-performance Webflow websites for businesses ready to grow. Get a free strategy call today.",
@@ -110,6 +125,9 @@ export const domainMap: Record<string, DomainConfig> = {
     domain: "webflowmontana.com",
     region: "Montana",
     regionAdjective: "Montana-based",
+    locality: "Billings",
+    stateCode: "MT",
+    nearbyAreas: "Missoula, Great Falls, Bozeman, Helena, and Kalispell",
     metaTitle: "Webflow Agency Montana | Expert Webflow Design & Development",
     metaDescription:
       "Montana's premier Webflow agency. We design, build, and launch high-performance Webflow websites for businesses ready to grow. Get a free strategy call today.",
@@ -129,6 +147,9 @@ export const domainMap: Record<string, DomainConfig> = {
     domain: "webflownevada.com",
     region: "Nevada",
     regionAdjective: "Nevada-based",
+    locality: "Las Vegas",
+    stateCode: "NV",
+    nearbyAreas: "Henderson, Reno, North Las Vegas, Sparks, and Carson City",
     metaTitle: "Webflow Agency Nevada | Expert Webflow Design & Development",
     metaDescription:
       "Nevada's premier Webflow agency. We design, build, and launch high-performance Webflow websites for businesses ready to grow. Get a free strategy call today.",
@@ -148,6 +169,9 @@ export const domainMap: Record<string, DomainConfig> = {
     domain: "webfloworegon.com",
     region: "Oregon",
     regionAdjective: "Oregon-based",
+    locality: "Portland",
+    stateCode: "OR",
+    nearbyAreas: "Beaverton, Salem, Eugene, Lake Oswego, and Hillsboro",
     metaTitle: "Webflow Agency Oregon | Expert Webflow Design & Development",
     metaDescription:
       "Oregon's premier Webflow agency. We design, build, and launch high-performance Webflow websites for businesses ready to grow. Get a free strategy call today.",
@@ -168,6 +192,9 @@ export const domainMap: Record<string, DomainConfig> = {
     region: "Singapore",
     regionAdjective: "Singapore-based",
     country: "SG",
+    locality: "Singapore",
+    stateCode: "SG",
+    nearbyAreas: "Orchard, Marina Bay, Raffles Place, Jurong, and Tampines",
     metaTitle: "Webflow Agency Singapore | Expert Webflow Design & Development",
     metaDescription:
       "Singapore's premier Webflow agency. We design, build, and launch high-performance Webflow websites for businesses ready to grow. Get a free strategy call today.",
@@ -188,6 +215,9 @@ export const domainMap: Record<string, DomainConfig> = {
     region: "Hong Kong",
     regionAdjective: "Hong Kong-based",
     country: "HK",
+    locality: "Hong Kong",
+    stateCode: "HK",
+    nearbyAreas: "Central, Wan Chai, Tsim Sha Tsui, Causeway Bay, and Kowloon",
     metaTitle: "Webflow Agency Hong Kong | Expert Webflow Design & Development",
     metaDescription:
       "Hong Kong's premier Webflow agency. We design, build, and launch high-performance Webflow websites for businesses ready to grow. Get a free strategy call today.",

@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "@/lib/gsap-register";
-import { industriesServed } from "@/content/shared";
+import { getIndustriesServed } from "@/content/shared";
 import {
   Heart,
   Building,
@@ -23,8 +23,14 @@ const iconMap: Record<string, LucideIcon> = {
   ShoppingBag,
 };
 
-export function Industries() {
+interface IndustriesProps {
+  locality: string;
+  region: string;
+}
+
+export function Industries({ locality, region }: IndustriesProps) {
   const ref = useRef<HTMLElement>(null);
+  const industries = getIndustriesServed(locality, region);
 
   useGSAP(
     () => {
@@ -57,17 +63,17 @@ export function Industries() {
         <div className="text-center mb-16">
           <p className="ind-heading eyebrow text-brand mb-4">Who We Help</p>
           <h2 className="ind-heading font-sans font-medium text-fluid-h2 leading-[1.1] text-white max-w-[28ch] mx-auto mb-6">
-            Webflow websites for Phoenix businesses{" "}
+            Webflow websites for {locality} businesses{" "}
             <span className="opacity-40">in every industry</span>
           </h2>
           <p className="ind-heading font-sans text-fluid-main text-white opacity-50 leading-relaxed max-w-[55ch] mx-auto">
-            We have built Webflow sites for businesses across Arizona — from
+            We have built Webflow sites for businesses across {region} — from
             healthcare to hospitality, real estate to SaaS.
           </p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {industriesServed.map((industry) => {
+          {industries.map((industry) => {
             const Icon = iconMap[industry.icon];
             return (
               <div

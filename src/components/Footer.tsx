@@ -15,8 +15,10 @@ const footerTags = [
   { label: "UI/UX Design", color: "#fff1c6" },
 ];
 
-export function Footer() {
+export function Footer({ locality }: { locality: string }) {
   const { openModal } = useContactForm();
+  const brandName = `${locality} Webflow Agency`;
+
   return (
     <footer
       style={{
@@ -67,13 +69,13 @@ export function Footer() {
             <span className="font-sans font-medium text-base flex items-center gap-2">
               <img
                 src="/images/logo.svg"
-                alt="Phoenix Webflow Agency"
+                alt={brandName}
                 className="h-5 w-auto"
               />
-              Phoenix Webflow Agency
+              {brandName}
             </span>
             <p className="font-sans text-fluid-small opacity-40">
-              &copy; {new Date().getFullYear()} Phoenix Webflow Agency. All rights reserved.
+              &copy; {new Date().getFullYear()} {brandName}. All rights reserved.
             </p>
           </div>
         </div>

@@ -12,7 +12,7 @@ const navLinks = [
   { label: "FAQ", href: "#faq" },
 ];
 
-export function Nav() {
+export function Nav({ locality }: { locality: string }) {
   const { openModal } = useContactForm();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -30,6 +30,8 @@ export function Nav() {
     const el = document.querySelector(href);
     if (el) el.scrollIntoView({ behavior: "smooth" });
   }
+
+  const brandName = `${locality} Webflow Agency`;
 
   return (
     <>
@@ -60,10 +62,10 @@ export function Nav() {
           >
             <img
               src="/images/logo.svg"
-              alt="Phoenix Webflow Agency"
+              alt={brandName}
               className="h-5 w-auto"
             />
-            Phoenix Webflow Agency
+            {brandName}
           </a>
 
           {/* Desktop Nav */}

@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "@/lib/gsap-register";
 import { warmPalette } from "@/lib/colors";
-import { expandedFaqs } from "@/content/shared";
+import { getExpandedFaqs } from "@/content/shared";
 
 const categories = [
   { key: "all", label: "All" },
@@ -17,7 +17,8 @@ const categories = [
 
 type CategoryKey = (typeof categories)[number]["key"];
 
-export function FAQ() {
+export function FAQ({ locality, region }: { locality: string; region: string }) {
+  const expandedFaqs = getExpandedFaqs(locality, region);
   const ref = useRef<HTMLElement>(null);
   const [openIndex, setOpenIndex] = useState(0);
   const [activeCategory, setActiveCategory] = useState<CategoryKey>("all");

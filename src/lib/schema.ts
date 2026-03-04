@@ -1,8 +1,12 @@
 import { DomainConfig } from "@/content/config";
-import { expandedFaqs, processSteps, webflowServices } from "@/content/shared";
+import { getExpandedFaqs } from "@/content/shared";
+import { processSteps, webflowServices } from "@/content/shared";
 
 export function generateSchema(config: DomainConfig) {
   const domain = `https://${config.domain}`;
+  const locality = config.locality;
+  const region = config.region;
+  const expandedFaqs = getExpandedFaqs(locality, region);
 
   return {
     "@context": "https://schema.org",
@@ -11,18 +15,14 @@ export function generateSchema(config: DomainConfig) {
       {
         "@type": ["LocalBusiness", "ProfessionalService"],
         "@id": `${domain}/#business`,
-        name: `Phoenix Webflow Agency — ${config.region}`,
+        name: `${locality} Webflow Agency — ${region}`,
         description: config.metaDescription,
         url: domain,
         ...(config.telephone && { telephone: config.telephone }),
         ...(config.email && { email: config.email }),
         areaServed: [
-          { "@type": "City", name: "Phoenix" },
-          { "@type": "City", name: "Scottsdale" },
-          { "@type": "City", name: "Tempe" },
-          { "@type": "City", name: "Mesa" },
-          { "@type": "City", name: "Chandler" },
-          { "@type": "State", name: "Arizona" },
+          { "@type": "City", name: locality },
+          { "@type": config.country === "US" ? "State" : "Country", name: region },
         ],
         ...(config.schemaAddress && {
           address: {
@@ -79,7 +79,7 @@ export function generateSchema(config: DomainConfig) {
         "@type": "WebSite",
         "@id": `${domain}/#website`,
         url: domain,
-        name: "Phoenix Webflow Agency",
+        name: `${locality} Webflow Agency`,
         publisher: { "@id": `${domain}/#business` },
       },
 
@@ -101,7 +101,7 @@ export function generateSchema(config: DomainConfig) {
         "@type": "HowTo",
         name: "How We Build Webflow Websites",
         description:
-          "Our four-step process for designing and developing high-performance Webflow websites for Arizona businesses.",
+          `Our four-step process for designing and developing high-performance Webflow websites for ${region} businesses.`,
         step: processSteps.map((s) => ({
           "@type": "HowToStep",
           position: s.step,
@@ -126,7 +126,7 @@ export function generateSchema(config: DomainConfig) {
         serviceType: service.title,
         description: service.description,
         provider: { "@id": `${domain}/#business` },
-        areaServed: { "@type": "State", name: "Arizona" },
+        areaServed: { "@type": config.country === "US" ? "State" : "Country", name: region },
       })),
 
       // BreadcrumbList

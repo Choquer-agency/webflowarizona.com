@@ -14,6 +14,11 @@ export interface DomainConfig {
   heroH1: string;
   heroSubhead: string;
 
+  // Location details
+  locality: string; // e.g. "Phoenix", "Portland", "Singapore"
+  stateCode: string; // e.g. "AZ", "OR", "SG"
+  nearbyAreas: string; // e.g. "Scottsdale, Tempe, Mesa, Chandler, and Gilbert"
+
   // Schema.org
   schemaAddress?: {
     locality: string;
@@ -116,6 +121,9 @@ export const defaultConfig: DomainConfig = {
   metaTitle: "Webflow Agency Arizona | Expert Webflow Design & Development",
   metaDescription:
     "Arizona's premier Webflow agency. We design, build, and launch high-performance Webflow websites for businesses ready to grow. Get a free strategy call today.",
+  locality: "Phoenix",
+  stateCode: "AZ",
+  nearbyAreas: "Scottsdale, Tempe, Mesa, Chandler, and Gilbert",
   heroH1: "Arizona's Premier Webflow Agency",
   heroSubhead:
     "We design, build, and launch high-performance Webflow websites for Arizona businesses ready to grow. No templates. No shortcuts.",

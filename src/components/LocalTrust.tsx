@@ -6,26 +6,33 @@ import { gsap } from "@/lib/gsap-register";
 import { warmPalette } from "@/lib/colors";
 import { MapPin, Users, Handshake } from "lucide-react";
 
-const trustSignals = [
-  {
-    icon: MapPin,
-    label: "Based in Phoenix, AZ",
-    color: warmPalette[0],
-  },
-  {
-    icon: Users,
-    label: "50+ Arizona businesses served",
-    color: warmPalette[4],
-  },
-  {
-    icon: Handshake,
-    label: "In-person strategy sessions available",
-    color: warmPalette[3],
-  },
-];
+interface LocalTrustProps {
+  locality: string;
+  stateCode: string;
+  region: string;
+  nearbyAreas: string;
+}
 
-export function LocalTrust() {
+export function LocalTrust({ locality, stateCode, region, nearbyAreas }: LocalTrustProps) {
   const ref = useRef<HTMLElement>(null);
+
+  const trustSignals = [
+    {
+      icon: MapPin,
+      label: `Based in ${locality}, ${stateCode}`,
+      color: warmPalette[0],
+    },
+    {
+      icon: Users,
+      label: `50+ ${region} businesses served`,
+      color: warmPalette[4],
+    },
+    {
+      icon: Handshake,
+      label: "In-person strategy sessions available",
+      color: warmPalette[3],
+    },
+  ];
 
   useGSAP(
     () => {
@@ -64,34 +71,31 @@ export function LocalTrust() {
           {/* Left: Copy */}
           <div>
             <p className="local-heading eyebrow text-brand mb-4">
-              Phoenix, Arizona
+              {locality}, {region}
             </p>
             <h2 className="local-heading font-sans font-medium text-fluid-h3 leading-[1.1] text-dark mb-8">
-              Built for businesses in the Valley of the Sun
+              Built for businesses in {locality}
             </h2>
 
             <div className="local-content space-y-5">
               <p className="font-sans text-fluid-main text-dark opacity-60 leading-relaxed">
-                Phoenix is one of the fastest-growing business markets in the
+                {locality} is one of the fastest-growing business markets in the
                 country — and the competition for online visibility is fierce.
-                Whether you are a healthcare practice in Scottsdale, a real estate
-                firm in Tempe, or a SaaS startup in downtown Phoenix, your website
+                Whether you are a healthcare practice, a real estate
+                firm, or a SaaS startup in {locality}, your website
                 is often the first impression customers have of your business.
               </p>
               <p className="font-sans text-fluid-main text-dark opacity-60 leading-relaxed">
-                As a Webflow agency rooted in Arizona, we understand the local
-                market dynamics that drive results for businesses across the Valley.
-                From the seasonal patterns of the hospitality industry in Mesa and
-                Chandler to the competitive healthcare corridor along the I-17, we
-                build websites that are tuned to how Arizona customers search, browse,
+                As a Webflow agency rooted in {region}, we understand the local
+                market dynamics that drive results for businesses across the area.
+                We build websites that are tuned to how {region} customers search, browse,
                 and buy.
               </p>
               <p className="font-sans text-fluid-main text-dark opacity-60 leading-relaxed">
-                We combine Webflow specialization with deep Phoenix-area market
+                We combine Webflow specialization with deep {locality}-area market
                 knowledge — giving your business a website that is not just
                 beautifully designed, but strategically built to rank in local
-                search results across Phoenix, Scottsdale, Tempe, Mesa, Chandler,
-                and Gilbert.
+                search results across {nearbyAreas}.
               </p>
             </div>
           </div>

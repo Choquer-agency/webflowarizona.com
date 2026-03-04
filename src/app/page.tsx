@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <ClientLayout domain={config.domain} region={config.region}>
-      <Nav />
+      <Nav locality={config.locality} />
       <Hero
         h1={config.heroH1}
         subhead={config.heroSubhead}
@@ -35,7 +35,7 @@ export default function Home() {
       <Problem />
       <MobileCta />
       <Portfolio />
-      <Testimonials />
+      <Testimonials locality={config.locality} />
       <CtaBanner />
       <Stats />
       <WhyWebflow />
@@ -44,14 +44,19 @@ export default function Home() {
       <WebflowVsWordPress />
       <MobileCta />
       <Services />
-      <Industries />
+      <Industries locality={config.locality} region={config.region} />
       <Process />
       <MobileCta />
-      <Pricing />
-      <LocalTrust />
+      <Pricing region={config.region} />
+      <LocalTrust
+        locality={config.locality}
+        stateCode={config.stateCode}
+        region={config.region}
+        nearbyAreas={config.nearbyAreas}
+      />
       <Partners />
-      <FAQ />
-      <Footer />
+      <FAQ locality={config.locality} region={config.region} />
+      <Footer locality={config.locality} />
     </ClientLayout>
   );
 }

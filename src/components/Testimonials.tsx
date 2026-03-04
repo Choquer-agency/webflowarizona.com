@@ -5,9 +5,10 @@ import { useGSAP } from "@gsap/react";
 import { gsap } from "@/lib/gsap-register";
 import { useContactForm } from "@/context/ContactFormContext";
 
-const testimonials = [
+function getLocalTestimonials(locality: string) {
+  return [
   {
-    quote: "Phoenix Webflow didn't just build us a website. They built us a sales machine. We went from 2 leads a month to 40 in the first 90 days.",
+    quote: `${locality} Webflow didn't just build us a website. They built us a sales machine. We went from 2 leads a month to 40 in the first 90 days.`,
     name: "Sarah Chen",
     company: "Elevate SaaS",
     color: "#F79C42",
@@ -42,9 +43,11 @@ const testimonials = [
     company: "Select Decks",
     color: "#C4EF7A",
   },
-];
+  ];
+}
 
-export function Testimonials() {
+export function Testimonials({ locality }: { locality: string }) {
+  const testimonials = getLocalTestimonials(locality);
   const { openModal } = useContactForm();
   const ref = useRef<HTMLElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);

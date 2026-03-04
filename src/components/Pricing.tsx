@@ -6,7 +6,7 @@ import { gsap } from "@/lib/gsap-register";
 import { useContactForm } from "@/context/ContactFormContext";
 import { pricingTiers } from "@/content/shared";
 
-export function Pricing() {
+export function Pricing({ region }: { region: string }) {
   const { openModal } = useContactForm();
   const ref = useRef<HTMLElement>(null);
 
@@ -42,7 +42,7 @@ export function Pricing() {
           <p className="pricing-heading eyebrow text-brand mb-4">Investment</p>
           <h2 className="pricing-heading font-sans font-medium text-fluid-h2 leading-[1.1] text-white max-w-[28ch] mx-auto mb-6">
             Transparent pricing{" "}
-            <span className="opacity-40">for Arizona businesses</span>
+            <span className="opacity-40">for {region} businesses</span>
           </h2>
           <p className="pricing-heading font-sans text-fluid-main text-white opacity-50 leading-relaxed max-w-[55ch] mx-auto">
             Every project is scoped to your goals. Here is what to expect when

@@ -76,37 +76,37 @@ export const processSteps: ProcessStep[] = [
   },
 ];
 
-export const testimonials: Testimonial[] = [
-  {
-    quote:
-      "Phoenix Webflow didn't just build us a website. They built us a sales machine. We went from 2 inbound leads a month to 40 in the first 90 days.",
-    name: "Sarah Chen",
-    title: "VP of Marketing",
-    company: "Elevate SaaS",
-    featured: true,
-  },
-  {
-    quote:
-      "The team at Phoenix Webflow understood our vision from day one. The site they delivered exceeded every expectation — fast, beautiful, and converting like crazy.",
-    name: "Marcus Rivera",
-    title: "Founder & CEO",
-    company: "Desert Digital Co.",
-  },
-  {
-    quote:
-      "We've worked with five agencies before Phoenix Webflow. None of them came close. The attention to detail and the speed of delivery were unmatched.",
-    name: "Emily Watson",
-    title: "Head of Brand",
-    company: "Pinnacle Ventures",
-  },
-  {
-    quote:
-      "Our old site was embarrassing. Phoenix Webflow gave us something we're genuinely proud to share. Traffic is up 200% and counting.",
-    name: "James Park",
-    title: "Director of Operations",
-    company: "Horizon Health",
-  },
-];
+export function getTestimonials(locality: string): Testimonial[] {
+  return [
+    {
+      quote: `${locality} Webflow didn't just build us a website. They built us a sales machine. We went from 2 inbound leads a month to 40 in the first 90 days.`,
+      name: "Sarah Chen",
+      title: "VP of Marketing",
+      company: "Elevate SaaS",
+      featured: true,
+    },
+    {
+      quote: `The team at ${locality} Webflow understood our vision from day one. The site they delivered exceeded every expectation — fast, beautiful, and converting like crazy.`,
+      name: "Marcus Rivera",
+      title: "Founder & CEO",
+      company: "Desert Digital Co.",
+    },
+    {
+      quote: `We've worked with five agencies before ${locality} Webflow. None of them came close. The attention to detail and the speed of delivery were unmatched.`,
+      name: "Emily Watson",
+      title: "Head of Brand",
+      company: "Pinnacle Ventures",
+    },
+    {
+      quote: `Our old site was embarrassing. ${locality} Webflow gave us something we're genuinely proud to share. Traffic is up 200% and counting.`,
+      name: "James Park",
+      title: "Director of Operations",
+      company: "Horizon Health",
+    },
+  ];
+}
+
+export const testimonials = getTestimonials("Phoenix");
 
 export const portfolioProjects: PortfolioProject[] = [
   {
@@ -212,7 +212,8 @@ export const solutionCards = [
 
 /* ─── Expanded FAQs (SEO + AEO) ─── */
 
-export const expandedFaqs: FAQItem[] = [
+export function getExpandedFaqs(locality: string, region: string): FAQItem[] {
+  return [
   // Existing FAQs (migrated)
   {
     category: "general",
@@ -247,8 +248,8 @@ export const expandedFaqs: FAQItem[] = [
   },
   {
     category: "pricing",
-    question: "How much does a Webflow website cost in Phoenix?",
-    answer: "A professionally designed and developed Webflow website in Phoenix typically ranges from $5,000 to $50,000+, depending on scope and complexity. A marketing site with 5–10 pages starts around $5,000–$12,000. E-commerce builds run $12,000–$30,000. Enterprise-level Webflow projects with custom CMS architecture, integrations, and advanced animations start at $25,000. Every project includes strategy, design, development, SEO optimization, and a 30-day post-launch support period.",
+    question: `How much does a Webflow website cost in ${locality}?`,
+    answer: `A professionally designed and developed Webflow website in ${locality} typically ranges from $5,000 to $50,000+, depending on scope and complexity. A marketing site with 5–10 pages starts around $5,000–$12,000. E-commerce builds run $12,000–$30,000. Enterprise-level Webflow projects with custom CMS architecture, integrations, and advanced animations start at $25,000. Every project includes strategy, design, development, SEO optimization, and a 30-day post-launch support period.`,
   },
   {
     category: "webflow",
@@ -258,7 +259,7 @@ export const expandedFaqs: FAQItem[] = [
   {
     category: "webflow",
     question: "Can Webflow handle e-commerce?",
-    answer: "Yes. Webflow E-commerce supports up to 15,000 products with fully customizable product pages, cart, and checkout flows. It integrates with Stripe for payment processing, handles physical and digital products, supports discount codes, and includes inventory management. For Arizona businesses that need a design-forward online store without the plugin headaches of WooCommerce or the template constraints of Shopify, Webflow E-commerce is an excellent fit.",
+    answer: `Yes. Webflow E-commerce supports up to 15,000 products with fully customizable product pages, cart, and checkout flows. It integrates with Stripe for payment processing, handles physical and digital products, supports discount codes, and includes inventory management. For ${region} businesses that need a design-forward online store without the plugin headaches of WooCommerce or the template constraints of Shopify, Webflow E-commerce is an excellent fit.`,
   },
   {
     category: "webflow",
@@ -278,7 +279,7 @@ export const expandedFaqs: FAQItem[] = [
   {
     category: "webflow",
     question: "Can you migrate my WordPress site to Webflow?",
-    answer: "Yes. We specialize in WordPress-to-Webflow migrations for Arizona businesses. The process includes content auditing and migration, 301 redirect mapping to preserve your SEO equity, design modernization, CMS structure setup in Webflow, and thorough QA testing. Most migrations take 4–6 weeks. We ensure zero downtime during the cutover and monitor search performance closely for the first 90 days post-migration.",
+    answer: `Yes. We specialize in WordPress-to-Webflow migrations for ${region} businesses. The process includes content auditing and migration, 301 redirect mapping to preserve your SEO equity, design modernization, CMS structure setup in Webflow, and thorough QA testing. Most migrations take 4–6 weeks. We ensure zero downtime during the cutover and monitor search performance closely for the first 90 days post-migration.`,
   },
   {
     category: "webflow",
@@ -288,19 +289,22 @@ export const expandedFaqs: FAQItem[] = [
   {
     category: "general",
     question: "Why hire a Webflow agency instead of a freelancer?",
-    answer: "A Webflow agency brings a full team — strategists, designers, developers, and SEO specialists — to every project. Freelancers are often one person wearing many hats, which leads to blind spots in design, performance, or search optimization. An agency also provides continuity: if your project lead is unavailable, the work continues. Phoenix Webflow Agency offers dedicated project management, structured timelines, quality assurance processes, and ongoing retainer support that individual freelancers simply cannot match.",
+    answer: `A Webflow agency brings a full team — strategists, designers, developers, and SEO specialists — to every project. Freelancers are often one person wearing many hats, which leads to blind spots in design, performance, or search optimization. An agency also provides continuity: if your project lead is unavailable, the work continues. ${locality} Webflow Agency offers dedicated project management, structured timelines, quality assurance processes, and ongoing retainer support that individual freelancers simply cannot match.`,
   },
   {
     category: "local",
-    question: "Why should I hire a Webflow agency in Phoenix?",
-    answer: "Working with a local Phoenix Webflow agency means you get a team that understands the Arizona market — the competitive landscape, local search dynamics, and what Phoenix customers expect from a business website. We are available for in-person strategy sessions, understand the seasonal patterns of Arizona industries, and have a portfolio of local success stories. Local expertise combined with Webflow specialization gives your business a measurable advantage.",
+    question: `Why should I hire a Webflow agency in ${locality}?`,
+    answer: `Working with a local ${locality} Webflow agency means you get a team that understands the ${region} market — the competitive landscape, local search dynamics, and what ${locality} customers expect from a business website. We are available for in-person strategy sessions, understand the seasonal patterns of ${region} industries, and have a portfolio of local success stories. Local expertise combined with Webflow specialization gives your business a measurable advantage.`,
   },
   {
     category: "webflow",
     question: "What is the difference between Webflow and Squarespace?",
     answer: "Webflow gives you full design freedom and clean code output. Squarespace is a template-based builder with limited customization. Webflow supports complex animations, custom CMS structures, and client-friendly content editing without the constraints of a rigid template system. For businesses that need a unique, high-performance website rather than a generic template, Webflow is the professional choice.",
   },
-];
+  ];
+}
+
+export const expandedFaqs = getExpandedFaqs("Phoenix", "Arizona");
 
 /* ─── Webflow Services Breakdown ─── */
 
@@ -368,44 +372,48 @@ export const platformComparison: ComparisonRow[] = [
 
 /* ─── Industries Served ─── */
 
-export const industriesServed: IndustryItem[] = [
-  {
-    name: "Healthcare & Medical",
-    icon: "Heart",
-    description: "HIPAA-aware marketing sites, patient portals, and provider directories for Phoenix-area healthcare practices and medical groups.",
-    color: "#BCEFFF",
-  },
-  {
-    name: "Real Estate",
-    icon: "Building",
-    description: "Property showcase sites, IDX integrations, and lead generation platforms for Arizona's competitive real estate market.",
-    color: "#F79C42",
-  },
-  {
-    name: "Hospitality & Tourism",
-    icon: "Plane",
-    description: "Booking-driven websites for hotels, resorts, restaurants, and tour operators across the Phoenix metro and greater Arizona.",
-    color: "#FFDF40",
-  },
-  {
-    name: "SaaS & Technology",
-    icon: "Cpu",
-    description: "High-converting marketing sites, product pages, and documentation portals for Arizona's growing tech startup ecosystem.",
-    color: "#C4EF7A",
-  },
-  {
-    name: "Professional Services",
-    icon: "Briefcase",
-    description: "Law firms, accounting practices, consulting firms, and financial services across the Phoenix metropolitan area.",
-    color: "#71CFA3",
-  },
-  {
-    name: "E-Commerce & Retail",
-    icon: "ShoppingBag",
-    description: "Design-forward online stores for Arizona brands ready to sell directly to customers with Webflow's native commerce platform.",
-    color: "#DEDA8D",
-  },
-];
+export function getIndustriesServed(locality: string, region: string): IndustryItem[] {
+  return [
+    {
+      name: "Healthcare & Medical",
+      icon: "Heart",
+      description: `HIPAA-aware marketing sites, patient portals, and provider directories for ${locality}-area healthcare practices and medical groups.`,
+      color: "#BCEFFF",
+    },
+    {
+      name: "Real Estate",
+      icon: "Building",
+      description: `Property showcase sites, IDX integrations, and lead generation platforms for ${region}'s competitive real estate market.`,
+      color: "#F79C42",
+    },
+    {
+      name: "Hospitality & Tourism",
+      icon: "Plane",
+      description: `Booking-driven websites for hotels, resorts, restaurants, and tour operators across the ${locality} metro and greater ${region}.`,
+      color: "#FFDF40",
+    },
+    {
+      name: "SaaS & Technology",
+      icon: "Cpu",
+      description: `High-converting marketing sites, product pages, and documentation portals for ${region}'s growing tech startup ecosystem.`,
+      color: "#C4EF7A",
+    },
+    {
+      name: "Professional Services",
+      icon: "Briefcase",
+      description: `Law firms, accounting practices, consulting firms, and financial services across the ${locality} metropolitan area.`,
+      color: "#71CFA3",
+    },
+    {
+      name: "E-Commerce & Retail",
+      icon: "ShoppingBag",
+      description: `Design-forward online stores for ${region} brands ready to sell directly to customers with Webflow's native commerce platform.`,
+      color: "#DEDA8D",
+    },
+  ];
+}
+
+export const industriesServed = getIndustriesServed("Phoenix", "Arizona");
 
 /* ─── Pricing Tiers ─── */
 
