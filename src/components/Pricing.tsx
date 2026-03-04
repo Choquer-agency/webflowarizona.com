@@ -110,7 +110,7 @@ export function Pricing({ region }: { region: string }) {
                 className={tier.featured ? "btn" : "btn-secondary"}
                 style={{ width: "100%" }}
               >
-                <span className="text-sm">Get Started</span>
+                <span className="text-sm">Book a Free Strategy Call</span>
                 <span className="btn-arrow">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                     <path

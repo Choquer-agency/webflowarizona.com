@@ -115,6 +115,11 @@ export const portfolioProjects: PortfolioProject[] = [
     category: "Notary Services",
     image: "/images/portfolio/project-1.jpg",
     description: "Ranked #1 locally for notary services in their target market.",
+    caseStudy: {
+      challenge: "LC Notary was competing against dozens of established notary services in their area with no online visibility and zero organic traffic.",
+      approach: "We built a locally optimized Webflow site with service-area pages, Google Business Profile integration, and a streamlined booking flow designed to convert mobile searchers into appointments.",
+      result: "Ranked #1 in Google for notary services in their target market within four months. Organic leads now account for over 70% of their new business.",
+    },
   },
   {
     name: "Pinnacle Fertility",
@@ -143,30 +148,55 @@ export const portfolioProjects: PortfolioProject[] = [
     category: "Fintech",
     image: "/images/portfolio/project-4.jpg",
     description: "Built a new website for a new product line, helping them reposition and elevate their brand.",
+    caseStudy: {
+      challenge: "Penni Payments was launching a new product line and needed a website that clearly communicated their value proposition to a new audience while elevating the overall brand perception.",
+      approach: "We designed and built a conversion-focused Webflow site with product-specific landing pages, animated feature breakdowns, and a CMS-powered resource center to support their sales team.",
+      result: "The new site reduced bounce rate by 35% and increased demo requests by 2.4x in the first quarter after launch. Their sales team reported significantly warmer inbound leads.",
+    },
   },
   {
     name: "Far North Crane",
     category: "Crane & Rigging",
     image: "/images/portfolio/project-5.jpg",
     description: "Continues to lead their market as a crane service working on major commercial projects.",
+    caseStudy: {
+      challenge: "Far North Crane had an outdated website that didn\u2019t reflect the scale of their commercial operations. General contractors couldn\u2019t easily find their services or request quotes online.",
+      approach: "We built a Webflow site showcasing their fleet, project portfolio, and service capabilities with a prominent quote request form and local SEO targeting commercial construction keywords.",
+      result: "Organic traffic increased 180% within six months. The site now generates a steady pipeline of commercial project inquiries, helping them secure contracts on major developments.",
+    },
   },
   {
     name: "Broudy Tennis",
     category: "Sports & Education",
     image: "/images/portfolio/project-6.jpg",
     description: "Elevated his brand and helped him start selling tennis course subscriptions online.",
+    caseStudy: {
+      challenge: "Broudy Tennis had a strong personal brand but no way to monetize it online. Course content was being given away for free with no structured sales funnel or subscription model.",
+      approach: "We built a Webflow site with integrated membership and e-commerce functionality, a content preview system to drive conversions, and SEO-optimized landing pages for each course offering.",
+      result: "Launched a profitable online subscription business from scratch. Monthly recurring revenue grew to five figures within the first year, with the website converting at 4.2% on course pages.",
+    },
   },
   {
     name: "DFI Forensics",
     category: "Digital Forensics",
     image: "/images/portfolio/project-7.jpg",
-    description: "Ranked in the top positions locally for digital forensics — and still owns that position today.",
+    description: "Ranked in the top positions locally for digital forensics \u2014 and still owns that position today.",
+    caseStudy: {
+      challenge: "DFI Forensics operated in a niche industry with very specific search terms. Their previous site was invisible in search results and relied entirely on referrals for new business.",
+      approach: "We built a technically optimized Webflow site targeting high-intent forensics keywords with service-specific pages, case study content, and schema markup for enhanced search visibility.",
+      result: "Ranked #1 locally for digital forensics within three months and has held that position for over two years. Organic search now drives 60% of their qualified leads.",
+    },
   },
   {
     name: "JDG Interior Design",
     category: "Interior Design",
     image: "/images/portfolio/project-8.jpg",
-    description: "Visuals are everything — we built a site that showcases the quality of their work beautifully.",
+    description: "Visuals are everything \u2014 we built a site that showcases the quality of their work beautifully.",
+    caseStudy: {
+      challenge: "JDG Interior Design had stunning project photography but their website didn\u2019t do it justice. The existing site was slow, poorly organized, and failed to convert visitors into consultation requests.",
+      approach: "We designed a visually immersive Webflow site with full-bleed project galleries, lazy-loaded high-res imagery, and a CMS-powered portfolio that the team can update after every project completion.",
+      result: "Page load times dropped by 60%, average session duration increased by 45%, and consultation requests tripled within the first two months of launch.",
+    },
   },
 ];
 
