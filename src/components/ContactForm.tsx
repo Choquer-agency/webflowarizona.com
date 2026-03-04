@@ -264,10 +264,10 @@ export function ContactFormModal({ domain, region }: ContactFormModalProps) {
       await submitForm({
         ...formData,
         goals: formData.goals.join(", "),
-        _domain: domain,
-        _region: region,
-        _timestamp: new Date().toISOString(),
-        _referrer: typeof window !== "undefined" ? window.location.href : "",
+        websiteSource: domain,
+        websiteRegion: region,
+        submittedAt: new Date().toISOString(),
+        pageUrl: typeof window !== "undefined" ? window.location.href : "",
       });
       setIsSuccess(true);
     } catch {
