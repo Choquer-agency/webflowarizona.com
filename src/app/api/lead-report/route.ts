@@ -26,14 +26,27 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    // Get previous month's key
+    // Use ?month=YYYY-MM to override, otherwise default to previous month
     const now = new Date();
-    const prevMonth = new Date(now.getFullYear(), now.getMonth() - 1, 1);
-    const monthKey = `leads:${prevMonth.getFullYear()}-${String(prevMonth.getMonth() + 1).padStart(2, "0")}`;
-    const monthLabel = prevMonth.toLocaleString("en-US", {
-      month: "long",
-      year: "numeric",
-    });
+    const monthParam = request.nextUrl.searchParams.get("month");
+    let monthKey: string;
+    let monthLabel: string;
+
+    if (monthParam && /^\d{4}-\d{2}$/.test(monthParam)) {
+      monthKey = `leads:${monthParam}`;
+      const [y, m] = monthParam.split("-").map(Number);
+      monthLabel = new Date(y, m - 1, 1).toLocaleString("en-US", {
+        month: "long",
+        year: "numeric",
+      });
+    } else {
+      const prevMonth = new Date(now.getFullYear(), now.getMonth() - 1, 1);
+      monthKey = `leads:${prevMonth.getFullYear()}-${String(prevMonth.getMonth() + 1).padStart(2, "0")}`;
+      monthLabel = prevMonth.toLocaleString("en-US", {
+        month: "long",
+        year: "numeric",
+      });
+    }
 
     // Fetch all leads for the month
     const rawLeads = await redis.lrange(monthKey, 0, -1);
