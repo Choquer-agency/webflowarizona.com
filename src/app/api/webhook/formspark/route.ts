@@ -23,9 +23,6 @@ export async function POST(request: NextRequest) {
     const monthKey = `leads:${lead.submittedAt.slice(0, 7)}`;
     await redis.lpush(monthKey, JSON.stringify(lead));
 
-    // Set TTL to 90 days so old data auto-cleans
-    await redis.expire(monthKey, 90 * 24 * 60 * 60);
-
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Webhook error:", error);
