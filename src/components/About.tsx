@@ -73,12 +73,21 @@ export function About({ locality, region }: AboutProps) {
           delay: 0.2,
         });
 
-        gsap.from(".about-image", {
+        gsap.from(".about-image > img:first-child", {
           y: 40,
           opacity: 0,
           duration: 0.8,
           ease: "power3.out",
           delay: 0.3,
+        });
+
+        gsap.from(".about-mask", {
+          scale: 0.8,
+          opacity: 0,
+          duration: 0.6,
+          stagger: 0.12,
+          ease: "back.out(1.4)",
+          delay: 0.6,
         });
 
         gsap.from(".about-value", {
@@ -169,16 +178,78 @@ export function About({ locality, region }: AboutProps) {
               </div>
             </div>
 
-            {/* Right: Photo */}
-            <div className="about-image">
+            {/* Right: Photo collage */}
+            <div className="about-image relative" style={{ minHeight: "540px" }}>
+              {/* Main hero photo — Bryce at desk */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/founder.png"
+                src="/images/about-hero.png"
                 alt="Bryce Choquer — Founder of Webflow Agency"
-                className="w-full rounded-sm"
+                className="relative z-10 w-[75%] mx-auto rounded-lg shadow-xl"
                 style={{ aspectRatio: "4/5", objectFit: "cover" }}
               />
-              <p className="font-mono text-xs text-dark opacity-30 mt-3">
+
+              {/* Mask photo 1 — team member focused at desk */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/about-mask-1.png"
+                alt="Team member working at desk"
+                className="about-mask absolute z-20 w-[38%] rounded-lg shadow-lg"
+                style={{
+                  top: "-4%",
+                  right: "-2%",
+                  transform: "rotate(4deg)",
+                  aspectRatio: "4/5",
+                  objectFit: "cover",
+                }}
+              />
+
+              {/* Mask photo 2 — team walking downtown */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/about-mask-2.png"
+                alt="Team walking through the city"
+                className="about-mask absolute z-20 w-[36%] rounded-lg shadow-lg"
+                style={{
+                  bottom: "2%",
+                  left: "-4%",
+                  transform: "rotate(-3deg)",
+                  aspectRatio: "4/5",
+                  objectFit: "cover",
+                }}
+              />
+
+              {/* Mask photo 3 — working at monitor */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/about-mask-3.png"
+                alt="Designer working on a client project"
+                className="about-mask absolute z-20 w-[35%] rounded-lg shadow-lg"
+                style={{
+                  bottom: "-6%",
+                  right: "4%",
+                  transform: "rotate(3deg)",
+                  aspectRatio: "4/5",
+                  objectFit: "cover",
+                }}
+              />
+
+              {/* Mask photo 4 — team member playing chess */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/about-mask-4.png"
+                alt="Team member at the office"
+                className="about-mask absolute z-5 w-[34%] rounded-lg shadow-lg"
+                style={{
+                  top: "8%",
+                  left: "-6%",
+                  transform: "rotate(-5deg)",
+                  aspectRatio: "4/5",
+                  objectFit: "cover",
+                }}
+              />
+
+              <p className="relative z-10 font-mono text-xs text-dark opacity-30 mt-8 text-center">
                 Bryce Choquer — Founder & Lead Developer
               </p>
             </div>
