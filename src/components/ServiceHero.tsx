@@ -10,9 +10,10 @@ interface ServiceHeroProps {
   subhead: string;
   qualifier: string;
   region: string;
+  eyebrow: string;
 }
 
-export function ServiceHero({ h1, subhead, qualifier }: ServiceHeroProps) {
+export function ServiceHero({ h1, subhead, qualifier, eyebrow }: ServiceHeroProps) {
   const { openModal } = useContactForm();
   const ref = useRef<HTMLElement>(null);
 
@@ -68,7 +69,7 @@ export function ServiceHero({ h1, subhead, qualifier }: ServiceHeroProps) {
               />
             </svg>
             <span className="font-mono text-xs uppercase tracking-wider text-brand">
-              Migration Experts
+              {eyebrow}
             </span>
           </div>
 

@@ -9,9 +9,10 @@ const stepColors = ["#F79C42", "#FFDF40", "#BCEFFF", "#C4EF7A"];
 
 interface ServiceProcessProps {
   steps: ProcessStep[];
+  heading: string;
 }
 
-export function ServiceProcess({ steps }: ServiceProcessProps) {
+export function ServiceProcess({ steps, heading }: ServiceProcessProps) {
   const ref = useRef<HTMLElement>(null);
 
   useGSAP(
@@ -52,7 +53,7 @@ export function ServiceProcess({ steps }: ServiceProcessProps) {
             Migration Process
           </p>
           <h2 className="sproc-heading font-sans font-medium text-fluid-h2 leading-[1.1] text-dark max-w-[22ch] mx-auto">
-            From WordPress to Webflow in four steps.
+            {heading}
           </h2>
         </div>
 

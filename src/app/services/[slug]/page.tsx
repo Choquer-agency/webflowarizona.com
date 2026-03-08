@@ -81,11 +81,16 @@ export default function ServicePage({ params }: ServicePageProps) {
         subhead={service.heroSubhead(config.locality, config.region)}
         qualifier={service.heroQualifier(config.locality, config.region)}
         region={config.region}
+        eyebrow={service.eyebrow}
       />
-      <ServiceProblem painPoints={service.painPoints} />
+      <ServiceProblem
+        painPoints={service.painPoints}
+        eyebrow={service.problemEyebrow}
+        heading={service.problemHeading}
+      />
       <MobileCta />
       {service.showComparison && <WebflowVsWordPress />}
-      <ServiceProcess steps={service.processSteps} />
+      <ServiceProcess steps={service.processSteps} heading={service.processHeading} />
       {service.showPortfolio && <Portfolio />}
       <Testimonials locality={config.locality} />
       {service.migrationPackages && (

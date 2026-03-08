@@ -29,9 +29,11 @@ const iconColor = "#E53935";
 
 interface ServiceProblemProps {
   painPoints: { title: string; description: string }[];
+  eyebrow: string;
+  heading: string;
 }
 
-export function ServiceProblem({ painPoints }: ServiceProblemProps) {
+export function ServiceProblem({ painPoints, eyebrow, heading }: ServiceProblemProps) {
   const ref = useRef<HTMLElement>(null);
 
   useGSAP(
@@ -68,10 +70,10 @@ export function ServiceProblem({ painPoints }: ServiceProblemProps) {
       <div className="u-container">
         <div className="text-center mb-16">
           <p className="sp-heading eyebrow text-brand mb-4">
-            Why Leave WordPress?
+            {eyebrow}
           </p>
           <h2 className="sp-heading font-sans font-medium text-fluid-h2 leading-[1.1] text-dark max-w-[24ch] mx-auto mb-6">
-            WordPress is holding your business back.{" "}
+            {heading}{" "}
             <span className="opacity-40">Here&apos;s how.</span>
           </h2>
         </div>
