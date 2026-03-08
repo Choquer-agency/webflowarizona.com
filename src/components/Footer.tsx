@@ -67,9 +67,85 @@ export function Footer({ locality }: { locality: string }) {
             ))}
           </div>
 
+          {/* Footer links */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+            <div>
+              <p className="font-mono text-xs uppercase tracking-wider opacity-40 mb-3">
+                Migration Services
+              </p>
+              <ul className="space-y-2">
+                <li>
+                  <a href="/services/wordpress-migration" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                    WordPress to Webflow
+                  </a>
+                </li>
+                <li>
+                  <a href="/services/squarespace-migration" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                    Squarespace to Webflow
+                  </a>
+                </li>
+                <li>
+                  <a href="/services/wix-migration" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                    Wix to Webflow
+                  </a>
+                </li>
+                <li>
+                  <a href="/services/shopify-migration" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                    Shopify to Webflow
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-mono text-xs uppercase tracking-wider opacity-40 mb-3">
+                Resources
+              </p>
+              <ul className="space-y-2">
+                <li>
+                  <a href="/blog" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a href="/#portfolio" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                    Case Studies
+                  </a>
+                </li>
+                <li>
+                  <a href="/#faq" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                    FAQ
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-mono text-xs uppercase tracking-wider opacity-40 mb-3">
+                Company
+              </p>
+              <ul className="space-y-2">
+                <li>
+                  <a href="/#process" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                    Our Process
+                  </a>
+                </li>
+                <li>
+                  <a href="/#pricing" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                    Pricing
+                  </a>
+                </li>
+                <li>
+                  <button onClick={() => openModal()} className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity text-left" style={{ transitionDuration: "0.2s" }}>
+                    Contact Us
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           {/* Copyright */}
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <span className="font-sans font-medium text-base flex items-center gap-2">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/logo.svg"
                 alt={brandName}
@@ -77,17 +153,9 @@ export function Footer({ locality }: { locality: string }) {
               />
               {brandName}
             </span>
-            <div className="flex items-center gap-6">
-              <a
-                href="/blog"
-                className="font-sans text-fluid-small opacity-60 hover:opacity-100 transition-opacity"
-              >
-                Blog
-              </a>
-              <p className="font-sans text-fluid-small opacity-40">
-                &copy; {new Date().getFullYear()} {brandName}. All rights reserved.
-              </p>
-            </div>
+            <p className="font-sans text-fluid-small opacity-40">
+              &copy; {new Date().getFullYear()} {brandName}. All rights reserved.
+            </p>
           </div>
         </div>
       </div>
