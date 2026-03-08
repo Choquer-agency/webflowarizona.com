@@ -124,6 +124,11 @@ export function Footer({ locality }: { locality: string }) {
               </p>
               <ul className="space-y-2">
                 <li>
+                  <a href="/about" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                    About Us
+                  </a>
+                </li>
+                <li>
                   <a href="/#process" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
                     Our Process
                   </a>
