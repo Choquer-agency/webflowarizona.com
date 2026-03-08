@@ -106,7 +106,7 @@ export function Pricing({ region }: { region: string }) {
                 ))}
               </ul>
               <button
-                onClick={openModal}
+                onClick={() => openModal()}
                 className={tier.featured ? "btn justify-center" : "btn-secondary"}
                 style={{ width: "100%" }}
               >

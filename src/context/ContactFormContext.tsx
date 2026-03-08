@@ -2,26 +2,41 @@
 
 import { createContext, useContext, useState, useCallback, ReactNode } from "react";
 
+export interface PackageInfo {
+  packageName: string;
+  pageCount: number;
+  estimatedTotal: string;
+}
+
 interface ContactFormContextValue {
   isOpen: boolean;
-  openModal: () => void;
+  openModal: (packageInfo?: PackageInfo) => void;
   closeModal: () => void;
+  packageInfo: PackageInfo | null;
 }
 
 const ContactFormContext = createContext<ContactFormContextValue>({
   isOpen: false,
   openModal: () => {},
   closeModal: () => {},
+  packageInfo: null,
 });
 
 export function ContactFormProvider({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [packageInfo, setPackageInfo] = useState<PackageInfo | null>(null);
 
-  const openModal = useCallback(() => setIsOpen(true), []);
-  const closeModal = useCallback(() => setIsOpen(false), []);
+  const openModal = useCallback((info?: PackageInfo) => {
+    setPackageInfo(info || null);
+    setIsOpen(true);
+  }, []);
+
+  const closeModal = useCallback(() => {
+    setIsOpen(false);
+  }, []);
 
   return (
-    <ContactFormContext.Provider value={{ isOpen, openModal, closeModal }}>
+    <ContactFormContext.Provider value={{ isOpen, openModal, closeModal, packageInfo }}>
       {children}
     </ContactFormContext.Provider>
   );

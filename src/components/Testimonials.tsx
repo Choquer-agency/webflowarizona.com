@@ -142,7 +142,7 @@ export function Testimonials({ locality }: { locality: string }) {
 
         <div className="mt-12 text-center">
           <button
-            onClick={openModal}
+            onClick={() => openModal()}
             className="inline-flex items-center gap-3 bg-brand text-dark rounded-sm px-8 py-4 font-sans font-medium text-fluid-main transition-all hover:brightness-110"
             style={{ transitionDuration: "0.3s" }}
           >

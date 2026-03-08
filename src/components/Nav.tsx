@@ -96,7 +96,7 @@ export function Nav({ locality }: { locality: string }) {
           {/* Desktop CTA */}
           <div className="hidden md:block">
             <button
-              onClick={openModal}
+              onClick={() => openModal()}
               className="btn"
               style={{
                 background: '#ff9500',

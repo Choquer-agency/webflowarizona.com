@@ -94,7 +94,7 @@ function ProgressIndicator({ current }: { current: number }) {
 }
 
 export function ContactFormModal({ domain, region }: ContactFormModalProps) {
-  const { isOpen, closeModal } = useContactForm();
+  const { isOpen, closeModal, packageInfo } = useContactForm();
   const mountTime = useRef(Date.now());
   const modalRef = useRef<HTMLDivElement>(null);
   const backdropRef = useRef<HTMLDivElement>(null);
@@ -150,7 +150,17 @@ export function ContactFormModal({ domain, region }: ContactFormModalProps) {
       });
     }
     closeModal();
-  }, [isSuccess, closeModal]);
+  }, [isSuccess, closeModal]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Pre-fill project type when opening from migration pricing
+  useEffect(() => {
+    if (isOpen && packageInfo) {
+      setFormData((prev) => ({
+        ...prev,
+        projectType: "Migration to Webflow (from WordPress, Squarespace, etc.)",
+      }));
+    }
+  }, [isOpen, packageInfo]);
 
   // Body scroll lock
   useEffect(() => {
@@ -268,6 +278,11 @@ export function ContactFormModal({ domain, region }: ContactFormModalProps) {
         websiteRegion: region,
         submittedAt: new Date().toISOString(),
         pageUrl: typeof window !== "undefined" ? window.location.href : "",
+        ...(packageInfo && {
+          selectedPackage: packageInfo.packageName,
+          migrationPageCount: packageInfo.pageCount,
+          estimatedTotal: packageInfo.estimatedTotal,
+        }),
       });
       setIsSuccess(true);
     } catch {
