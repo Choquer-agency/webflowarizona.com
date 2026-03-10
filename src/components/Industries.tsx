@@ -26,11 +26,12 @@ const iconMap: Record<string, LucideIcon> = {
 interface IndustriesProps {
   locality: string;
   region: string;
+  slug: string;
 }
 
-export function Industries({ locality, region }: IndustriesProps) {
+export function Industries({ locality, region, slug }: IndustriesProps) {
   const ref = useRef<HTMLElement>(null);
-  const industries = getIndustriesServed(locality, region);
+  const industries = getIndustriesServed(locality, region, slug);
 
   useGSAP(
     () => {

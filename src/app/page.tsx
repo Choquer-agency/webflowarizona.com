@@ -33,7 +33,7 @@ export default function Home() {
         subhead={config.heroSubhead}
         region={config.region}
       />
-      <Problem />
+      <Problem slug={config.slug} />
       <MobileCta />
       <Portfolio />
       <Testimonials locality={config.locality} />
@@ -41,13 +41,13 @@ export default function Home() {
       <Stats />
       <WhyWebflow />
       <MobileCta />
-      <WebflowServicesBreakdown />
-      <WebflowVsWordPress />
+      <WebflowServicesBreakdown slug={config.slug} />
+      <WebflowVsWordPress slug={config.slug} />
       <Services />
-      <Industries locality={config.locality} region={config.region} />
-      <Process />
+      <Industries locality={config.locality} region={config.region} slug={config.slug} />
+      <Process slug={config.slug} />
       <MobileCta />
-      <Pricing region={config.region} />
+      <Pricing region={config.region} slug={config.slug} />
       <LocalTrust
         locality={config.locality}
         stateCode={config.stateCode}
@@ -55,7 +55,7 @@ export default function Home() {
         nearbyAreas={config.nearbyAreas}
       />
       <Partners />
-      <FAQ locality={config.locality} region={config.region} />
+      <FAQ locality={config.locality} region={config.region} slug={config.slug} />
       <Footer locality={config.locality} />
     </ClientLayout>
   );

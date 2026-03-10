@@ -44,6 +44,9 @@ export interface DomainConfig {
 
   // Optional per-region accent override
   accentColor?: string;
+
+  // Market cluster for differentiated content
+  cluster?: string;
 }
 
 export interface FAQItem {

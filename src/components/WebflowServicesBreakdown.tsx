@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "@/lib/gsap-register";
 import { useContactForm } from "@/context/ContactFormContext";
-import { webflowServices } from "@/content/shared";
+import { getWebflowServices } from "@/content/shared";
 import { warmPalette } from "@/lib/colors";
 
 const serviceImages = [
@@ -16,7 +16,8 @@ const serviceImages = [
   "/images/services/6.png",
 ];
 
-export function WebflowServicesBreakdown() {
+export function WebflowServicesBreakdown({ slug }: { slug: string }) {
+  const webflowServices = getWebflowServices(slug);
   const { openModal } = useContactForm();
   const ref = useRef<HTMLElement>(null);
   const [openIndex, setOpenIndex] = useState(0);

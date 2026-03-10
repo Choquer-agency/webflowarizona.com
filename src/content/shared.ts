@@ -9,6 +9,9 @@ import {
   IndustryItem,
   PricingTier,
 } from "./config";
+import { getCluster, getCurrency } from "./clusters";
+
+/* ─── Services (static — not used by components directly) ─── */
 
 export const services: ServiceItem[] = [
   {
@@ -49,32 +52,17 @@ export const services: ServiceItem[] = [
   },
 ];
 
-export const processSteps: ProcessStep[] = [
-  {
-    step: 1,
-    title: "Discovery",
-    description:
-      "Your business, understood inside and out. A focused strategy session where we dig into your goals, audience, competitors, and what success looks like.",
-  },
-  {
-    step: 2,
-    title: "Design",
-    description:
-      "Your experience, mapped before a single pixel is placed. Wireframes, moodboards, and a full design system \u2014 all approved by you before a single line of code is written.",
-  },
-  {
-    step: 3,
-    title: "Build",
-    description:
-      "Your site, built right \u2014 in Webflow. Clean, semantic, performant Webflow development with CMS, animations, integrations, and SEO baked in.",
-  },
-  {
-    step: 4,
-    title: "Launch & Grow",
-    description:
-      "Your keys, handed over \u2014 with ongoing support. Full handoff, team training, and retainer options to help your site perform better month after month.",
-  },
-];
+/* ─── Process Steps (cluster-aware) ─── */
+
+export function getProcessSteps(slug: string): ProcessStep[] {
+  const cluster = getCluster(slug);
+  return cluster.processSteps;
+}
+
+// Backward-compatible static alias
+export const processSteps: ProcessStep[] = getProcessSteps("arizona");
+
+/* ─── Testimonials (static — real quotes, identical across domains) ─── */
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export function getTestimonials(locality: string): Testimonial[] {
@@ -87,7 +75,7 @@ export function getTestimonials(locality: string): Testimonial[] {
       featured: true,
     },
     {
-      quote: `The team understood our vision from day one. The site they delivered exceeded every expectation \u2014 fast, beautiful, and converting.`,
+      quote: `The team understood our vision from day one. The site they delivered exceeded every expectation — fast, beautiful, and converting.`,
       name: "Tom Vasquez",
       title: "Owner",
       company: "Pedigree Painting",
@@ -108,6 +96,8 @@ export function getTestimonials(locality: string): Testimonial[] {
 }
 
 export const testimonials = getTestimonials("Phoenix");
+
+/* ─── Portfolio (static — real projects, identical across domains) ─── */
 
 export const portfolioProjects: PortfolioProject[] = [
   {
@@ -180,7 +170,7 @@ export const portfolioProjects: PortfolioProject[] = [
     name: "DFI Forensics",
     category: "Digital Forensics",
     image: "/images/portfolio/project-7.jpg",
-    description: "Ranked in the top positions locally for digital forensics \u2014 and still owns that position today.",
+    description: "Ranked in the top positions locally for digital forensics — and still owns that position today.",
     caseStudy: {
       challenge: "DFI Forensics operated in a niche industry with very specific search terms. Their previous site was invisible in search results and relied entirely on referrals for new business.",
       approach: "We built a technically optimized Webflow site targeting high-intent forensics keywords with service-specific pages, case study content, and schema markup for enhanced search visibility.",
@@ -191,7 +181,7 @@ export const portfolioProjects: PortfolioProject[] = [
     name: "JDG Interior Design",
     category: "Interior Design",
     image: "/images/portfolio/project-8.jpg",
-    description: "Visuals are everything \u2014 we built a site that showcases the quality of their work beautifully.",
+    description: "Visuals are everything — we built a site that showcases the quality of their work beautifully.",
     caseStudy: {
       challenge: "JDG Interior Design had stunning project photography but their website didn\u2019t do it justice. The existing site was slow, poorly organized, and failed to convert visitors into consultation requests.",
       approach: "We designed a visually immersive Webflow site with full-bleed project galleries, lazy-loaded high-res imagery, and a CMS-powered portfolio that the team can update after every project completion.",
@@ -200,6 +190,8 @@ export const portfolioProjects: PortfolioProject[] = [
   },
 ];
 
+/* ─── Stats (static — identical across domains) ─── */
+
 export const stats = {
   projectsCompleted: 150,
   clientsServed: 80,
@@ -207,33 +199,17 @@ export const stats = {
   avgLighthouse: 96,
 };
 
-export const painPoints = [
-  {
-    title: "Cookie-cutter templates",
-    description:
-      "You deserve a site built for your brand, not recycled from a theme store.",
-  },
-  {
-    title: "Developers who disappear",
-    description:
-      "You've been burned by freelancers who vanish mid-project and miss every deadline.",
-  },
-  {
-    title: "Sites that don't perform",
-    description:
-      "A beautiful website that doesn't rank, doesn't convert, and doesn't grow — is just an expensive business card.",
-  },
-  {
-    title: "Agencies that don't specialize",
-    description:
-      "Working with a generalist agency on a Webflow project is like hiring a GP for surgery.",
-  },
-  {
-    title: "Still stuck on WordPress?",
-    description:
-      "Plugin updates, security patches, and slow load times \u2014 WordPress is costing you time, money, and rankings.",
-  },
-];
+/* ─── Pain Points (cluster-aware) ─── */
+
+export function getPainPoints(slug: string): { title: string; description: string }[] {
+  const cluster = getCluster(slug);
+  return cluster.painPoints;
+}
+
+// Backward-compatible static alias
+export const painPoints = getPainPoints("arizona");
+
+/* ─── Solution Cards (static — low crawl impact) ─── */
 
 export const solutionCards = [
   {
@@ -256,105 +232,125 @@ export const solutionCards = [
   },
 ];
 
-/* ─── Expanded FAQs (SEO + AEO) ─── */
+/* ─── Expanded FAQs (SEO + AEO, cluster-enhanced) ─── */
 
-export function getExpandedFaqs(locality: string, region: string): FAQItem[] {
-  return [
-  // Existing FAQs (migrated)
-  {
-    category: "general",
-    question: "How does Conversion Rate Optimization (CRO) improve my website's performance?",
-    answer: "Most websites lose leads due to friction — confusing navigation, weak CTAs, or slow load times. We analyze user behavior, heatmaps, and drop-off points, then implement data-driven changes that remove barriers and increase conversions, turning more visitors into customers.",
-  },
-  {
-    category: "process",
-    question: "How long does it take to see results from SEO and CRO?",
-    answer: "Clients see an average 47% traffic increase within six months. SEO takes time as Google indexes improvements, while CRO delivers quicker wins by optimizing your site for better engagement. Our dual approach ensures consistent, measurable growth from day one.",
-  },
-  {
-    category: "general",
-    question: "What industries do you specialize in?",
-    answer: "We don't need to specialize in your industry — we specialize in Google's algorithm and user behavior. With 150+ websites across 50+ industries, we know how people search, interact, and convert, allowing us to apply winning strategies to any business.",
-  },
-  {
-    category: "general",
-    question: "Do you guarantee results?",
-    answer: "Yes — we guarantee at least a 20% traffic increase in six months, or we work for free. We've never worked for free because our SEO and CRO strategies consistently deliver measurable growth that drives leads and revenue.",
-  },
-  {
-    category: "process",
-    question: "How do you integrate into our company's team?",
-    answer: "We embed ourselves into your company by working directly with your sales, reception, and marketing teams to understand your customers. This allows us to optimize your site and messaging to align with real customer needs, increasing conversions and closing more deals.",
-  },
-  // New AEO-targeted FAQs
-  {
-    category: "webflow",
-    question: "What is Webflow?",
-    answer: "Webflow is a professional web design and development platform that combines a visual builder with the power of clean, production-ready code. Unlike WordPress or Squarespace, Webflow generates semantic HTML, CSS, and JavaScript — meaning your site loads faster, ranks better in search engines, and requires no plugins to maintain. It is the platform of choice for over 300,000 businesses worldwide, from startups to Fortune 500 companies.",
-  },
-  {
-    category: "pricing",
-    question: `How much does a Webflow website cost in ${locality}?`,
-    answer: `A professionally designed and developed Webflow website in ${locality} typically ranges from $5,000 to $50,000+, depending on scope and complexity. A marketing site with 5–10 pages starts around $5,000–$12,000. E-commerce builds run $12,000–$30,000. Enterprise-level Webflow projects with custom CMS architecture, integrations, and advanced animations start at $25,000. Every project includes strategy, design, development, SEO optimization, and a 30-day post-launch support period.`,
-  },
-  {
-    category: "webflow",
-    question: "Why choose Webflow over WordPress?",
-    answer: "Webflow eliminates the maintenance burden that comes with WordPress. There are no plugins to update, no security patches to worry about, and no database to manage. Webflow sites load 30–50% faster out of the box, include built-in hosting on AWS infrastructure, and give your team a visual CMS editor that is far more intuitive than the WordPress dashboard. For businesses that want a modern, secure, and fast website without ongoing developer dependency, Webflow is the clear choice.",
-  },
-  {
-    category: "webflow",
-    question: "Can Webflow handle e-commerce?",
-    answer: `Yes. Webflow E-commerce supports up to 15,000 products with fully customizable product pages, cart, and checkout flows. It integrates with Stripe for payment processing, handles physical and digital products, supports discount codes, and includes inventory management. For ${region} businesses that need a design-forward online store without the plugin headaches of WooCommerce or the template constraints of Shopify, Webflow E-commerce is an excellent fit.`,
-  },
-  {
-    category: "webflow",
-    question: "Is Webflow good for SEO?",
-    answer: "Webflow is one of the most SEO-friendly platforms available. It generates clean, semantic HTML by default and offers built-in controls for meta titles, descriptions, Open Graph tags, alt text, canonical URLs, 301 redirects, auto-generated sitemaps, and robots.txt — all without a single plugin. Webflow sites also score exceptionally well on Core Web Vitals due to their lightweight architecture and global CDN hosting. Our clients see an average 47% traffic increase within six months.",
-  },
-  {
-    category: "process",
-    question: "How long does it take to build a Webflow website?",
-    answer: "Most Webflow projects take 4 to 8 weeks from kickoff to launch. A focused marketing site with 5–8 pages can be completed in 4–5 weeks. Larger builds with custom CMS collections, e-commerce, and complex animations typically take 6–8 weeks. Timeline depends on content readiness, feedback cycles, and project scope. We provide a detailed timeline during the discovery phase so there are no surprises.",
-  },
-  {
-    category: "webflow",
-    question: "Do I need a developer for Webflow?",
-    answer: "While Webflow's visual builder allows non-developers to make basic content edits, a professional Webflow developer is essential for building a high-performance site. Custom interactions, CMS architecture, responsive design, third-party integrations, and SEO optimization all require expertise. Once we build your site, your team can manage day-to-day content updates through Webflow's intuitive Editor — no code required.",
-  },
-  {
-    category: "webflow",
-    question: "Can you migrate my WordPress site to Webflow?",
-    answer: `Yes. We specialize in WordPress-to-Webflow migrations for ${region} businesses. The process includes content auditing and migration, 301 redirect mapping to preserve your SEO equity, design modernization, CMS structure setup in Webflow, and thorough QA testing. Most migrations take 4–6 weeks. We ensure zero downtime during the cutover and monitor search performance closely for the first 90 days post-migration.`,
-  },
-  {
-    category: "webflow",
-    question: "What is Webflow CMS?",
-    answer: "Webflow CMS is a built-in content management system that lets you create dynamic, database-driven content without code. You define custom content structures — blog posts, team members, case studies, product listings — and Webflow automatically generates pages from templates. Unlike WordPress, which relies on dozens of plugins, Webflow CMS is native to the platform, meaning faster load times, no security vulnerabilities from third-party code, and a much simpler editing experience for your team.",
-  },
-  {
-    category: "general",
-    question: "Why hire a Webflow agency instead of a freelancer?",
-    answer: `A Webflow agency brings a full team — strategists, designers, developers, and SEO specialists — to every project. Freelancers are often one person wearing many hats, which leads to blind spots in design, performance, or search optimization. An agency also provides continuity: if your project lead is unavailable, the work continues. ${locality} Webflow Agency offers dedicated project management, structured timelines, quality assurance processes, and ongoing retainer support that individual freelancers simply cannot match.`,
-  },
-  {
-    category: "local",
-    question: `Why should I hire a Webflow agency in ${locality}?`,
-    answer: `Working with a local ${locality} Webflow agency means you get a team that understands the ${region} market — the competitive landscape, local search dynamics, and what ${locality} customers expect from a business website. We are available for in-person strategy sessions, understand the seasonal patterns of ${region} industries, and have a portfolio of local success stories. Local expertise combined with Webflow specialization gives your business a measurable advantage.`,
-  },
-  {
-    category: "webflow",
-    question: "What is the difference between Webflow and Squarespace?",
-    answer: "Webflow gives you full design freedom and clean code output. Squarespace is a template-based builder with limited customization. Webflow supports complex animations, custom CMS structures, and client-friendly content editing without the constraints of a rigid template system. For businesses that need a unique, high-performance website rather than a generic template, Webflow is the professional choice.",
-  },
+export function getExpandedFaqs(locality: string, region: string, slug?: string): FAQItem[] {
+  const currency = getCurrency(slug || "arizona");
+
+  // Format price range for the FAQ answer based on currency
+  const formatPriceExample = () => {
+    if (currency.code === "USD") return "$5,000 to $50,000+, depending on scope and complexity. A marketing site with 5–10 pages starts around $5,000–$12,000. E-commerce builds run $12,000–$30,000. Enterprise-level Webflow projects with custom CMS architecture, integrations, and advanced animations start at $25,000";
+    const fmt = (n: number) => n.toLocaleString(currency.locale, { style: "currency", currency: currency.code, minimumFractionDigits: 0, maximumFractionDigits: 0 });
+    const low = Math.round(5000 * currency.exchangeRate / 500) * 500;
+    const mid = Math.round(12000 * currency.exchangeRate / 500) * 500;
+    const midHigh = Math.round(30000 * currency.exchangeRate / 1000) * 1000;
+    const high = Math.round(25000 * currency.exchangeRate / 1000) * 1000;
+    return `${fmt(low)} to ${fmt(high * 2)}+, depending on scope and complexity. A marketing site with 5–10 pages starts around ${fmt(low)}–${fmt(mid)}. E-commerce builds run ${fmt(mid)}–${fmt(midHigh)}. Enterprise-level Webflow projects with custom CMS architecture, integrations, and advanced animations start at ${fmt(high)}`;
+  };
+
+  const baseFaqs: FAQItem[] = [
+    // Core FAQs
+    {
+      category: "general",
+      question: "How does Conversion Rate Optimization (CRO) improve my website's performance?",
+      answer: "Most websites lose leads due to friction — confusing navigation, weak CTAs, or slow load times. We analyze user behavior, heatmaps, and drop-off points, then implement data-driven changes that remove barriers and increase conversions, turning more visitors into customers.",
+    },
+    {
+      category: "process",
+      question: "How long does it take to see results from SEO and CRO?",
+      answer: "Clients see an average 47% traffic increase within six months. SEO takes time as Google indexes improvements, while CRO delivers quicker wins by optimizing your site for better engagement. Our dual approach ensures consistent, measurable growth from day one.",
+    },
+    {
+      category: "general",
+      question: "What industries do you specialize in?",
+      answer: "We don't need to specialize in your industry — we specialize in Google's algorithm and user behavior. With 150+ websites across 50+ industries, we know how people search, interact, and convert, allowing us to apply winning strategies to any business.",
+    },
+    {
+      category: "general",
+      question: "Do you guarantee results?",
+      answer: "Yes — we guarantee at least a 20% traffic increase in six months, or we work for free. We've never worked for free because our SEO and CRO strategies consistently deliver measurable growth that drives leads and revenue.",
+    },
+    {
+      category: "process",
+      question: "How do you integrate into our company's team?",
+      answer: "We embed ourselves into your company by working directly with your sales, reception, and marketing teams to understand your customers. This allows us to optimize your site and messaging to align with real customer needs, increasing conversions and closing more deals.",
+    },
+    // AEO-targeted FAQs
+    {
+      category: "webflow",
+      question: "What is Webflow?",
+      answer: "Webflow is a professional web design and development platform that combines a visual builder with the power of clean, production-ready code. Unlike WordPress or Squarespace, Webflow generates semantic HTML, CSS, and JavaScript — meaning your site loads faster, ranks better in search engines, and requires no plugins to maintain. It is the platform of choice for over 300,000 businesses worldwide, from startups to Fortune 500 companies.",
+    },
+    {
+      category: "pricing",
+      question: `How much does a Webflow website cost in ${locality}?`,
+      answer: `A professionally designed and developed Webflow website in ${locality} typically ranges from ${formatPriceExample()}. Every project includes strategy, design, development, SEO optimization, and a 30-day post-launch support period.`,
+    },
+    {
+      category: "webflow",
+      question: "Why choose Webflow over WordPress?",
+      answer: "Webflow eliminates the maintenance burden that comes with WordPress. There are no plugins to update, no security patches to worry about, and no database to manage. Webflow sites load 30–50% faster out of the box, include built-in hosting on AWS infrastructure, and give your team a visual CMS editor that is far more intuitive than the WordPress dashboard. For businesses that want a modern, secure, and fast website without ongoing developer dependency, Webflow is the clear choice.",
+    },
+    {
+      category: "webflow",
+      question: "Can Webflow handle e-commerce?",
+      answer: `Yes. Webflow E-commerce supports up to 15,000 products with fully customizable product pages, cart, and checkout flows. It integrates with Stripe for payment processing, handles physical and digital products, supports discount codes, and includes inventory management. For ${region} businesses that need a design-forward online store without the plugin headaches of WooCommerce or the template constraints of Shopify, Webflow E-commerce is an excellent fit.`,
+    },
+    {
+      category: "webflow",
+      question: "Is Webflow good for SEO?",
+      answer: "Webflow is one of the most SEO-friendly platforms available. It generates clean, semantic HTML by default and offers built-in controls for meta titles, descriptions, Open Graph tags, alt text, canonical URLs, 301 redirects, auto-generated sitemaps, and robots.txt — all without a single plugin. Webflow sites also score exceptionally well on Core Web Vitals due to their lightweight architecture and global CDN hosting. Our clients see an average 47% traffic increase within six months.",
+    },
+    {
+      category: "process",
+      question: "How long does it take to build a Webflow website?",
+      answer: "Most Webflow projects take 4 to 8 weeks from kickoff to launch. A focused marketing site with 5–8 pages can be completed in 4–5 weeks. Larger builds with custom CMS collections, e-commerce, and complex animations typically take 6–8 weeks. Timeline depends on content readiness, feedback cycles, and project scope. We provide a detailed timeline during the discovery phase so there are no surprises.",
+    },
+    {
+      category: "webflow",
+      question: "Do I need a developer for Webflow?",
+      answer: "While Webflow's visual builder allows non-developers to make basic content edits, a professional Webflow developer is essential for building a high-performance site. Custom interactions, CMS architecture, responsive design, third-party integrations, and SEO optimization all require expertise. Once we build your site, your team can manage day-to-day content updates through Webflow's intuitive Editor — no code required.",
+    },
+    {
+      category: "webflow",
+      question: "Can you migrate my WordPress site to Webflow?",
+      answer: `Yes. We specialize in WordPress-to-Webflow migrations for ${region} businesses. The process includes content auditing and migration, 301 redirect mapping to preserve your SEO equity, design modernization, CMS structure setup in Webflow, and thorough QA testing. Most migrations take 4–6 weeks. We ensure zero downtime during the cutover and monitor search performance closely for the first 90 days post-migration.`,
+    },
+    {
+      category: "webflow",
+      question: "What is Webflow CMS?",
+      answer: "Webflow CMS is a built-in content management system that lets you create dynamic, database-driven content without code. You define custom content structures — blog posts, team members, case studies, product listings — and Webflow automatically generates pages from templates. Unlike WordPress, which relies on dozens of plugins, Webflow CMS is native to the platform, meaning faster load times, no security vulnerabilities from third-party code, and a much simpler editing experience for your team.",
+    },
+    {
+      category: "general",
+      question: "Why hire a Webflow agency instead of a freelancer?",
+      answer: `A Webflow agency brings a full team — strategists, designers, developers, and SEO specialists — to every project. Freelancers are often one person wearing many hats, which leads to blind spots in design, performance, or search optimization. An agency also provides continuity: if your project lead is unavailable, the work continues. ${locality} Webflow Agency offers dedicated project management, structured timelines, quality assurance processes, and ongoing retainer support that individual freelancers simply cannot match.`,
+    },
+    {
+      category: "local",
+      question: `Why should I hire a Webflow agency in ${locality}?`,
+      answer: `Working with a local ${locality} Webflow agency means you get a team that understands the ${region} market — the competitive landscape, local search dynamics, and what ${locality} customers expect from a business website. We are available for in-person strategy sessions, understand the seasonal patterns of ${region} industries, and have a portfolio of local success stories. Local expertise combined with Webflow specialization gives your business a measurable advantage.`,
+    },
+    {
+      category: "webflow",
+      question: "What is the difference between Webflow and Squarespace?",
+      answer: "Webflow gives you full design freedom and clean code output. Squarespace is a template-based builder with limited customization. Webflow supports complex animations, custom CMS structures, and client-friendly content editing without the constraints of a rigid template system. For businesses that need a unique, high-performance website rather than a generic template, Webflow is the professional choice.",
+    },
   ];
+
+  // Add cluster-specific FAQs
+  const cluster = getCluster(slug || "arizona");
+  const clusterFaqs = cluster.faqAdditions(locality, region);
+
+  return [...baseFaqs, ...clusterFaqs];
 }
 
-export const expandedFaqs = getExpandedFaqs("Phoenix", "Arizona");
+// Backward-compatible static aliases
+export const expandedFaqs = getExpandedFaqs("Phoenix", "Arizona", "arizona");
 
-/* ─── Webflow Services Breakdown ─── */
+/* ─── Webflow Services Breakdown (cluster-aware) ─── */
 
-export const webflowServices: WebflowService[] = [
+const baseWebflowServices: WebflowService[] = [
   {
     slug: "webflow-design",
     title: "Webflow Design",
@@ -399,9 +395,24 @@ export const webflowServices: WebflowService[] = [
   },
 ];
 
-/* ─── Platform Comparison ─── */
+export function getWebflowServices(slug: string): WebflowService[] {
+  const cluster = getCluster(slug);
+  const overrides = cluster.webflowServiceOverrides;
 
-export const platformComparison: ComparisonRow[] = [
+  return baseWebflowServices.map((svc) => {
+    if (overrides[svc.slug]) {
+      return { ...svc, longDescription: overrides[svc.slug] };
+    }
+    return svc;
+  });
+}
+
+// Backward-compatible static alias
+export const webflowServices: WebflowService[] = getWebflowServices("arizona");
+
+/* ─── Platform Comparison (cluster-aware) ─── */
+
+const basePlatformComparison: ComparisonRow[] = [
   { feature: "Visual design freedom", webflow: "Full creative control", wordpress: "Theme-limited", customCode: "Full creative control" },
   { feature: "Clean code output", webflow: true, wordpress: false, customCode: true },
   { feature: "Built-in CMS", webflow: true, wordpress: "Plugin-dependent", customCode: false },
@@ -416,95 +427,32 @@ export const platformComparison: ComparisonRow[] = [
   { feature: "Plugin / dependency risk", webflow: "None", wordpress: "High", customCode: "Varies" },
 ];
 
-/* ─── Industries Served ─── */
-
-export function getIndustriesServed(locality: string, region: string): IndustryItem[] {
-  return [
-    {
-      name: "Healthcare & Medical",
-      icon: "Heart",
-      description: `HIPAA-aware marketing sites, patient portals, and provider directories for ${locality}-area healthcare practices and medical groups.`,
-      color: "#BCEFFF",
-    },
-    {
-      name: "Real Estate",
-      icon: "Building",
-      description: `Property showcase sites, IDX integrations, and lead generation platforms for ${region}'s competitive real estate market.`,
-      color: "#F79C42",
-    },
-    {
-      name: "Hospitality & Tourism",
-      icon: "Plane",
-      description: `Booking-driven websites for hotels, resorts, restaurants, and tour operators across the ${locality} metro and greater ${region}.`,
-      color: "#FFDF40",
-    },
-    {
-      name: "SaaS & Technology",
-      icon: "Cpu",
-      description: `High-converting marketing sites, product pages, and documentation portals for ${region}'s growing tech startup ecosystem.`,
-      color: "#C4EF7A",
-    },
-    {
-      name: "Professional Services",
-      icon: "Briefcase",
-      description: `Law firms, accounting practices, consulting firms, and financial services across the ${locality} metropolitan area.`,
-      color: "#71CFA3",
-    },
-    {
-      name: "E-Commerce & Retail",
-      icon: "ShoppingBag",
-      description: `Design-forward online stores for ${region} brands ready to sell directly to customers with Webflow's native commerce platform.`,
-      color: "#DEDA8D",
-    },
-  ];
+export function getPlatformComparison(slug: string): ComparisonRow[] {
+  const cluster = getCluster(slug);
+  const extras = cluster.platformComparisonExtras;
+  if (extras.length === 0) return basePlatformComparison;
+  return [...basePlatformComparison, ...extras];
 }
 
-export const industriesServed = getIndustriesServed("Phoenix", "Arizona");
+// Backward-compatible static alias
+export const platformComparison: ComparisonRow[] = getPlatformComparison("arizona");
 
-/* ─── Pricing Tiers ─── */
+/* ─── Industries Served (cluster-aware) ─── */
 
-export const pricingTiers: PricingTier[] = [
-  {
-    name: "Marketing Site",
-    priceRange: "$5,000 – $12,000",
-    description: "Perfect for businesses that need a professional online presence that ranks and converts.",
-    includes: [
-      "5–10 custom-designed pages",
-      "Responsive design for all devices",
-      "Basic CMS setup",
-      "On-page SEO optimization",
-      "Contact form integration",
-      "30-day post-launch support",
-    ],
-    color: "#BCEFFF",
-  },
-  {
-    name: "Growth Site",
-    priceRange: "$12,000 – $25,000",
-    description: "For businesses ready to use their website as a lead generation and growth engine.",
-    includes: [
-      "10–20 custom-designed pages",
-      "Advanced CMS architecture",
-      "Custom animations & interactions",
-      "Third-party integrations",
-      "CRO-optimized layouts",
-      "90-day post-launch support",
-    ],
-    color: "#F79C42",
-    featured: true,
-  },
-  {
-    name: "Enterprise / E-Commerce",
-    priceRange: "$25,000+",
-    description: "Complex builds with e-commerce, multi-collection CMS, and enterprise-grade integrations.",
-    includes: [
-      "Unlimited pages",
-      "Webflow E-commerce setup",
-      "Multi-collection CMS architecture",
-      "API & automation integrations",
-      "Performance monitoring dashboard",
-      "Ongoing retainer support",
-    ],
-    color: "#C4EF7A",
-  },
-];
+export function getIndustriesServed(locality: string, region: string, slug?: string): IndustryItem[] {
+  const cluster = getCluster(slug || "arizona");
+  return cluster.industries(locality, region);
+}
+
+// Backward-compatible static alias
+export const industriesServed = getIndustriesServed("Phoenix", "Arizona", "arizona");
+
+/* ─── Pricing Tiers (cluster-aware) ─── */
+
+export function getPricingTiers(slug: string): PricingTier[] {
+  const cluster = getCluster(slug);
+  return cluster.pricingTiers;
+}
+
+// Backward-compatible static alias
+export const pricingTiers: PricingTier[] = getPricingTiers("arizona");

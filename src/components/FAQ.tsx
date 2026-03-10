@@ -17,8 +17,8 @@ const categories = [
 
 type CategoryKey = (typeof categories)[number]["key"];
 
-export function FAQ({ locality, region }: { locality: string; region: string }) {
-  const expandedFaqs = getExpandedFaqs(locality, region);
+export function FAQ({ locality, region, slug }: { locality: string; region: string; slug: string }) {
+  const expandedFaqs = getExpandedFaqs(locality, region, slug);
   const ref = useRef<HTMLElement>(null);
   const [openIndex, setOpenIndex] = useState(0);
   const [activeCategory, setActiveCategory] = useState<CategoryKey>("all");

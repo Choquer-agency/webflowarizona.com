@@ -89,7 +89,7 @@ export default function ServicePage({ params }: ServicePageProps) {
         heading={service.problemHeading}
       />
       <MobileCta />
-      {service.showComparison && <WebflowVsWordPress />}
+      {service.showComparison && <WebflowVsWordPress slug={config.slug} />}
       <ServiceProcess steps={service.processSteps} heading={service.processHeading} />
       {service.showPortfolio && <Portfolio />}
       <Testimonials locality={config.locality} />
@@ -97,6 +97,7 @@ export default function ServicePage({ params }: ServicePageProps) {
         <MigrationPricing
           packages={service.migrationPackages}
           region={config.region}
+          slug={config.slug}
         />
       )}
       <MobileCta />

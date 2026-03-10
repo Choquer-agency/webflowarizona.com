@@ -3,11 +3,12 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "@/lib/gsap-register";
-import { processSteps } from "@/content/shared";
+import { getProcessSteps } from "@/content/shared";
 
 const stepColors = ["#F79C42", "#FFDF40", "#BCEFFF", "#C4EF7A"];
 
-export function Process() {
+export function Process({ slug }: { slug: string }) {
+  const processSteps = getProcessSteps(slug);
   const ref = useRef<HTMLElement>(null);
 
   useGSAP(

@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "@/lib/gsap-register";
-import { platformComparison } from "@/content/shared";
+import { getPlatformComparison } from "@/content/shared";
 
 function CellValue({ value }: { value: string | boolean }) {
   if (typeof value === "boolean") {
@@ -24,7 +24,8 @@ function CellValue({ value }: { value: string | boolean }) {
   return <span>{value}</span>;
 }
 
-export function WebflowVsWordPress() {
+export function WebflowVsWordPress({ slug }: { slug: string }) {
+  const platformComparison = getPlatformComparison(slug);
   const ref = useRef<HTMLElement>(null);
 
   useGSAP(

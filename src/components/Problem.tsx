@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "@/lib/gsap-register";
-import { painPoints } from "@/content/shared";
+import { getPainPoints } from "@/content/shared";
 
 // Pixelated X icon (same pixel-art style as hero icons)
 function PixelX({ color }: { color: string }) {
@@ -25,8 +25,9 @@ function PixelX({ color }: { color: string }) {
 // All red to indicate problems
 const iconColor = "#E53935";
 
-export function Problem() {
+export function Problem({ slug }: { slug: string }) {
   const ref = useRef<HTMLElement>(null);
+  const painPoints = getPainPoints(slug);
 
   useGSAP(
     () => {

@@ -1,15 +1,16 @@
 "use client";
 
-import { useRef, useState, useCallback } from "react";
+import { useRef, useState, useCallback, useMemo } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "@/lib/gsap-register";
 import { useContactForm } from "@/context/ContactFormContext";
 import { MigrationPackage } from "@/content/services";
+import { getCurrency, getCluster } from "@/content/clusters";
 
-function formatCurrency(amount: number): string {
-  return amount.toLocaleString("en-US", {
+function formatCurrencyAmount(amount: number, locale: string, currencyCode: string): string {
+  return amount.toLocaleString(locale, {
     style: "currency",
-    currency: "USD",
+    currency: currencyCode,
     minimumFractionDigits: 0,
     maximumFractionDigits: 0,
   });
@@ -18,9 +19,24 @@ function formatCurrency(amount: number): string {
 interface MigrationPricingProps {
   packages: MigrationPackage[];
   region: string;
+  slug?: string;
 }
 
-export function MigrationPricing({ packages, region }: MigrationPricingProps) {
+export function MigrationPricing({ packages, region, slug }: MigrationPricingProps) {
+  const currency = getCurrency(slug || "arizona");
+  const cluster = getCluster(slug || "arizona");
+  const formatCurrency = useMemo(
+    () => (amount: number) => formatCurrencyAmount(amount, currency.locale, currency.code),
+    [currency.locale, currency.code]
+  );
+
+  // Use cluster-specific pricing for migration packages
+  const localizedPackages = packages.map((pkg) => {
+    if (pkg.slug === "straightforward") return { ...pkg, pricePerPage: cluster.migrationPricePerPage.straightforward };
+    if (pkg.slug === "animated") return { ...pkg, pricePerPage: cluster.migrationPricePerPage.animated };
+    if (pkg.slug === "brand-elevation") return { ...pkg, pricePerPage: cluster.migrationPricePerPage.brandElevation };
+    return pkg;
+  });
   const { openModal } = useContactForm();
   const ref = useRef<HTMLElement>(null);
   const [pageCount, setPageCount] = useState(10);
@@ -67,7 +83,7 @@ export function MigrationPricing({ packages, region }: MigrationPricingProps) {
         estimatedTotal: total,
       });
     },
-    [openModal, pageCount]
+    [openModal, pageCount, formatCurrency]
   );
 
   return (
@@ -117,7 +133,7 @@ export function MigrationPricing({ packages, region }: MigrationPricingProps) {
 
         {/* Package Cards */}
         <div className="grid md:grid-cols-3 gap-6">
-          {packages.map((pkg) => {
+          {localizedPackages.map((pkg) => {
             const total = pkg.pricePerPage * pageCount;
             return (
               <div

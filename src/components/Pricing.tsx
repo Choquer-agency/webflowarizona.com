@@ -4,9 +4,10 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "@/lib/gsap-register";
 import { useContactForm } from "@/context/ContactFormContext";
-import { pricingTiers } from "@/content/shared";
+import { getPricingTiers } from "@/content/shared";
 
-export function Pricing({ region }: { region: string }) {
+export function Pricing({ region, slug }: { region: string; slug: string }) {
+  const pricingTiers = getPricingTiers(slug);
   const { openModal } = useContactForm();
   const ref = useRef<HTMLElement>(null);
 
