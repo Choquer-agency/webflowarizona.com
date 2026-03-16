@@ -1,8 +1,10 @@
 import { MetadataRoute } from "next";
-import { headers } from "next/headers";
+import { getDomainConfig } from "@/lib/getDomainConfig";
+
+export const dynamic = "force-dynamic";
 
 export default function robots(): MetadataRoute.Robots {
-  const host = headers().get("host") || "webflowarizona.com";
+  const config = getDomainConfig();
   return {
     rules: [
       { userAgent: "*", allow: "/" },
@@ -12,6 +14,6 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "anthropic-ai", allow: "/" },
       { userAgent: "ClaudeBot", allow: "/" },
     ],
-    sitemap: `https://${host}/sitemap.xml`,
+    sitemap: `https://${config.domain}/sitemap.xml`,
   };
 }

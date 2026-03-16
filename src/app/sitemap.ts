@@ -1,24 +1,34 @@
 import { MetadataRoute } from "next";
-import { headers } from "next/headers";
 import { getDomainConfig } from "@/lib/getDomainConfig";
 import { getBlogPostsByRegion } from "@/content/blog";
 import { getAllServiceSlugs } from "@/content/services";
+import { getAllIndustrySlugs } from "@/content/industries";
+
+export const dynamic = "force-dynamic";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const host = headers().get("host") || "webflowarizona.com";
   const config = getDomainConfig();
+  const domain = config.domain;
   const posts = await getBlogPostsByRegion(config.region);
   const serviceSlugs = getAllServiceSlugs();
+  const industrySlugs = getAllIndustrySlugs();
 
   const blogEntries: MetadataRoute.Sitemap = posts.map((post) => ({
-    url: `https://${host}/blog/${post.slug}`,
+    url: `https://${domain}/blog/${post.slug}`,
     lastModified: new Date(post.modifiedDate),
     changeFrequency: "monthly",
     priority: 0.8,
   }));
 
   const serviceEntries: MetadataRoute.Sitemap = serviceSlugs.map((slug) => ({
-    url: `https://${host}/services/${slug}`,
+    url: `https://${domain}/services/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.9,
+  }));
+
+  const industryEntries: MetadataRoute.Sitemap = industrySlugs.map((slug) => ({
+    url: `https://${domain}/industries/${slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.9,
@@ -26,22 +36,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [
     {
-      url: `https://${host}`,
+      url: `https://${domain}`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1.0,
     },
     {
-      url: `https://${host}/about`,
+      url: `https://${domain}/about`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     ...serviceEntries,
+    ...industryEntries,
     ...(posts.length > 0
       ? [
           {
-            url: `https://${host}/blog`,
+            url: `https://${domain}/blog`,
             lastModified: new Date(),
             changeFrequency: "weekly" as const,
             priority: 0.9,
