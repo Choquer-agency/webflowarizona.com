@@ -3,6 +3,7 @@ import { headers } from "next/headers";
 import { domainMap } from "@/content/domains";
 import { defaultConfig } from "@/content/config";
 import { getAllServiceSlugs } from "@/content/services";
+import { getAllIndustrySlugs } from "@/content/industries";
 import blogManifest from "@/content/blog/manifest.json";
 
 export const dynamic = "force-dynamic";
@@ -17,6 +18,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const posts = blogManifest.filter((p) => p.region === config.region);
   const serviceSlugs = getAllServiceSlugs();
+  const industrySlugs = getAllIndustrySlugs();
 
   const blogEntries: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `https://${domain}/blog/${post.slug}`,
@@ -27,6 +29,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const serviceEntries: MetadataRoute.Sitemap = serviceSlugs.map((slug) => ({
     url: `https://${domain}/services/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.9,
+  }));
+
+  const industryEntries: MetadataRoute.Sitemap = industrySlugs.map((slug) => ({
+    url: `https://${domain}/industries/${slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.9,
@@ -46,6 +55,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     },
     ...serviceEntries,
+    ...industryEntries,
     ...(posts.length > 0
       ? [
           {
