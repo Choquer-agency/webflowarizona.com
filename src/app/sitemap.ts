@@ -1,14 +1,21 @@
 import { MetadataRoute } from "next";
-import { getDomainConfig } from "@/lib/getDomainConfig";
-import { getBlogPostsByRegion } from "@/content/blog";
+import { headers } from "next/headers";
+import { domainMap } from "@/content/domains";
+import { defaultConfig } from "@/content/config";
 import { getAllServiceSlugs } from "@/content/services";
+import blogManifest from "@/content/blog/manifest.json";
 
 export const dynamic = "force-dynamic";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const config = getDomainConfig();
+  // Resolve domain from host header
+  const headersList = headers();
+  const host = headersList.get("host") || "";
+  const hostname = host.replace(/:\d+$/, "").replace(/^www\./, "");
+  const config = domainMap[hostname] || defaultConfig;
   const domain = config.domain;
-  const posts = await getBlogPostsByRegion(config.region);
+
+  const posts = blogManifest.filter((p) => p.region === config.region);
   const serviceSlugs = getAllServiceSlugs();
 
   const blogEntries: MetadataRoute.Sitemap = posts.map((post) => ({
