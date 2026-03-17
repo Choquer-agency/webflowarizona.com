@@ -40,6 +40,9 @@ Enterprise Webflow projects serve France's largest organizations and most comple
 
 French enterprises in luxury goods (LVMH group companies, Hermès, Kering brands), industrial conglomerates (Schneider Electric, Saint-Gobain), and the public sector require this investment level. When Direction Interministérielle du Numérique (DINUM) standards influence your project or when your design system needs to scale across multiple brand entities, the scope exceeds simpler tiers.
 
+
+> **Want a quick estimate?** Use our [free Website Cost Calculator](/tools/website-cost-calculator) to get an instant ballpark for your project.
+
 ## What Makes the French Web Design Market Different?
 
 ### Design Is Culturally Loaded in France

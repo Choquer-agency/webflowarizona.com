@@ -22,6 +22,9 @@ For Vancouver's booming ecosystem of film production companies, clean-tech start
 
 Webflow closes this gap by compressing the development cycle. Where a traditional agency sends your approved design to a front-end developer, then a back-end developer, then a QA team — each billing hours — a Webflow specialist handles the entire build in a single, visual workflow.
 
+
+> **Want a quick estimate?** Use our [free Website Cost Calculator](/tools/website-cost-calculator) to get an instant ballpark for your project.
+
 ## Webflow Pricing Tiers for Vancouver Businesses
 
 ### Marketing Site: C$6,500 – C$16,500

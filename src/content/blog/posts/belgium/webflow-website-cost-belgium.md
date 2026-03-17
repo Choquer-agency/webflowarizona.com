@@ -42,6 +42,9 @@ Enterprise Webflow projects serve Belgium's largest companies and most complex m
 
 Belgian enterprises like Proximus, Solvay, UCB, and AB InBev — along with the EU institutions themselves and the international organizations headquartered in Brussels — require this investment level. When your website needs to serve Belgian federal communication standards or when your content management system must handle four language versions with region-specific variations, project complexity demands enterprise-level architecture.
 
+
+> **Want a quick estimate?** Use our [free Website Cost Calculator](/tools/website-cost-calculator) to get an instant ballpark for your project.
+
 ## Why Does Belgium's Trilingual Reality Affect Web Costs So Much?
 
 Belgium's linguistic structure isn't just a cultural curiosity — it's the single biggest cost driver for Belgian web projects. Understanding why helps you budget accurately.

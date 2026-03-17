@@ -44,6 +44,9 @@ Enterprise Webflow projects serve Sweden's largest organizations and most comple
 
 Swedish enterprises in financial services, telecommunications (Ericsson, Telia), automotive (Volvo, Scania), and the public sector require this level of investment. When the Swedish Financial Supervisory Authority's (Finansinspektionen) guidelines influence your site's content structure, or when your design system needs to scale across 20+ market-specific subdirectories, the project exceeds what simpler tiers can deliver.
 
+
+> **Want a quick estimate?** Use our [free Website Cost Calculator](/tools/website-cost-calculator) to get an instant ballpark for your project.
+
 ## Why Is Sweden a Different Pricing Market for Webflow?
 
 Several factors specific to Sweden shape Webflow project economics in ways that international pricing guides miss entirely.

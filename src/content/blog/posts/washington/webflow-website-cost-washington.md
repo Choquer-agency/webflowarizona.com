@@ -44,6 +44,9 @@ Amazon has trained a generation of Washington consumers and business leaders to 
 
 This creates pressure on every Washington business to invest in web performance — but it also creates an opportunity. Webflow sites, properly built, consistently achieve 90+ Google Lighthouse scores. For Washington businesses competing against the implicit standard set by Big Tech's digital experiences, Webflow delivers enterprise-grade performance at mid-market prices.
 
+
+> **Want a quick estimate?** Use our [free Website Cost Calculator](/tools/website-cost-calculator) to get an instant ballpark for your project.
+
 ## Webflow Pricing Tiers for Washington Businesses
 
 ### Marketing Site — $5,000–$12,000

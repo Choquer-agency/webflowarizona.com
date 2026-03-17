@@ -40,6 +40,9 @@ Webflow has fundamentally disrupted this cost structure. By eliminating the need
 
 This isn't about building cheaper websites. It's about removing unnecessary cost layers. A Webflow site and a custom-coded site can look identical. The difference is that the custom-coded version required 200 hours of backend development, and the Webflow version required zero.
 
+
+> **Want a quick estimate?** Use our [free Website Cost Calculator](/tools/website-cost-calculator) to get an instant ballpark for your project.
+
 ## Webflow Pricing Tiers for California Businesses
 
 Here's how Webflow website costs break down for California businesses — from a marketing site for an emerging brand to a full enterprise platform.

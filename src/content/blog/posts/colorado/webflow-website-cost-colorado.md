@@ -43,6 +43,9 @@ Colorado is the unofficial capital of the outdoor industry in the United States.
 
 These companies need websites that communicate adventure, authenticity, and craftsmanship — visually rich experiences with high-quality imagery, video integration, and immersive scrolling. Webflow is particularly well-suited to this aesthetic because it allows precise design control and smooth interactions without custom code — exactly what outdoor brands need.
 
+
+> **Want a quick estimate?** Use our [free Website Cost Calculator](/tools/website-cost-calculator) to get an instant ballpark for your project.
+
 ## What Webflow Costs in Colorado: A Direct Breakdown
 
 ### Marketing Site — $5,000–$12,000

@@ -45,6 +45,9 @@ Montana is arguably the best state in the country for working with remote servic
 
 This is not a compromise. For Webflow specifically, working with a remote specialist who builds on the platform daily delivers better outcomes than working with a local generalist who completes a few Webflow projects per year.
 
+
+> **Want a quick estimate?** Use our [free Website Cost Calculator](/tools/website-cost-calculator) to get an instant ballpark for your project.
+
 ## Webflow Pricing for Montana Businesses
 
 ### Marketing Site: $4,500–$10,000

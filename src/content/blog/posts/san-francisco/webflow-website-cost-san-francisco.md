@@ -49,6 +49,9 @@ Y Combinator companies — and the broader Bay Area startup ecosystem — face a
 
 The math is obvious when you lay it out. But San Francisco's tech culture has a bias toward engineering solutions, so many startups still default to Option 1 — and regret it within six months.
 
+
+> **Want a quick estimate?** Use our [free Website Cost Calculator](/tools/website-cost-calculator) to get an instant ballpark for your project.
+
 ## What Webflow Costs for Bay Area Businesses: Three Tiers
 
 ### Marketing Site — $5,000–$12,000

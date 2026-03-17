@@ -43,6 +43,9 @@ Here is the counterintuitive reality: Hawaii businesses often get better Webflow
 
 Hawaii businesses are already accustomed to sourcing from the mainland — everything from building materials to specialized services. Web design follows the same logic.
 
+
+> **Want a quick estimate?** Use our [free Website Cost Calculator](/tools/website-cost-calculator) to get an instant ballpark for your project.
+
 ## What Webflow Costs for Hawaii Businesses
 
 ### Marketing Site: $4,500–$10,000

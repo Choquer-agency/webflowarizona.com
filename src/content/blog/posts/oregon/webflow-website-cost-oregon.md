@@ -40,6 +40,9 @@ Oregon — particularly Portland and Bend — has an outsized concentration of o
 
 These brands have specific web design needs: rich visual storytelling, high-quality product photography integration, and brand experiences that feel handcrafted rather than templated. Webflow excels at this because it allows pixel-perfect design control without the constraints of traditional CMS templates.
 
+
+> **Want a quick estimate?** Use our [free Website Cost Calculator](/tools/website-cost-calculator) to get an instant ballpark for your project.
+
 ## Webflow Pricing for Oregon Businesses
 
 ### Marketing Site — $5,000–$12,000

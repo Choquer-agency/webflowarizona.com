@@ -22,6 +22,9 @@ The Webflow platform changes this dynamic for Canadian businesses because it dec
 
 This is particularly relevant for Canada, where the vast geographic spread of the business community has historically meant that companies outside major metro areas either overpaid Toronto/Vancouver agencies or settled for lower-quality local options.
 
+
+> **Want a quick estimate?** Use our [free Website Cost Calculator](/tools/website-cost-calculator) to get an instant ballpark for your project.
+
 ## National Pricing Tiers: What Canadian Businesses Should Expect
 
 ### Marketing Site: C$6,500 – C$16,500

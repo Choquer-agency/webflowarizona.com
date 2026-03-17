@@ -78,6 +78,9 @@ If your time is worth C$75/hour (a reasonable figure for a Canadian business own
 
 **Best for:** Solopreneurs with design aptitude, businesses with no budget whatsoever, or founders who genuinely enjoy building things and treat the website as a learning project rather than a business tool.
 
+
+> **Want a quick estimate?** Use our [free Website Cost Calculator](/tools/website-cost-calculator) to get an instant ballpark for your project.
+
 ## How Canadian Webflow Agencies Price Their Work
 
 Understanding how agencies structure pricing helps you evaluate quotes and avoid surprises. Canadian Webflow agencies use three primary pricing models:

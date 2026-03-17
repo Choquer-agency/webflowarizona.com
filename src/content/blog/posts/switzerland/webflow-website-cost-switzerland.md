@@ -42,6 +42,9 @@ Enterprise Webflow projects serve Switzerland's largest companies and most deman
 
 Swiss enterprises in banking (UBS, Credit Suisse legacy entities, cantonal banks), pharmaceuticals (Roche, Novartis, Lonza), insurance (Zurich, Swiss Re), and the public sector require this investment level. When the Swiss Financial Market Supervisory Authority (FINMA) guidelines affect your content requirements, or when swissmedic regulations dictate how you present product information, project complexity and compliance testing drive costs beyond standard enterprise ranges.
 
+
+> **Want a quick estimate?** Use our [free Website Cost Calculator](/tools/website-cost-calculator) to get an instant ballpark for your project.
+
 ## Why Is Switzerland the Most Expensive Web Design Market in Europe?
 
 ### Swiss Developer Salaries Are Unmatched

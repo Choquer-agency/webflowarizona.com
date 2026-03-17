@@ -22,6 +22,9 @@ This scarcity drives up costs. An experienced full-stack developer in Auckland c
 
 This is the structural advantage that working with a Webflow specialist offers. The platform eliminates the ongoing developer dependency that makes New Zealand's web development economics so punishing, and the remote-first model means a business in Rotorua or Dunedin gets the same quality and pricing as one in central Auckland.
 
+
+> **Want a quick estimate?** Use our [free Website Cost Calculator](/tools/website-cost-calculator) to get an instant ballpark for your project.
+
 ## What Does a Webflow Website Cost in New Zealand Dollars?
 
 ### Marketing Site: NZ$8,250 – NZ$19,800

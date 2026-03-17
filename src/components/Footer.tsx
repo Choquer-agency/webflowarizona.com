@@ -117,6 +117,11 @@ export function Footer({ locality }: { locality: string }) {
                     FAQ
                   </a>
                 </li>
+                <li>
+                  <Link href="/tools/website-cost-calculator" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                    Website Cost Calculator
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>

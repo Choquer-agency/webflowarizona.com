@@ -34,6 +34,9 @@ This scarcity has two effects on pricing:
 
 Idaho's web design needs extend well beyond the capital. Coeur d'Alene's tourism economy, Idaho Falls' proximity to Idaho National Laboratory, Twin Falls' agricultural industry, and Sun Valley's resort market all generate demand for professional websites. But outside Boise, local agency options essentially disappear. Businesses in these areas are already accustomed to working with remote providers — which makes a remote Webflow specialist a natural fit.
 
+
+> **Want a quick estimate?** Use our [free Website Cost Calculator](/tools/website-cost-calculator) to get an instant ballpark for your project.
+
 ## What Webflow Costs in Idaho: Tier Breakdown
 
 ### Marketing Site: $4,500–$10,000

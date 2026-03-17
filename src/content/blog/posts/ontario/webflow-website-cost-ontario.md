@@ -22,6 +22,9 @@ That math produces project quotes between C$15,000 and C$75,000 for what amounts
 
 Webflow changes this equation fundamentally because it eliminates the need for separate front-end and back-end development. A skilled Webflow developer handles design implementation, CMS architecture, and deployment in a single workflow, cutting the team size and timeline required for most projects.
 
+
+> **Want a quick estimate?** Use our [free Website Cost Calculator](/tools/website-cost-calculator) to get an instant ballpark for your project.
+
 ## What Does a Webflow Website Actually Cost in Ontario?
 
 Here is what Ontario businesses should expect to pay in 2026, broken down by project complexity.

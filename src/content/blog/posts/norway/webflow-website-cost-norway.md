@@ -42,6 +42,9 @@ Enterprise Webflow projects serve organizations with complex requirements: multi
 
 Norwegian enterprises in energy, shipping, and financial services often require this level of build. When your website needs to serve regulatory compliance purposes — like the Norwegian Government's universal design requirements under the Likestillings- og diskrimineringsloven — the design, development, and testing investment increases substantially.
 
+
+> **Want a quick estimate?** Use our [free Website Cost Calculator](/tools/website-cost-calculator) to get an instant ballpark for your project.
+
 ## Why Do Webflow Websites Cost Less Than Traditional Norwegian Agency Builds?
 
 The pricing gap between Webflow projects and traditional Norwegian web development isn't marketing spin — it reflects fundamental differences in how the work gets done.

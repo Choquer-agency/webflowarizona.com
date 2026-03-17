@@ -20,6 +20,9 @@ The Census and Statistics Department reported that Hong Kong's information and c
 
 But the market is shifting. The post-2024 startup ecosystem that has emerged in Wong Chuk Hang, Kwun Tong, and Cyberport has brought a new generation of businesses that refuse to pay Central District prices for what they correctly identify as commodity work. Webflow has become the platform of choice for these companies — and increasingly for the established firms whose CFOs are questioning why a corporate website costs as much as six months of junior analyst salary.
 
+
+> **Want a quick estimate?** Use our [free Website Cost Calculator](/tools/website-cost-calculator) to get an instant ballpark for your project.
+
 ## What Does a Webflow Website Actually Cost in Hong Kong Dollars?
 
 ### Marketing Site: HK$39,000 – HK$93,600

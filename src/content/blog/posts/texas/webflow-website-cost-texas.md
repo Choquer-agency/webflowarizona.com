@@ -36,6 +36,9 @@ Texas is not one web design market. It is at least four, each with distinct pric
 
 Texas has one of the largest freelance web design communities in the country. Platforms like Upwork show over 3,000 Texas-based web designers, with hourly rates ranging from $25 to $200. For simple projects, a qualified Texas freelancer can deliver a Webflow site for $2,000–$6,000. The risk: freelancers disappear, timelines slip, and there is no backup team when life intervenes.
 
+
+> **Want a quick estimate?** Use our [free Website Cost Calculator](/tools/website-cost-calculator) to get an instant ballpark for your project.
+
 ## Webflow Pricing Tiers: What Texas Businesses Actually Pay
 
 ### Marketing Site: $4,500–$10,000

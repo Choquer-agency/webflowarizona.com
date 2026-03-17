@@ -20,6 +20,9 @@ The Infocomm Media Development Authority (IMDA) reported that 94% of Singapore e
 
 For fintech startups in the Marina Bay Financial Centre, for professional services firms along Shenton Way, and for e-commerce companies operating out of Jurong's industrial estates, understanding what a Webflow website actually costs — versus what a traditional Singapore agency charges — is the difference between smart investment and unnecessary overspend.
 
+
+> **Want a quick estimate?** Use our [free Website Cost Calculator](/tools/website-cost-calculator) to get an instant ballpark for your project.
+
 ## What Does a Webflow Website Cost in Singapore Dollars?
 
 The cost depends on what your business needs. A founder launching an MVP landing page has fundamentally different requirements from a licensed financial advisory firm that needs PDPA-compliant forms, multilingual content in English, Mandarin, and Malay, and integration with their CRM system.
