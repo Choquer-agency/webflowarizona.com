@@ -40,9 +40,9 @@ export const domainMap: Record<string, DomainConfig> = {
     locality: "San Francisco",
     stateCode: "CA",
     nearbyAreas: "Oakland, Berkeley, San Jose, Palo Alto, and Marin County",
-    metaTitle: "Webflow Agency San Francisco | Expert Webflow Design & Development",
+    metaTitle: "San Francisco Webflow Agency | Expert Design & Development",
     metaDescription:
-      "San Francisco's premier Webflow agency. We design, build, and launch high-performance Webflow websites for businesses ready to grow. Get a free strategy call today.",
+      "San Francisco's premier Webflow agency. We design and launch high-performance websites for Bay Area businesses. Get a free strategy call today.",
     heroH1: "San Francisco's Premier Webflow Agency",
     heroSubhead:
       "Webflow sites that rank on Google, convert visitors into leads, and grow your business \u2014 built by a certified Webflow Expert Partner.",
@@ -240,9 +240,9 @@ export const domainMap: Record<string, DomainConfig> = {
     locality: "Seattle",
     stateCode: "WA",
     nearbyAreas: "Bellevue, Tacoma, Redmond, Kirkland, and Olympia",
-    metaTitle: "Webflow Agency Washington | Expert Webflow Design & Development",
+    metaTitle: "Webflow Agency Washington | Expert Design & Development",
     metaDescription:
-      "Washington's premier Webflow agency. We design, build, and launch high-performance Webflow websites for businesses across the Pacific Northwest. Get a free strategy call today.",
+      "Washington's premier Webflow agency. We design and launch high-performance websites for Pacific Northwest businesses. Free strategy call.",
     heroH1: "Washington's Premier Webflow Agency",
     heroSubhead:
       "Webflow sites that rank on Google, convert visitors into leads, and grow your business \u2014 built by a certified Webflow Expert Partner.",
@@ -399,9 +399,9 @@ export const domainMap: Record<string, DomainConfig> = {
     locality: "Zurich",
     stateCode: "CH",
     nearbyAreas: "Geneva, Basel, Bern, Lausanne, and Lucerne",
-    metaTitle: "Webflow Agency Switzerland | Expert Webflow Design & Development",
+    metaTitle: "Webflow Agency Switzerland | Expert Design & Dev",
     metaDescription:
-      "Switzerland's premier Webflow agency. We design, build, and launch high-performance Webflow websites for Swiss businesses ready to grow. Get a free strategy call today.",
+      "Switzerland's premier Webflow agency. We design and launch high-performance websites for Swiss businesses. Free strategy call today.",
     heroH1: "Switzerland's Premier Webflow Agency",
     heroSubhead:
       "Webflow sites that rank on Google, convert visitors into leads, and grow your business \u2014 built by a certified Webflow Expert Partner.",
@@ -468,9 +468,9 @@ export const domainMap: Record<string, DomainConfig> = {
     locality: "Amsterdam",
     stateCode: "NL",
     nearbyAreas: "Rotterdam, The Hague, Utrecht, Eindhoven, and Groningen",
-    metaTitle: "Webflow Agency Netherlands | Expert Webflow Design & Development",
+    metaTitle: "Webflow Agency Netherlands | Expert Design & Dev",
     metaDescription:
-      "The Netherlands' premier Webflow agency. We design, build, and launch high-performance Webflow websites for Dutch businesses ready to grow. Get a free strategy call today.",
+      "The Netherlands' premier Webflow agency. We design and launch high-performance websites for Dutch businesses. Free strategy call today.",
     heroH1: "The Netherlands' Premier Webflow Agency",
     heroSubhead:
       "Webflow sites that rank on Google, convert visitors into leads, and grow your business \u2014 built by a certified Webflow Expert Partner.",
@@ -491,9 +491,9 @@ export const domainMap: Record<string, DomainConfig> = {
     locality: "Auckland",
     stateCode: "NZ",
     nearbyAreas: "Wellington, Christchurch, Hamilton, Queenstown, and Tauranga",
-    metaTitle: "Webflow Agency New Zealand | Expert Webflow Design & Development",
+    metaTitle: "Webflow Agency New Zealand | Expert Design & Dev",
     metaDescription:
-      "New Zealand's premier Webflow agency. We design, build, and launch high-performance Webflow websites for Kiwi businesses ready to grow. Get a free strategy call today.",
+      "New Zealand's premier Webflow agency. We design and launch high-performance websites for Kiwi businesses. Free strategy call today.",
     heroH1: "New Zealand's Premier Webflow Agency",
     heroSubhead:
       "Webflow sites that rank on Google, convert visitors into leads, and grow your business \u2014 built by a certified Webflow Expert Partner.",
@@ -549,95 +549,4 @@ export const domainMap: Record<string, DomainConfig> = {
     gtmId: "GTM-TLPKRLDR",
   },
 
-  // ── UK Agency ──
-  "webflowagency.uk": {
-    ...defaultConfig,
-    slug: "agency-uk",
-    domain: "webflowagency.uk",
-    region: "UK Agency",
-    regionAdjective: "UK-based",
-    country: "UK",
-    locality: "London",
-    stateCode: "UK",
-    nearbyAreas: "Manchester, Birmingham, Leeds, Bristol, and Edinburgh",
-    metaTitle: "Webflow Agency UK | Your Trusted British Webflow Partner",
-    metaDescription:
-      "The UK's premier Webflow agency. We design, build, and launch high-performance Webflow websites for British businesses ready to grow. Get a free strategy call today.",
-    heroH1: "The UK's Premier Webflow Agency",
-    heroSubhead:
-      "Webflow sites that rank on Google, convert visitors into leads, and grow your business \u2014 built by a certified Webflow Expert Partner.",
-    schemaAddress: { locality: "London", region: "England", country: "GB" },
-    geoCoordinates: { latitude: 51.5074, longitude: -0.1278 },
-    geoRegionCode: "GB",
-    gtmId: "GTM-5HTD29LN",
-  },
-
-  // ── European Agency ──
-  "webflowagency.eu": {
-    ...defaultConfig,
-    slug: "agency-eu",
-    domain: "webflowagency.eu",
-    region: "European Agency",
-    regionAdjective: "Europe-based",
-    country: "EU",
-    locality: "Amsterdam",
-    stateCode: "EU",
-    nearbyAreas: "London, Paris, Berlin, Brussels, and Zurich",
-    metaTitle: "Webflow Agency Europe | Your Trusted European Webflow Partner",
-    metaDescription:
-      "Europe's premier Webflow agency. We design, build, and launch high-performance Webflow websites for European businesses ready to grow. Get a free strategy call today.",
-    heroH1: "Europe's Premier Webflow Agency",
-    heroSubhead:
-      "Webflow sites that rank on Google, convert visitors into leads, and grow your business \u2014 built by a certified Webflow Expert Partner.",
-    schemaAddress: { locality: "Amsterdam", region: "North Holland", country: "NL" },
-    geoCoordinates: { latitude: 52.3676, longitude: 4.9041 },
-    geoRegionCode: "EU",
-    gtmId: "GTM-MPFHKMMZ",
-  },
-
-  // ── European Expert ──
-  "webflowexpert.eu": {
-    ...defaultConfig,
-    slug: "expert-eu",
-    domain: "webflowexpert.eu",
-    region: "European Expert",
-    regionAdjective: "Europe-based",
-    country: "EU",
-    locality: "Amsterdam",
-    stateCode: "EU",
-    nearbyAreas: "London, Paris, Berlin, Brussels, and Zurich",
-    metaTitle: "Webflow Expert Europe | Certified Webflow Development",
-    metaDescription:
-      "Europe's trusted Webflow expert. We deliver pixel-perfect, high-performance Webflow websites for European businesses. Certified Webflow development. Get a free strategy call today.",
-    heroH1: "Europe's Trusted Webflow Expert",
-    heroSubhead:
-      "Webflow sites that rank on Google, convert visitors into leads, and grow your business \u2014 built by a certified Webflow Expert Partner.",
-    schemaAddress: { locality: "Amsterdam", region: "North Holland", country: "NL" },
-    geoCoordinates: { latitude: 52.3676, longitude: 4.9041 },
-    geoRegionCode: "EU",
-    gtmId: "GTM-P7H37JG9",
-  },
-
-  // ── Canadian Expert ──
-  "webflowexpert.ca": {
-    ...defaultConfig,
-    slug: "expert-ca",
-    domain: "webflowexpert.ca",
-    region: "Canadian Expert",
-    regionAdjective: "Canadian",
-    country: "CA",
-    locality: "Toronto",
-    stateCode: "ON",
-    nearbyAreas: "Vancouver, Montreal, Calgary, Ottawa, and Edmonton",
-    metaTitle: "Webflow Expert Canada | Certified Webflow Development",
-    metaDescription:
-      "Canada's trusted Webflow expert. We deliver pixel-perfect, high-performance Webflow websites for Canadian businesses. Certified Webflow development. Get a free strategy call today.",
-    heroH1: "Canada's Trusted Webflow Expert",
-    heroSubhead:
-      "Webflow sites that rank on Google, convert visitors into leads, and grow your business \u2014 built by a certified Webflow Expert Partner.",
-    schemaAddress: { locality: "Toronto", region: "ON", country: "CA" },
-    geoCoordinates: { latitude: 43.6532, longitude: -79.3832 },
-    geoRegionCode: "CA-ON",
-    gtmId: "GTM-PX3FF6XD",
-  },
 };
