@@ -28,10 +28,6 @@ function getNewSitePerPage(pages: number): number {
   return NEW_BASE_PER_PAGE;
 }
 
-const TOGGLE_FEATURES = [
-  { id: "ecommerce", label: "E-Commerce Store", description: "Online store with product pages, cart, and Stripe checkout" },
-] as const;
-
 const ADD_ONS = [
   { id: "animations", label: "Animations & Interactions", priceAdd: 2000, description: "Scroll animations, page transitions, and micro-interactions" },
   { id: "multilingual", label: "Multilingual", priceAdd: 3000, description: "Multi-language support with CMS-powered switching" },
