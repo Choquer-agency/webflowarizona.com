@@ -97,7 +97,7 @@ export const slugToCluster: Record<string, MarketClusterId> = {
   vancouver: "canada",
   canada: "canada",
   "agency-ca": "canada",
-  "expert-ca": "canada",
+  // "expert-ca": "canada", // domain removed (Vercel limit)
 
   // Europe North
   norway: "europe-north",
@@ -108,11 +108,11 @@ export const slugToCluster: Record<string, MarketClusterId> = {
   france: "europe-west",
   belgium: "europe-west",
   netherlands: "europe-west",
-  "agency-eu": "europe-west",
-  "expert-eu": "europe-west",
+  // "agency-eu": "europe-west", // domain removed (Vercel limit)
+  // "expert-eu": "europe-west", // domain removed (Vercel limit)
 
   // UK
-  "agency-uk": "uk",
+  // "agency-uk": "uk", // domain removed (Vercel limit)
 
   // Asia-Pacific
   singapore: "asia-pacific",

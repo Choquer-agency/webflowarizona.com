@@ -1,5 +1,6 @@
 import { DomainConfig } from "@/content/config";
 import { ServicePageConfig } from "@/content/services";
+import { getCurrency } from "@/content/clusters";
 
 export function generateServiceSchema(
   config: DomainConfig,
@@ -96,12 +97,6 @@ export function generateServiceSchema(
           {
             "@type": "ListItem",
             position: 2,
-            name: "Services",
-            item: `${domain}/services`,
-          },
-          {
-            "@type": "ListItem",
-            position: 3,
             name: service.title,
             item: `${domain}/services/${service.slug}`,
           },
@@ -110,19 +105,21 @@ export function generateServiceSchema(
 
       // Offer (pricing for migration packages)
       ...(service.migrationPackages
-        ? service.migrationPackages.map((pkg) => ({
+        ? service.migrationPackages.map((pkg) => {
+            const currency = getCurrency(config.slug || "arizona");
+            return {
             "@type": "Offer",
             name: pkg.name,
             description: pkg.description,
-            price: pkg.pricePerPage,
-            priceCurrency: "USD",
+            price: Math.round(pkg.pricePerPage * currency.exchangeRate),
+            priceCurrency: currency.code,
             unitText: "per page",
             itemOffered: {
               "@type": "Service",
               name: `${pkg.name} — ${service.title}`,
               provider: { "@id": `${domain}/#business` },
             },
-          }))
+          };})
         : []),
     ],
   };

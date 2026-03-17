@@ -8,8 +8,8 @@ import { useContactForm } from "@/context/ContactFormContext";
 const navLinks = [
   { label: "Services", href: "#webflow-services" },
   { label: "Work", href: "#portfolio" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Blog", href: "/blog", isPage: true },
+  { label: "About", href: "/about", isPage: true },
 ];
 
 export function Nav({ locality }: { locality: string }) {

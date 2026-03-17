@@ -8,12 +8,12 @@ import { getWebflowServices } from "@/content/shared";
 import { warmPalette } from "@/lib/colors";
 
 const serviceImages = [
-  "/images/services/1.jpg",
-  "/images/services/2.png",
-  "/images/services/3.png",
-  "/images/services/4.png",
-  "/images/services/5.png",
-  "/images/services/6.png",
+  "/images/services/1.webp",
+  "/images/services/2.webp",
+  "/images/services/3.webp",
+  "/images/services/4.webp",
+  "/images/services/5.webp",
+  "/images/services/6.webp",
 ];
 
 export function WebflowServicesBreakdown({ slug }: { slug: string }) {

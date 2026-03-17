@@ -62,7 +62,7 @@ export function CtaBanner() {
           <div className="flex items-center justify-center gap-4 mt-10 pt-8 border-t" style={{ borderColor: "rgba(0,0,0,0.1)" }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/founder.jpg"
+              src="/images/founder.webp"
               alt="Bryce Choquer"
               className="w-12 h-12 rounded-full object-cover"
             />

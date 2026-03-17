@@ -183,7 +183,7 @@ export function About({ locality, region }: AboutProps) {
               {/* Main hero photo — Bryce at desk */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/about-hero.png"
+                src="/images/about-hero.webp"
                 alt="Bryce Choquer — Founder of Webflow Agency"
                 className="relative z-10 w-[75%] mx-auto rounded-lg shadow-xl"
                 style={{ aspectRatio: "4/5", objectFit: "cover" }}
@@ -192,7 +192,7 @@ export function About({ locality, region }: AboutProps) {
               {/* Mask photo 1 — team member focused at desk */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/about-mask-1.png"
+                src="/images/about-mask-1.webp"
                 alt="Team member working at desk"
                 className="about-mask absolute z-20 w-[38%] rounded-lg shadow-lg"
                 style={{
@@ -207,7 +207,7 @@ export function About({ locality, region }: AboutProps) {
               {/* Mask photo 2 — team walking downtown */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/about-mask-2.png"
+                src="/images/about-mask-2.webp"
                 alt="Team walking through the city"
                 className="about-mask absolute z-20 w-[36%] rounded-lg shadow-lg"
                 style={{
@@ -222,7 +222,7 @@ export function About({ locality, region }: AboutProps) {
               {/* Mask photo 3 — working at monitor */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/about-mask-3.png"
+                src="/images/about-mask-3.webp"
                 alt="Designer working on a client project"
                 className="about-mask absolute z-20 w-[35%] rounded-lg shadow-lg"
                 style={{
@@ -237,7 +237,7 @@ export function About({ locality, region }: AboutProps) {
               {/* Mask photo 4 — team member playing chess */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/about-mask-4.png"
+                src="/images/about-mask-4.webp"
                 alt="Team member at the office"
                 className="about-mask absolute z-5 w-[34%] rounded-lg shadow-lg"
                 style={{

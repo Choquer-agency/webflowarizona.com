@@ -282,6 +282,9 @@ export function ContactFormModal({ domain, region }: ContactFormModalProps) {
           selectedPackage: packageInfo.packageName,
           migrationPageCount: packageInfo.pageCount,
           estimatedTotal: packageInfo.estimatedTotal,
+          ...(packageInfo.calculatorDetails && {
+            calculatorDetails: packageInfo.calculatorDetails,
+          }),
         }),
       });
       setIsSuccess(true);

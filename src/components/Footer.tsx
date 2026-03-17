@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useContactForm } from "@/context/ContactFormContext";
 
 const footerTags = [
@@ -32,9 +33,9 @@ export function Footer({ locality }: { locality: string }) {
           <p className="font-mono text-fluid-small uppercase tracking-wider opacity-60 mb-6">
             Ready to get started?
           </p>
-          <h2 className="font-sans font-medium text-fluid-h1 leading-[1.05] max-w-[16ch] mx-auto mb-8">
+          <p className="font-sans font-medium text-fluid-h1 leading-[1.05] max-w-[16ch] mx-auto mb-8">
             Let&apos;s build something great together.
-          </h2>
+          </p>
           <button
             onClick={() => openModal()}
             className="inline-flex items-center gap-3 bg-brand text-dark rounded-sm px-8 py-4 font-sans font-medium text-fluid-main transition-all hover:brightness-110"
@@ -75,24 +76,24 @@ export function Footer({ locality }: { locality: string }) {
               </p>
               <ul className="space-y-2">
                 <li>
-                  <a href="/services/wordpress-migration" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                  <Link href="/services/wordpress-migration" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
                     WordPress to Webflow
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/services/squarespace-migration" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                  <Link href="/services/squarespace-migration" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
                     Squarespace to Webflow
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/services/wix-migration" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                  <Link href="/services/wix-migration" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
                     Wix to Webflow
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/services/shopify-migration" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                  <Link href="/services/shopify-migration" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
                     Shopify to Webflow
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -102,9 +103,9 @@ export function Footer({ locality }: { locality: string }) {
               </p>
               <ul className="space-y-2">
                 <li>
-                  <a href="/blog" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                  <Link href="/blog" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
                     Blog
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="/#portfolio" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
@@ -124,9 +125,9 @@ export function Footer({ locality }: { locality: string }) {
               </p>
               <ul className="space-y-2">
                 <li>
-                  <a href="/about" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                  <Link href="/about" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="/#process" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>

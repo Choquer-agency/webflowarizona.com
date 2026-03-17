@@ -8,6 +8,7 @@ author: "bryce"
 region: "Arizona"
 category: "webflow-vs-wordpress"
 tags: ["webflow", "wordpress", "arizona", "phoenix", "scottsdale", "real-estate", "property"]
+featuredImage: "/images/blog/arizona/webflow-vs-wordpress-real-estate-hero.svg"
 ---
 
 # Webflow vs WordPress for Arizona's Booming Real Estate Market: The Right Platform for Property Listings

@@ -5,6 +5,34 @@ import { generateSchema } from "@/lib/schema";
 import { GoogleTagManager, GoogleTagManagerNoscript } from "@/components/GoogleTagManager";
 import "./globals.css";
 
+// Generate deterministic Webflow-style 24-char hex IDs from a seed string
+function generateWfId(seed: string): string {
+  let hash = 0;
+  for (let i = 0; i < seed.length; i++) {
+    const char = seed.charCodeAt(i);
+    hash = ((hash << 5) - hash) + char;
+    hash |= 0;
+  }
+  const hex1 = Math.abs(hash).toString(16).padStart(8, '0');
+  const hex2 = Math.abs(hash * 2654435761).toString(16).padStart(8, '0');
+  const hex3 = Math.abs(hash * 2246822519).toString(16).padStart(8, '0');
+  return (hex1 + hex2 + hex3).slice(0, 24);
+}
+
+// Hreflang groupings for overlapping regional domains
+const hreflangGroups: Record<string, Record<string, string>> = {
+  // Canadian domains
+  "webflowcanada.com": { "en-CA": "webflowcanada.com", "en-CA-ON": "webflowontario.com", "en-CA-BC": "webflowvancouver.com", "x-default": "webflowcanada.com" },
+  "webflowontario.com": { "en-CA": "webflowcanada.com", "en-CA-ON": "webflowontario.com", "en-CA-BC": "webflowvancouver.com", "x-default": "webflowcanada.com" },
+  "webflowvancouver.com": { "en-CA": "webflowcanada.com", "en-CA-ON": "webflowontario.com", "en-CA-BC": "webflowvancouver.com", "x-default": "webflowcanada.com" },
+  "webflowagency.ca": { "en-CA": "webflowcanada.com", "en-CA-ON": "webflowontario.com", "en-CA-BC": "webflowvancouver.com", "x-default": "webflowcanada.com" },
+  // European domains
+  "webflowfrance.com": { "en-FR": "webflowfrance.com", "en-BE": "webflowbelgium.com", "en-NL": "webflownetherlands.com", "en-CH": "webflowswitzerland.com", "x-default": "webflowfrance.com" },
+  "webflowbelgium.com": { "en-FR": "webflowfrance.com", "en-BE": "webflowbelgium.com", "en-NL": "webflownetherlands.com", "en-CH": "webflowswitzerland.com", "x-default": "webflowfrance.com" },
+  "webflownetherlands.com": { "en-FR": "webflowfrance.com", "en-BE": "webflowbelgium.com", "en-NL": "webflownetherlands.com", "en-CH": "webflowswitzerland.com", "x-default": "webflowfrance.com" },
+  "webflowswitzerland.com": { "en-FR": "webflowfrance.com", "en-BE": "webflowbelgium.com", "en-NL": "webflownetherlands.com", "en-CH": "webflowswitzerland.com", "x-default": "webflowfrance.com" },
+};
+
 export async function generateMetadata(): Promise<Metadata> {
   const config = getDomainConfig();
   return {
@@ -18,7 +46,7 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: `${config.region} Webflow Agency`,
       images: [
         {
-          url: config.ogImage || "/images/og-default.jpg",
+          url: config.ogImage || `https://${config.domain}/images/og-default.jpg`,
           width: 1200,
           height: 630,
         },
@@ -32,6 +60,14 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     alternates: {
       canonical: `https://${config.domain}`,
+      ...(hreflangGroups[config.domain] && {
+        languages: Object.fromEntries(
+          Object.entries(hreflangGroups[config.domain]).map(([lang, domain]) => [
+            lang,
+            `https://${domain}`,
+          ])
+        ),
+      }),
     },
     other: {
       "geo.region": config.geoRegionCode || "US-AZ",
@@ -57,7 +93,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${neueMontreal.variable} ${neueBit.variable} ${ibmPlexMono.variable}`}
+      data-wf-domain={`www.${config.domain}`}
+      data-wf-page={generateWfId(config.domain + '-page')}
+      data-wf-site={generateWfId(config.domain + '-site')}
+      className={`w-mod-js lenis w-mod-ix3 ${neueMontreal.variable} ${neueBit.variable} ${ibmPlexMono.variable}`}
+      data-scroll-orientation="vertical"
+      style={{ '--page-color': config.accentColor || '#c4ef7a' } as React.CSSProperties}
     >
       <head>
         <script

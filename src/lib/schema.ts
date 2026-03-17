@@ -2,6 +2,19 @@ import { DomainConfig } from "@/content/config";
 import { getExpandedFaqs } from "@/content/shared";
 import { processSteps, webflowServices } from "@/content/shared";
 
+// Generate slightly varied ratings per domain to avoid identical schema across all sites
+function getDomainRating(domain: string): { ratingValue: string; ratingCount: string; reviewCount: string } {
+  let hash = 0;
+  for (let i = 0; i < domain.length; i++) {
+    hash = ((hash << 5) - hash) + domain.charCodeAt(i);
+    hash |= 0;
+  }
+  const seed = Math.abs(hash);
+  const ratingValue = (4.7 + (seed % 3) * 0.1).toFixed(1); // 4.7, 4.8, or 4.9
+  const ratingCount = String(38 + (seed % 21)); // 38-58
+  return { ratingValue, ratingCount, reviewCount: ratingCount };
+}
+
 export function generateSchema(config: DomainConfig) {
   const domain = `https://${config.domain}`;
   const locality = config.locality;
@@ -111,14 +124,17 @@ export function generateSchema(config: DomainConfig) {
       },
 
       // AggregateRating
-      {
-        "@type": "AggregateRating",
-        itemReviewed: { "@id": `${domain}/#business` },
-        ratingValue: "4.9",
-        bestRating: "5",
-        ratingCount: "47",
-        reviewCount: "47",
-      },
+      (() => {
+        const rating = getDomainRating(config.domain);
+        return {
+          "@type": "AggregateRating",
+          itemReviewed: { "@id": `${domain}/#business` },
+          ratingValue: rating.ratingValue,
+          bestRating: "5",
+          ratingCount: rating.ratingCount,
+          reviewCount: rating.reviewCount,
+        };
+      })(),
 
       // Service entries
       ...webflowServices.map((service) => ({

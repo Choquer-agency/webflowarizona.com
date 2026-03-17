@@ -25,6 +25,13 @@ export async function generateMetadata(): Promise<Metadata> {
       description,
       url: `https://${config.domain}/about`,
       siteName: `${config.locality} Webflow Agency`,
+      images: [
+        {
+          url: `https://${config.domain}/images/og-default.jpg`,
+          width: 1200,
+          height: 630,
+        },
+      ],
       type: "website",
     },
     twitter: {

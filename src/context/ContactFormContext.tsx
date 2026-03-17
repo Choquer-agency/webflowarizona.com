@@ -6,6 +6,8 @@ export interface PackageInfo {
   packageName: string;
   pageCount: number;
   estimatedTotal: string;
+  /** Optional detailed breakdown from cost calculator */
+  calculatorDetails?: string;
 }
 
 interface ContactFormContextValue {

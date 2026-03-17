@@ -103,7 +103,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     name: "LC Notary",
     category: "Notary Services",
-    image: "/images/portfolio/project-1.jpg",
+    image: "/images/portfolio/project-1.webp",
     description: "Ranked #1 locally for notary services in their target market.",
     caseStudy: {
       challenge: "LC Notary was competing against dozens of established notary services in their area with no online visibility and zero organic traffic.",
@@ -114,7 +114,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     name: "Pinnacle Fertility",
     category: "Healthcare",
-    image: "/images/portfolio/project-2.jpg",
+    image: "/images/portfolio/project-2.webp",
     description: "Managed their entire web portfolio with an average organic growth of 221% across accounts.",
     caseStudy: {
       challenge: "Pinnacle Fertility had multiple clinic locations with outdated websites that weren\u2019t ranking for key fertility-related search terms. Each location operated independently online, with inconsistent branding and poor organic visibility.",
@@ -125,7 +125,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     name: "Pedigree Painting",
     category: "Painting Services",
-    image: "/images/portfolio/project-3.jpg",
+    image: "/images/portfolio/project-3.webp",
     description: "Took them from zero to $1.3 million in revenue over three years.",
     caseStudy: {
       challenge: "Pedigree Painting was a brand-new painting company with no online presence, no website, and no established reputation in a competitive local market.",
@@ -136,7 +136,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     name: "Penni Payments",
     category: "Fintech",
-    image: "/images/portfolio/project-4.jpg",
+    image: "/images/portfolio/project-4.webp",
     description: "Built a new website for a new product line, helping them reposition and elevate their brand.",
     caseStudy: {
       challenge: "Penni Payments was launching a new product line and needed a website that clearly communicated their value proposition to a new audience while elevating the overall brand perception.",
@@ -147,7 +147,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     name: "Far North Crane",
     category: "Crane & Rigging",
-    image: "/images/portfolio/project-5.jpg",
+    image: "/images/portfolio/project-5.webp",
     description: "Continues to lead their market as a crane service working on major commercial projects.",
     caseStudy: {
       challenge: "Far North Crane had an outdated website that didn\u2019t reflect the scale of their commercial operations. General contractors couldn\u2019t easily find their services or request quotes online.",
@@ -158,7 +158,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     name: "Broudy Tennis",
     category: "Sports & Education",
-    image: "/images/portfolio/project-6.jpg",
+    image: "/images/portfolio/project-6.webp",
     description: "Elevated his brand and helped him start selling tennis course subscriptions online.",
     caseStudy: {
       challenge: "Broudy Tennis had a strong personal brand but no way to monetize it online. Course content was being given away for free with no structured sales funnel or subscription model.",
@@ -169,7 +169,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     name: "DFI Forensics",
     category: "Digital Forensics",
-    image: "/images/portfolio/project-7.jpg",
+    image: "/images/portfolio/project-7.webp",
     description: "Ranked in the top positions locally for digital forensics — and still owns that position today.",
     caseStudy: {
       challenge: "DFI Forensics operated in a niche industry with very specific search terms. Their previous site was invisible in search results and relied entirely on referrals for new business.",
@@ -180,7 +180,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     name: "JDG Interior Design",
     category: "Interior Design",
-    image: "/images/portfolio/project-8.jpg",
+    image: "/images/portfolio/project-8.webp",
     description: "Visuals are everything — we built a site that showcases the quality of their work beautifully.",
     caseStudy: {
       challenge: "JDG Interior Design had stunning project photography but their website didn\u2019t do it justice. The existing site was slow, poorly organized, and failed to convert visitors into consultation requests.",

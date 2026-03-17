@@ -35,9 +35,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       authors: [post.author.name],
       section: post.category,
       tags: post.tags,
-      ...(post.featuredImage && {
-        images: [{ url: post.featuredImage, width: 1200, height: 630 }],
-      }),
+      images: post.featuredImage
+        ? [{ url: post.featuredImage, width: 1200, height: 630 }]
+        : [{ url: `https://${config.domain}/images/og-default.jpg`, width: 1200, height: 630 }],
     },
     twitter: {
       card: "summary_large_image",
@@ -154,7 +154,10 @@ export default async function BlogPostPage({ params }: PageProps) {
             <img
               src={post.featuredImage}
               alt={post.title}
+              width={1200}
+              height={630}
               className="w-full h-auto"
+              loading="lazy"
             />
           </div>
         )}
