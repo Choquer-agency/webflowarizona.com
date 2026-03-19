@@ -1,4 +1,5 @@
 import { getDomainConfig } from "@/lib/getDomainConfig";
+import { generateSchema } from "@/lib/schema";
 import { ClientLayout } from "@/components/ClientLayout";
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
@@ -24,9 +25,14 @@ export const dynamic = "force-dynamic";
 
 export default function Home() {
   const config = getDomainConfig();
+  const schema = generateSchema(config);
 
   return (
     <ClientLayout domain={config.domain} region={config.region}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <Nav locality={config.locality} />
       <Hero
         h1={config.heroH1}

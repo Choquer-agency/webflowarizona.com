@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { neueMontreal, neueBit, ibmPlexMono } from "./fonts";
 import { getDomainConfig } from "@/lib/getDomainConfig";
-import { generateSchema } from "@/lib/schema";
+
 import { GoogleTagManager, GoogleTagManagerNoscript } from "@/components/GoogleTagManager";
 import "./globals.css";
 
@@ -88,7 +88,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const config = getDomainConfig();
-  const schema = generateSchema(config);
 
   return (
     <html
@@ -101,10 +100,6 @@ export default function RootLayout({
       style={{ '--page-color': config.accentColor || '#c4ef7a' } as React.CSSProperties}
     >
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
         {config.gtmId && <GoogleTagManager gtmId={config.gtmId} />}
       </head>
       <body className="font-sans">
