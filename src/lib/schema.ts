@@ -99,6 +99,7 @@ export function generateSchema(config: DomainConfig) {
       // FAQPage
       {
         "@type": "FAQPage",
+        "@id": `${domain}/#faq`,
         mainEntity: expandedFaqs.map((faq) => ({
           "@type": "Question",
           name: faq.question,

@@ -56,7 +56,7 @@ export function Nav({ locality }: { locality: string }) {
         >
           {/* Logo */}
           <a
-            href="#"
+            href="/"
             className="font-sans font-medium text-base tracking-tight flex items-center gap-2"
             style={{ color: "inherit" }}
           >

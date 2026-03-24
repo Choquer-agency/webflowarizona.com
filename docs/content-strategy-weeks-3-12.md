@@ -4,8 +4,8 @@ description: 10-week content calendar (Weeks 3-12) with topics, keywords, buyer 
 type: project
 ---
 
-**Current Week:** 3
-**Last Published:** Week 2 (Mar 15) — 88 posts live across 26 domains
+**Current Week:** 6
+**Last Published:** Week 5 (Apr 5) — 163 posts live across 25 domains
 
 ## 10-Week Content Calendar (Weeks 3–12)
 
@@ -17,9 +17,9 @@ type: project
 
 | Week | Date | Topic | Keyword Pattern | Buyer Stage |
 |------|------|-------|-----------------|-------------|
-| 3 | Mar 22 | How Much Does a Webflow Website Cost in [Region]? | webflow website cost [region] | Decision |
-| 4 | Mar 29 | Webflow vs Squarespace: Which Is Better for [Industry] in [Region]? | webflow vs squarespace [region] | Consideration |
-| 5 | Apr 5 | Why [Region] Businesses Are Migrating from WordPress to Webflow | wordpress to webflow migration [region] | Consideration/Decision |
+| 3 ✅ | Mar 22 | How Much Does a Webflow Website Cost in [Region]? | webflow website cost [region] | Decision |
+| 4 ✅ | Mar 29 | Webflow vs Squarespace: Which Is Better for [Industry] in [Region]? | webflow vs squarespace [region] | Consideration |
+| 5 ✅ | Apr 5 | Why [Region] Businesses Are Migrating from WordPress to Webflow | wordpress to webflow migration [region] | Consideration/Decision |
 | 6 | Apr 12 | The Complete Guide to Web Design for [Top Local Industry] in [Region] | web design for [industry] [region] | Awareness |
 | 7 | Apr 19 | Webflow vs Wix: Why Growing [Region] Businesses Switch | webflow vs wix [region] | Consideration |
 | 8 | Apr 26 | How to Choose a Web Design Agency in [Region] (2026 Guide) | how to choose web design agency [region] | Decision |
@@ -62,8 +62,8 @@ type: project
 
 ```
 Homepage (Hub)
-├── Platform Comparisons: Wk1✅, Wk4, Wk7, Wk9
-├── Pricing & Buying: Wk2✅, Wk3, Wk8
+├── Platform Comparisons: Wk1✅, Wk4✅, Wk7, Wk9
+├── Pricing & Buying: Wk2✅, Wk3✅, Wk8
 ├── Migration: Wk5, Service Pages✅
 ├── Industry & Local: Wk0✅, Wk6, Wk11
 └── Education & Implementation: Wk10, Wk12

@@ -61,6 +61,7 @@ export function generateIndustrySchema(
       // FAQPage
       {
         "@type": "FAQPage",
+        "@id": `${domain}/industries/${industry.slug}/#faq`,
         mainEntity: industryFaqs.map((faq) => ({
           "@type": "Question",
           name: faq.question,

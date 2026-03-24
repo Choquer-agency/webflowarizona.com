@@ -61,6 +61,7 @@ export function generateServiceSchema(
       // FAQPage
       {
         "@type": "FAQPage",
+        "@id": `${domain}/services/${service.slug}/#faq`,
         mainEntity: serviceFaqs.map((faq) => ({
           "@type": "Question",
           name: faq.question,

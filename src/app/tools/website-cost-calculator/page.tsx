@@ -113,6 +113,7 @@ export default function WebsiteCostCalculatorPage() {
       },
       {
         "@type": "FAQPage",
+        "@id": `https://${config.domain}/tools/website-cost-calculator/#faq`,
         mainEntity: faqs.map((faq) => ({
           "@type": "Question",
           name: faq.question,
