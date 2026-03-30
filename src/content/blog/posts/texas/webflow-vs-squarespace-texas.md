@@ -193,7 +193,7 @@ The pattern: Squarespace is right when you need something temporary, simple, or 
 
 ### Can a Texas tech startup build on Squarespace and migrate to Webflow later?
 
-Yes, but it's more expensive than building on Webflow initially. Squarespace-to-Webflow migration involves rebuilding every page (designs don't transfer), manually migrating content, setting up 301 redirects to preserve SEO equity, and re-implementing any integrations. For a typical 20-page startup site with a blog, migration runs $8,000-15,000 and takes 3-4 weeks. Building on Webflow from launch typically costs $5,000-12,000 total.
+Yes, but it's more expensive than building on Webflow initially. Squarespace-to-Webflow migration involves rebuilding every page (designs don't transfer), manually migrating content, setting up 301 redirects to preserve SEO equity, and re-implementing any integrations. Our [Squarespace to Webflow migration service](/services/squarespace-migration/) handles this end-to-end. For a typical 20-page startup site with a blog, migration runs $8,000-15,000 and takes 3-4 weeks. Building on Webflow from launch typically costs $5,000-12,000 total.
 
 ### Which platform better supports Texas energy companies with multiple operating locations?
 

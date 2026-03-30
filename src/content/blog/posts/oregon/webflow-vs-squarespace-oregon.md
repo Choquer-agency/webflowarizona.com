@@ -177,7 +177,7 @@ For craft and sustainable businesses currently on Squarespace, the migration pat
 5. **Integration rebuild** — Connect your new site to inventory, CRM, email, and any other tools in your stack
 6. **301 redirect mapping** — Preserve every URL's search ranking through comprehensive redirect rules
 
-Most Oregon craft brand sites (30-80 pages, product catalog, blog) migrate in 4-6 weeks. [We work with Oregon brands on exactly this type of transition](/) — understanding both the technical migration and the brand values that need to come through in every design decision.
+Most Oregon craft brand sites (30-80 pages, product catalog, blog) migrate in 4-6 weeks. Our [Squarespace to Webflow migration service](/services/squarespace-migration/) covers every step — from content architecture to 301 redirects to zero-downtime launch. [We work with Oregon brands on exactly this type of transition](/) — understanding both the technical migration and the brand values that need to come through in every design decision.
 
 ## Frequently Asked Questions
 

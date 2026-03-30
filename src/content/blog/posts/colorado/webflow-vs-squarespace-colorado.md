@@ -186,7 +186,7 @@ The comparison we published on [Webflow vs WordPress for Colorado outdoor brands
 
 ## Migration: Moving Colorado Businesses from Squarespace to Webflow
 
-For outdoor brands and health tech companies ready to make the switch:
+For outdoor brands and health tech companies ready to make the switch, our [Squarespace to Webflow migration service](/services/squarespace-migration/) handles the full process:
 
 1. **Product and content inventory** — Catalog every product, variant, content piece, and media file. For outdoor brands, this includes variant matrices. For health tech, this includes any compliance-sensitive content
 2. **CMS architecture design** — Design collections that model your actual content relationships. This is the step that transforms your site from a collection of pages into an interconnected content system

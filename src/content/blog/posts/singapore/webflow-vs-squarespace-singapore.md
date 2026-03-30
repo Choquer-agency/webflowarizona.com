@@ -205,7 +205,7 @@ Webflow is the clear choice for:
 
 The Monetary Authority of Singapore's 2025 Technology Risk Management Guidelines reference the principle of "secure by design" for digital assets. Webflow's architecture — static HTML, CDN-delivered, no plugin attack surface — aligns with this principle far better than either WordPress or Squarespace.
 
-Ready to build a Webflow site that matches Singapore's digital standards? [Learn more about our Singapore Webflow services](/) or explore our [Webflow vs WordPress comparison](/blog/webflow-vs-wordpress-singapore-fintech) for the full platform landscape.
+If you're currently on Squarespace, our [Squarespace to Webflow migration service](/services/squarespace-migration/) handles the full transition — content migration, compliance setup, 301 redirects, and zero-downtime launch. Ready to build a Webflow site that matches Singapore's digital standards? [Learn more about our Singapore Webflow services](/) or explore our [Webflow vs WordPress comparison](/blog/webflow-vs-wordpress-singapore-fintech) for the full platform landscape.
 
 ## FAQ: Webflow vs Squarespace for Singapore Businesses
 

@@ -1,7 +1,325 @@
 [
   {
+    "slug": "web-design-cannabis-regulated-industries-canada",
+    "region": "Canadian Agency",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-real-estate-arizona",
+    "region": "Arizona",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-eu-institutions-ngos-belgium",
+    "region": "Belgium",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-saas-companies-california",
+    "region": "California",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-mining-natural-resources-canada",
+    "region": "Canada",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-fintech-financial-services-colorado",
+    "region": "Colorado",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-legal-professional-services-florida",
+    "region": "Florida",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-luxury-fashion-france",
+    "region": "France",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-tourism-hospitality-hawaii",
+    "region": "Hawaii",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-logistics-trade-hong-kong",
+    "region": "Hong Kong",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-construction-trades-idaho",
+    "region": "Idaho",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-tourism-outdoor-recreation-montana",
+    "region": "Montana",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-manufacturing-industrial-netherlands",
+    "region": "Netherlands",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-hospitality-entertainment-nevada",
+    "region": "Nevada",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-tourism-adventure-new-zealand",
+    "region": "New Zealand",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-maritime-shipping-norway",
+    "region": "Norway",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-fintech-financial-services-ontario",
+    "region": "Ontario",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-clean-energy-climate-tech-oregon",
+    "region": "Oregon",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-biotech-healthtech-san-francisco",
+    "region": "San Francisco",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-fintech-financial-services-singapore",
+    "region": "Singapore",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-energy-cleantech-sweden",
+    "region": "Sweden",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-fintech-banking-switzerland",
+    "region": "Switzerland",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-healthcare-medical-texas",
+    "region": "Texas",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-real-estate-proptech-vancouver",
+    "region": "Vancouver",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "web-design-enterprise-technology-washington",
+    "region": "Washington",
+    "date": "2026-04-12",
+    "modifiedDate": "2026-04-12"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-canadian-agencies-workflow",
+    "region": "Canada",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-arizona-real-estate-hospitality",
+    "region": "Arizona",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-brussels-eu-bilingual",
+    "region": "Belgium",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-california-entertainment-brands",
+    "region": "California",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-canadian-smb-casl",
+    "region": "Canada",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-denver-outdoor-healthtech",
+    "region": "Colorado",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-florida-international-business",
+    "region": "Florida",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-paris-creative-luxury",
+    "region": "France",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-hawaii-tourism-mobile",
+    "region": "Hawaii",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-hk-finance-crossborder",
+    "region": "Hong Kong",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-boise-outdoor-agtech",
+    "region": "Idaho",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-montana-tourism-ranching",
+    "region": "Montana",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-amsterdam-startups-ecommerce",
+    "region": "Netherlands",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-vegas-entertainment-reno-tech",
+    "region": "Nevada",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-nz-tourism-agriculture",
+    "region": "New Zealand",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-norway-maritime-energy",
+    "region": "Norway",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-toronto-fintech-compliance",
+    "region": "Ontario",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-portland-creative-economy",
+    "region": "Oregon",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-sf-saas-startups",
+    "region": "San Francisco",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-singapore-fintech-logistics",
+    "region": "Singapore",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-sweden-fintech-gaming",
+    "region": "Sweden",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-swiss-finance-luxury",
+    "region": "Switzerland",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-texas-energy-startups",
+    "region": "Texas",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-vancouver-film-cleantech",
+    "region": "Vancouver",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "wordpress-to-webflow-migration-seattle-b2b-tech",
+    "region": "Washington",
+    "date": "2026-04-05",
+    "modifiedDate": "2026-04-05"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-agency-ca",
+    "region": "Canadian Agency",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
     "slug": "webflow-vs-squarespace-agency-ca",
     "region": "Canada",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "webflow-vs-wix-agency-ca",
+    "region": "Canadian Agency",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-arizona",
+    "region": "Arizona",
     "date": "2026-03-29",
     "modifiedDate": "2026-03-29"
   },
@@ -12,8 +330,32 @@
     "modifiedDate": "2026-03-29"
   },
   {
+    "slug": "webflow-vs-wix-arizona",
+    "region": "Arizona",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-belgium",
+    "region": "Belgium",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
     "slug": "webflow-vs-squarespace-belgium",
     "region": "Belgium",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "webflow-vs-wix-belgium",
+    "region": "Belgium",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-california",
+    "region": "California",
     "date": "2026-03-29",
     "modifiedDate": "2026-03-29"
   },
@@ -24,8 +366,32 @@
     "modifiedDate": "2026-03-29"
   },
   {
+    "slug": "webflow-vs-wix-california",
+    "region": "California",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-canada",
+    "region": "Canada",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
     "slug": "webflow-vs-squarespace-canada",
     "region": "Canada",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "webflow-vs-wix-canada",
+    "region": "Canada",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-colorado",
+    "region": "Colorado",
     "date": "2026-03-29",
     "modifiedDate": "2026-03-29"
   },
@@ -36,8 +402,32 @@
     "modifiedDate": "2026-03-29"
   },
   {
+    "slug": "webflow-vs-wix-colorado",
+    "region": "Colorado",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-florida",
+    "region": "Florida",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
     "slug": "webflow-vs-squarespace-florida",
     "region": "Florida",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "webflow-vs-wix-florida",
+    "region": "Florida",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-france",
+    "region": "France",
     "date": "2026-03-29",
     "modifiedDate": "2026-03-29"
   },
@@ -48,8 +438,32 @@
     "modifiedDate": "2026-03-29"
   },
   {
+    "slug": "webflow-vs-wix-france",
+    "region": "France",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-hawaii",
+    "region": "Hawaii",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
     "slug": "webflow-vs-squarespace-hawaii",
     "region": "Hawaii",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "webflow-vs-wix-hawaii",
+    "region": "Hawaii",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-hong-kong",
+    "region": "Hong Kong",
     "date": "2026-03-29",
     "modifiedDate": "2026-03-29"
   },
@@ -60,8 +474,32 @@
     "modifiedDate": "2026-03-29"
   },
   {
+    "slug": "webflow-vs-wix-hong-kong",
+    "region": "Hong Kong",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-idaho",
+    "region": "Idaho",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
     "slug": "webflow-vs-squarespace-idaho",
     "region": "Idaho",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "webflow-vs-wix-idaho",
+    "region": "Idaho",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-montana",
+    "region": "Montana",
     "date": "2026-03-29",
     "modifiedDate": "2026-03-29"
   },
@@ -72,8 +510,32 @@
     "modifiedDate": "2026-03-29"
   },
   {
+    "slug": "webflow-vs-wix-montana",
+    "region": "Montana",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-netherlands",
+    "region": "Netherlands",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
     "slug": "webflow-vs-squarespace-netherlands",
     "region": "Netherlands",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "webflow-vs-wix-netherlands",
+    "region": "Netherlands",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-nevada",
+    "region": "Nevada",
     "date": "2026-03-29",
     "modifiedDate": "2026-03-29"
   },
@@ -84,8 +546,32 @@
     "modifiedDate": "2026-03-29"
   },
   {
+    "slug": "webflow-vs-wix-nevada",
+    "region": "Nevada",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-new-zealand",
+    "region": "New Zealand",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
     "slug": "webflow-vs-squarespace-new-zealand",
     "region": "New Zealand",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "webflow-vs-wix-new-zealand",
+    "region": "New Zealand",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-norway",
+    "region": "Norway",
     "date": "2026-03-29",
     "modifiedDate": "2026-03-29"
   },
@@ -96,8 +582,32 @@
     "modifiedDate": "2026-03-29"
   },
   {
+    "slug": "webflow-vs-wix-norway",
+    "region": "Norway",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-ontario",
+    "region": "Ontario",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
     "slug": "webflow-vs-squarespace-ontario",
     "region": "Ontario",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "webflow-vs-wix-ontario",
+    "region": "Ontario",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-oregon",
+    "region": "Oregon",
     "date": "2026-03-29",
     "modifiedDate": "2026-03-29"
   },
@@ -108,8 +618,32 @@
     "modifiedDate": "2026-03-29"
   },
   {
+    "slug": "webflow-vs-wix-oregon",
+    "region": "Oregon",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-san-francisco",
+    "region": "San Francisco",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
     "slug": "webflow-vs-squarespace-san-francisco",
     "region": "San Francisco",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "webflow-vs-wix-san-francisco",
+    "region": "San Francisco",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-singapore",
+    "region": "Singapore",
     "date": "2026-03-29",
     "modifiedDate": "2026-03-29"
   },
@@ -120,8 +654,32 @@
     "modifiedDate": "2026-03-29"
   },
   {
+    "slug": "webflow-vs-wix-singapore",
+    "region": "Singapore",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-sweden",
+    "region": "Sweden",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
     "slug": "webflow-vs-squarespace-sweden",
     "region": "Sweden",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "webflow-vs-wix-sweden",
+    "region": "Sweden",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-switzerland",
+    "region": "Switzerland",
     "date": "2026-03-29",
     "modifiedDate": "2026-03-29"
   },
@@ -132,8 +690,32 @@
     "modifiedDate": "2026-03-29"
   },
   {
+    "slug": "webflow-vs-wix-switzerland",
+    "region": "Switzerland",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-texas",
+    "region": "Texas",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
     "slug": "webflow-vs-squarespace-texas",
     "region": "Texas",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "webflow-vs-wix-texas",
+    "region": "Texas",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-vancouver",
+    "region": "Vancouver",
     "date": "2026-03-29",
     "modifiedDate": "2026-03-29"
   },
@@ -144,7 +726,25 @@
     "modifiedDate": "2026-03-29"
   },
   {
+    "slug": "webflow-vs-wix-vancouver",
+    "region": "Vancouver",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "how-to-choose-web-design-agency-washington",
+    "region": "Washington",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
     "slug": "webflow-vs-squarespace-washington",
+    "region": "Washington",
+    "date": "2026-03-29",
+    "modifiedDate": "2026-03-29"
+  },
+  {
+    "slug": "webflow-vs-wix-washington",
     "region": "Washington",
     "date": "2026-03-29",
     "modifiedDate": "2026-03-29"

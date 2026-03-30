@@ -192,7 +192,7 @@ If your SaaS company has outgrown Squarespace, here's what the migration to Webf
 5. **SEO preservation** — Map every URL to its new equivalent with 301 redirects; verify with Search Console after cutover
 6. **Team training** — Get your marketing team comfortable with Webflow's editor so they can operate independently
 
-For most SaaS marketing sites (20-100 pages, blog, documentation section), this process takes 4-8 weeks. [Our team specializes in exactly this type of migration for Bay Area tech companies](/) — we understand both the technical requirements and the timeline pressure.
+For most SaaS marketing sites (20-100 pages, blog, documentation section), this process takes 4-8 weeks. Our [Squarespace to Webflow migration service](/services/squarespace-migration/) handles this end-to-end with zero downtime and full SEO preservation. [Our team specializes in exactly this type of migration for Bay Area tech companies](/) — we understand both the technical requirements and the timeline pressure.
 
 ## Frequently Asked Questions
 

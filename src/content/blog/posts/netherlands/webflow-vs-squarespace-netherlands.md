@@ -147,7 +147,7 @@ The Dutch market's efficiency orientation means businesses evaluate this cost di
 
 For Dutch e-commerce, the iDEAL gap is a concrete cost. Squarespace processes payments through Stripe and PayPal — neither of which presents iDEAL as a primary payment option in the checkout flow. Dutch consumers confronted with only credit card or PayPal options abandon carts at rates 20–30% higher than when iDEAL is offered first. For a Dutch e-commerce brand doing EUR 500,000 in annual revenue, that cart abandonment premium far exceeds the cost difference between Squarespace and Webflow.
 
-For a comprehensive comparison of Webflow against WordPress — the other major platform choice for Dutch businesses — see our [Netherlands-specific WordPress analysis](/blog/webflow-vs-wordpress-dutch-ecommerce-creative). To explore how Webflow can serve your Dutch business, [visit our homepage](/).
+If you're ready to migrate from Squarespace, our [Squarespace to Webflow migration service](/services/squarespace-migration/) handles the full transition — content migration, iDEAL integration setup, 301 redirects, and zero-downtime launch. For a comprehensive comparison of Webflow against WordPress — the other major platform choice for Dutch businesses — see our [Netherlands-specific WordPress analysis](/blog/webflow-vs-wordpress-dutch-ecommerce-creative). To explore how Webflow can serve your Dutch business, [visit our homepage](/).
 
 ## The Hague, Utrecht, Eindhoven: Regional Dutch Perspectives
 

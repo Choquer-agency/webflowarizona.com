@@ -189,7 +189,7 @@ Honest assessment — Squarespace works for:
 - **Non-profits and community organizations** that need informational sites without booking or commerce complexity
 - **New businesses testing the market** before investing in a professional web build
 
-The dividing line is clear: if tourists finding and booking through your website is essential to your revenue, Webflow is the investment that pays. If your website is supplementary to in-person business, Squarespace's simplicity and cost make more sense.
+The dividing line is clear: if tourists finding and booking through your website is essential to your revenue, Webflow is the investment that pays. Our [Squarespace to Webflow migration service](/services/squarespace-migration/) makes the transition seamless with zero downtime and full SEO preservation. If your website is supplementary to in-person business, Squarespace's simplicity and cost make more sense.
 
 ## Frequently Asked Questions
 

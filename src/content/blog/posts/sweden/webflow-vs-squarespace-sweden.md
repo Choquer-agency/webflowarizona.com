@@ -154,7 +154,7 @@ If you've read our [analysis of Webflow vs WordPress for Stockholm's SaaS ecosys
 
 Webflow gives you the design precision that Swedish audiences expect, the CMS depth that SaaS content strategies require, the multilingual infrastructure that Nordic market expansion demands, and the performance that Google.se rankings reward. The subscription costs are nearly identical to Squarespace's, and the total cost of ownership is substantially lower.
 
-At [Webflow Sweden](/), we build Webflow sites for SaaS companies, gaming studios, and tech firms across Stockholm, Gothenburg, Malmö, and beyond. If you're currently on Squarespace and hitting limitations — or evaluating platforms for a new build — we can show you exactly what Webflow makes possible for your specific product and market.
+If you're ready to migrate, our [Squarespace to Webflow migration service](/services/squarespace-migration/) handles the full transition — content migration, multilingual setup, 301 redirects, and zero-downtime launch. At [Webflow Sweden](/), we build Webflow sites for SaaS companies, gaming studios, and tech firms across Stockholm, Gothenburg, Malmö, and beyond. If you're currently on Squarespace and hitting limitations — or evaluating platforms for a new build — we can show you exactly what Webflow makes possible for your specific product and market.
 
 ## Frequently Asked Questions
 

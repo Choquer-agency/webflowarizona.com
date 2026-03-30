@@ -130,7 +130,7 @@ French businesses evaluate platform cost within the context of developer rates i
 
 The gap narrows by year two, when Squarespace sites typically need redesign to accommodate growth, while Webflow sites scale without structural changes. For French luxury and fashion brands — where the website is a brand asset, not a utility — the investment in Webflow design quality pays returns in brand perception and conversion performance.
 
-For a deeper look at how Webflow compares to WordPress for French luxury and fashion — the other major platform decision French brands face — see our [Webflow vs WordPress comparison for French markets](/blog/webflow-vs-wordpress-french-luxury-fashion). And to explore what a Webflow-built site looks like for your brand, [visit our homepage](/).
+If you're ready to migrate from Squarespace, our [Squarespace to Webflow migration service](/services/squarespace-migration/) handles the full transition — multilingual content migration, 301 redirects, and zero-downtime launch. For a deeper look at how Webflow compares to WordPress for French luxury and fashion — the other major platform decision French brands face — see our [Webflow vs WordPress comparison for French markets](/blog/webflow-vs-wordpress-french-luxury-fashion). And to explore what a Webflow-built site looks like for your brand, [visit our homepage](/).
 
 ## FAQ
 

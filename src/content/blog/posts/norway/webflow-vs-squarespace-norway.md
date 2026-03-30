@@ -154,7 +154,7 @@ If you've read our [Webflow vs WordPress comparison for Norwegian maritime and e
 
 For Norwegian companies that need multilingual support, GDPR compliance control, custom CMS architecture, and the design precision that Scandinavian audiences expect, Webflow is the clear choice. The subscription costs are comparable, the total cost of ownership is lower, and the ceiling for what you can build is dramatically higher.
 
-At [Webflow Norway](/), we've helped maritime companies in Bergen, energy firms in Stavanger, and tech startups in Oslo and Trondheim build Webflow sites that meet Norwegian design and compliance standards. If you're evaluating platforms for a redesign or new build, we can walk you through exactly what Webflow would look like for your specific use case.
+If you're ready to migrate from Squarespace, our [Squarespace to Webflow migration service](/services/squarespace-migration/) handles the full transition — multilingual content migration, 301 redirects, and zero-downtime launch. At [Webflow Norway](/), we've helped maritime companies in Bergen, energy firms in Stavanger, and tech startups in Oslo and Trondheim build Webflow sites that meet Norwegian design and compliance standards. If you're evaluating platforms for a redesign or new build, we can walk you through exactly what Webflow would look like for your specific use case.
 
 ## Frequently Asked Questions
 

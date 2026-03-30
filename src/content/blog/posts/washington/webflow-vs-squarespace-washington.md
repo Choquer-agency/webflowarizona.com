@@ -228,7 +228,7 @@ Moving from Squarespace to Webflow for a SaaS marketing site involves specific c
 5. **SEO audit and redirect mapping** — Document every existing URL and its ranking value, create comprehensive redirect rules
 6. **Team enablement** — Train your marketing team on Webflow's editor, focusing on the CMS workflows they'll use daily
 
-For SaaS companies with 30-150 pages and active content operations, budget 5-8 weeks for a thorough migration. [We specialize in this exact transition for Washington tech companies](/) — combining the technical migration with the strategic content architecture that makes the new platform deliver more than the old one.
+For SaaS companies with 30-150 pages and active content operations, budget 5-8 weeks for a thorough migration. Our [Squarespace to Webflow migration service](/services/squarespace-migration/) handles the full process — content migration, 301 redirects, integration setup, and zero-downtime launch. [We specialize in this exact transition for Washington tech companies](/) — combining the technical migration with the strategic content architecture that makes the new platform deliver more than the old one.
 
 ## Frequently Asked Questions
 

@@ -245,4 +245,4 @@ Webflow was not built specifically for Canada either, but its architecture — f
 
 If you read our [Webflow vs WordPress analysis for Canadian businesses](/blog/webflow-vs-wordpress-canada-business-comparison), this comparison adds a third data point to the same conclusion: for national businesses navigating Canada's unique digital landscape, Webflow provides the platform flexibility that the Canadian market demands.
 
-Ready to build a web presence that works across every province and both official languages? [Start the conversation](/) with a team that understands Canadian digital requirements.
+Ready to build a web presence that works across every province and both official languages? Our [Squarespace to Webflow migration service](/services/squarespace-migration/) handles the full transition — bilingual content migration, 301 redirects, and zero-downtime launch. [Start the conversation](/) with a team that understands Canadian digital requirements.

@@ -161,7 +161,7 @@ Squarespace provides basic cookie consent functionality, but Swiss companies ope
 
 ### What is the typical migration cost from Squarespace to Webflow in Switzerland?
 
-Content migration from Squarespace to Webflow for a Swiss business site typically costs CHF 5,000–15,000 depending on site complexity, number of languages, and content volume. The process usually takes 4–8 weeks. Many Swiss agencies report that 30–40% of their Webflow projects originate as Squarespace migrations from companies that outgrew the platform.
+Our [Squarespace to Webflow migration service](/services/squarespace-migration/) covers the entire process end-to-end. Content migration from Squarespace to Webflow for a Swiss business site typically costs CHF 5,000–15,000 depending on site complexity, number of languages, and content volume. The process usually takes 4–8 weeks. Many Swiss agencies report that 30–40% of their Webflow projects originate as Squarespace migrations from companies that outgrew the platform.
 
 ### Which platform is better for SEO in the Swiss market?
 

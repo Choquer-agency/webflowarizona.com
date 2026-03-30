@@ -173,7 +173,7 @@ For a Las Vegas restaurant doing $2M+ annually, the Webflow investment is neglig
 - You're investing in SEO and content marketing to reduce customer acquisition costs
 - Convention and event traffic creates revenue opportunities that demand performance
 
-For the majority of established hospitality and entertainment businesses in the Las Vegas metro, Henderson, and Reno — where digital presence directly drives revenue — Webflow's investment pays back through better conversion, lower ongoing costs, and a competitive edge that template platforms can't deliver. A great starting point is working with a [Webflow development agency](/) that understands the Nevada hospitality landscape.
+For the majority of established hospitality and entertainment businesses in the Las Vegas metro, Henderson, and Reno — where digital presence directly drives revenue — Webflow's investment pays back through better conversion, lower ongoing costs, and a competitive edge that template platforms can't deliver. A great starting point is working with a [Webflow development agency](/) that understands the Nevada hospitality landscape. If you're migrating from Squarespace, our [Squarespace to Webflow migration service](/services/squarespace-migration/) covers content migration, booking integration setup, 301 redirects, and zero-downtime launch.
 
 ## Frequently Asked Questions
 

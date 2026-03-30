@@ -143,7 +143,7 @@ Montana businesses often operate on thinner margins than urban counterparts. Her
 - **Squarespace:** $49/month, extensive workarounds, eventual migration. Total: $10,000-20,000 over 3 years including migration.
 - **Webflow:** $39/month, $10,000-20,000 build. Total: $11,000-22,000 over 3 years with full capability from day one.
 
-For a Montana guest ranch averaging $10,000 per family booking, a single additional booking from better web performance pays for the Webflow investment. For a fishing guide at $600/day, five additional bookings per year — entirely plausible with better SEO — covers the entire cost. Working with a [Webflow agency](/) that understands Montana's seasonal, tourism-driven economy makes the investment go further.
+For a Montana guest ranch averaging $10,000 per family booking, a single additional booking from better web performance pays for the Webflow investment. For a fishing guide at $600/day, five additional bookings per year — entirely plausible with better SEO — covers the entire cost. Working with a [Webflow agency](/) that understands Montana's seasonal, tourism-driven economy makes the investment go further. Our [Squarespace to Webflow migration service](/services/squarespace-migration/) handles the entire transition — content migration, 301 redirects, and zero-downtime launch.
 
 ## When Squarespace Wins in Montana
 

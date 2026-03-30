@@ -239,7 +239,7 @@ Webflow is the clear platform for:
 
 New Zealand businesses operate with a geographic handicap that no other developed English-speaking market faces. The platform you build on determines whether that distance is a constraint or is rendered invisible through proper infrastructure. Webflow eliminates the distance tax. Squarespace does not.
 
-Ready to build a website that works as hard as your New Zealand business? [Learn about our New Zealand Webflow services](/) or read our [Webflow vs WordPress comparison for NZ tourism and agritech](/blog/webflow-vs-wordpress-new-zealand-tourism-agritech) for the complete platform landscape.
+If you're currently on Squarespace, our [Squarespace to Webflow migration service](/services/squarespace-migration/) handles the full transition — content migration, booking integration setup, 301 redirects, and zero-downtime launch. Ready to build a website that works as hard as your New Zealand business? [Learn about our New Zealand Webflow services](/) or read our [Webflow vs WordPress comparison for NZ tourism and agritech](/blog/webflow-vs-wordpress-new-zealand-tourism-agritech) for the complete platform landscape.
 
 ## FAQ: Webflow vs Squarespace for New Zealand Businesses
 

@@ -242,4 +242,4 @@ Squarespace is a template tool. Webflow is a design platform. In a city that pro
 
 If you explored our [Webflow vs WordPress analysis for Vancouver's film and cleantech sectors](/blog/webflow-vs-wordpress-vancouver-film-cleantech), this comparison reinforces the same pattern: Webflow's flexibility, performance, and extensibility serve Vancouver's unique industry mix in ways that template-based platforms cannot.
 
-Want to build a Vancouver web presence that matches your industry's standards? [Let's talk](/) about what Webflow can do for your studio, startup, or sustainability venture.
+Want to build a Vancouver web presence that matches your industry's standards? If you're migrating from Squarespace, our [Squarespace to Webflow migration service](/services/squarespace-migration/) covers the full transition with zero downtime. [Let's talk](/) about what Webflow can do for your studio, startup, or sustainability venture.

@@ -178,7 +178,7 @@ Boise's tech influx is raising the bar for all Idaho businesses. When software e
 
 This rising tide of design expectations means Idaho businesses that invest in Webflow's custom design capabilities aren't just getting a better website — they're future-proofing against the competitive pressure that Boise's growth is creating across all sectors.
 
-Partnering with a [Webflow agency that understands Idaho's markets](/) ensures that investment translates into a site built for both today's needs and tomorrow's growth.
+Partnering with a [Webflow agency that understands Idaho's markets](/) ensures that investment translates into a site built for both today's needs and tomorrow's growth. If you're currently on Squarespace, our [Squarespace to Webflow migration service](/services/squarespace-migration/) handles the full transition with zero downtime and SEO preserved.
 
 ## Frequently Asked Questions
 

@@ -126,13 +126,13 @@ export const defaultConfig: DomainConfig = {
   region: "Arizona",
   regionAdjective: "Arizona-based",
   country: "US",
-  metaTitle: "Webflow Agency Arizona | Expert Webflow Design & Development",
+  metaTitle: "Webflow Design Company Phoenix AZ | Arizona Agency",
   metaDescription:
-    "Arizona's premier Webflow agency. We design, build, and launch high-performance Webflow websites for businesses ready to grow. Get a free strategy call today.",
+    "Phoenix AZ Webflow design company. We build high-performance websites for Arizona businesses. Certified Webflow Expert. Free strategy call.",
   locality: "Phoenix",
   stateCode: "AZ",
   nearbyAreas: "Scottsdale, Tempe, Mesa, Chandler, and Gilbert",
-  heroH1: "Arizona's Premier Webflow Agency",
+  heroH1: "Phoenix AZ's Webflow Design Agency",
   heroSubhead:
     "Webflow sites that rank on Google, convert visitors into leads, and grow your business \u2014 built by a certified Webflow Expert Partner.",
   schemaAddress: {

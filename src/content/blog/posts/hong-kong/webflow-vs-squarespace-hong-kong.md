@@ -189,7 +189,7 @@ Webflow is the clear platform for:
 
 The standard for digital presence in Hong Kong is set by the global banks, luxury houses, and professional services firms that dominate the market. Webflow is the only platform in this comparison that can meet that standard.
 
-Ready to build a website that meets Hong Kong's exacting standards? [Explore our Hong Kong Webflow services](/) or read our [Webflow vs WordPress comparison for Hong Kong finance](/blog/webflow-vs-wordpress-hong-kong-finance) for the complete platform picture.
+If you're currently on Squarespace, our [Squarespace to Webflow migration service](/services/squarespace-migration/) handles the full transition — bilingual content migration, compliance setup, 301 redirects, and zero-downtime launch. Ready to build a website that meets Hong Kong's exacting standards? [Explore our Hong Kong Webflow services](/) or read our [Webflow vs WordPress comparison for Hong Kong finance](/blog/webflow-vs-wordpress-hong-kong-finance) for the complete platform picture.
 
 ## FAQ: Webflow vs Squarespace for Hong Kong Businesses
 

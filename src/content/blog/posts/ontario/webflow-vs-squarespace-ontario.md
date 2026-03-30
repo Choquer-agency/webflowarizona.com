@@ -227,4 +227,4 @@ Squarespace excels at making simple websites quickly. Webflow excels at building
 
 If you have already compared [Webflow vs WordPress for Ontario businesses](/blog/webflow-vs-wordpress-toronto-fintech-startups), adding Squarespace to the evaluation confirms the same conclusion from a different angle: Webflow's flexibility, performance, and extensibility make it the platform of choice for Ontario companies that take their digital presence seriously.
 
-Ready to see what Webflow can do for your Ontario business? [Talk to our team](/) about a platform that matches your ambitions.
+Ready to see what Webflow can do for your Ontario business? If you're currently on Squarespace, our [Squarespace to Webflow migration service](/services/squarespace-migration/) handles the entire transition with zero downtime and full SEO preservation. [Talk to our team](/) about a platform that matches your ambitions.

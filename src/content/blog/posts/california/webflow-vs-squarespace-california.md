@@ -205,7 +205,7 @@ If you're currently on Squarespace and considering a move to Webflow, here's wha
 5. **301 redirects** — Map every old URL to its new equivalent to preserve SEO value
 6. **DNS cutover** — Point your domain to Webflow hosting
 
-For most creative agency sites, this process takes 3-6 weeks. The investment pays for itself quickly when your site starts ranking better, converting more effectively, and giving your team the ability to make changes without waiting on a developer.
+Our [Squarespace to Webflow migration service](/services/squarespace-migration/) covers every step of this process. For most creative agency sites, it takes 3-6 weeks. The investment pays for itself quickly when your site starts ranking better, converting more effectively, and giving your team the ability to make changes without waiting on a developer.
 
 Ready to see what your agency's site could look like on Webflow? [We help California creative agencies make this exact transition](/) — with strategy, design, and migration handled end-to-end.
 
@@ -213,7 +213,7 @@ Ready to see what your agency's site could look like on Webflow? [We help Califo
 
 ### Can I move my Squarespace portfolio to Webflow without losing SEO rankings?
 
-Yes, if you implement proper 301 redirects for every URL on your current site. Webflow's redirect manager makes this straightforward — you map each old Squarespace URL to its new Webflow equivalent, and search engines transfer the ranking authority. Most agencies see a temporary 2-4 week fluctuation followed by improved rankings, since Webflow's faster load times and cleaner code structure benefit Core Web Vitals scores.
+Yes, if you implement proper 301 redirects for every URL on your current site. Our [Squarespace to Webflow migration service](/services/squarespace-migration/) includes comprehensive 301 redirect mapping — you map each old Squarespace URL to its new Webflow equivalent, and search engines transfer the ranking authority. Most agencies see a temporary 2-4 week fluctuation followed by improved rankings, since Webflow's faster load times and cleaner code structure benefit Core Web Vitals scores.
 
 ### Is Webflow harder to learn than Squarespace for non-technical team members?
 

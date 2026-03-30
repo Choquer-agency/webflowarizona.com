@@ -220,9 +220,9 @@ export const serviceMap: Record<string, ServicePageConfig> = {
     problemHeading: "Squarespace is limiting your growth.",
     processHeading: "From Squarespace to Webflow in four steps.",
     metaTitle: (locality, region) =>
-      `Squarespace to Webflow Migration in ${locality} | ${region} Migration Experts`,
+      `Squarespace to Webflow Migration | ${locality}, ${region}`,
     metaDescription: (locality, region) =>
-      `Migrate your Squarespace site to Webflow for full design freedom and better performance. Expert migration services for ${region} businesses in ${locality}. Zero downtime, SEO preserved.`,
+      `Migrate your Squarespace site to Webflow with zero downtime and SEO preserved. Expert migration services for ${region} businesses in ${locality}.`,
     heroH1: (_locality, region) =>
       `Migrate from Squarespace to Webflow in ${region}`,
     heroSubhead: (_locality, region) =>
@@ -338,9 +338,9 @@ export const serviceMap: Record<string, ServicePageConfig> = {
     problemHeading: "Wix is costing you credibility and performance.",
     processHeading: "From Wix to Webflow in four steps.",
     metaTitle: (locality, region) =>
-      `Wix to Webflow Migration in ${locality} | ${region} Migration Experts`,
+      `Wix to Webflow Migration | ${locality}, ${region}`,
     metaDescription: (locality, region) =>
-      `Upgrade from Wix to Webflow for a professional, high-performance website. Expert migration services for ${region} businesses in ${locality}. Clean code, real SEO, full design control.`,
+      `Migrate from Wix to Webflow with zero downtime and SEO preserved. Expert migration for ${region} businesses in ${locality}. Clean code, full design control.`,
     heroH1: (_locality, region) =>
       `Migrate from Wix to Webflow in ${region}`,
     heroSubhead: (_locality, region) =>

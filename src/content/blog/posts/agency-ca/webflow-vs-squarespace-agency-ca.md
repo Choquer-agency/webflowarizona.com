@@ -226,4 +226,4 @@ Squarespace was designed for a different category of website — one where looki
 
 If you read our analysis of [Webflow vs WordPress for Canadian professional service firms](/blog/webflow-vs-wordpress-canadian-professional-services), this Squarespace comparison reinforces the same conclusion from another angle: template-based platforms impose ceilings that professional service firms inevitably hit. Webflow removes those ceilings.
 
-Ready to build a web presence that reflects the calibre of your firm? [Connect with our team](/) to discuss how Webflow serves Canadian professional service firms.
+Ready to build a web presence that reflects the calibre of your firm? If you're currently on Squarespace, our [Squarespace to Webflow migration service](/services/squarespace-migration/) handles the full transition — content migration, bilingual setup, 301 redirects, and zero-downtime launch. [Connect with our team](/) to discuss how Webflow serves Canadian professional service firms.
