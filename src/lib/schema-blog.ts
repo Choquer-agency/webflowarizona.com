@@ -1,6 +1,43 @@
 import { DomainConfig } from "@/content/config";
 import { BlogPost } from "@/content/blog";
 
+export function generateBlogIndexSchema(posts: BlogPost[], config: DomainConfig) {
+  const domain = `https://${config.domain}`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": `${domain}/blog`,
+    name: `Blog | ${config.locality} Webflow Agency`,
+    description: `Web design insights, Webflow tips, and digital marketing guides for ${config.region} businesses.`,
+    url: `${domain}/blog`,
+    isPartOf: { "@id": `${domain}/#website` },
+    hasPart: posts.slice(0, 20).map((post) => ({
+      "@type": "BlogPosting",
+      headline: post.title,
+      url: `${domain}/blog/${post.slug}`,
+      datePublished: post.date,
+    })),
+    breadcrumb: {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: domain,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Blog",
+          item: `${domain}/blog`,
+        },
+      ],
+    },
+  };
+}
+
 export function generateBlogPostSchema(post: BlogPost, config: DomainConfig) {
   const domain = `https://${config.domain}`;
   const postUrl = `${domain}/blog/${post.slug}`;

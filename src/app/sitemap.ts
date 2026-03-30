@@ -3,6 +3,7 @@ import { headers } from "next/headers";
 import { domainMap } from "@/content/domains";
 import { defaultConfig } from "@/content/config";
 import { getAllServiceSlugs } from "@/content/services";
+import { getAllIndustrySlugs } from "@/content/industries";
 import blogManifest from "@/content/blog/manifest.json";
 
 export const dynamic = "force-dynamic";
@@ -25,12 +26,30 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.8,
   }));
 
+  const industrySlugs = getAllIndustrySlugs();
+
   const serviceEntries: MetadataRoute.Sitemap = serviceSlugs.map((slug) => ({
     url: `https://${domain}/services/${slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.9,
   }));
+
+  const industryEntries: MetadataRoute.Sitemap = industrySlugs.map((slug) => ({
+    url: `https://${domain}/industries/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.9,
+  }));
+
+  const toolsEntries: MetadataRoute.Sitemap = [
+    {
+      url: `https://${domain}/tools/website-cost-calculator`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+  ];
 
   return [
     {
@@ -46,6 +65,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     },
     ...serviceEntries,
+    ...industryEntries,
+    ...toolsEntries,
     ...(posts.length > 0
       ? [
           {

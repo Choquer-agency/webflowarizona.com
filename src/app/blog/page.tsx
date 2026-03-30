@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getDomainConfig } from "@/lib/getDomainConfig";
 import { getBlogPostsByRegion } from "@/content/blog";
+import { generateBlogIndexSchema } from "@/lib/schema-blog";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 
@@ -43,9 +44,14 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function BlogIndex() {
   const config = getDomainConfig();
   const posts = await getBlogPostsByRegion(config.region);
+  const blogIndexSchema = generateBlogIndexSchema(posts, config);
 
   return (
     <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogIndexSchema) }}
+    />
     <Nav locality={config.locality} />
     <main className="pt-32 pb-20" style={{ backgroundColor: "#FFF9F0" }}>
       <div className="u-container max-w-4xl">

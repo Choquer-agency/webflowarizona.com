@@ -99,6 +99,43 @@ export function Footer({ locality }: { locality: string }) {
             </div>
             <div>
               <p className="font-mono text-xs uppercase tracking-wider opacity-40 mb-3">
+                Industries
+              </p>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="/industries/healthcare" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                    Healthcare
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/industries/trades" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                    Trades & Home Services
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/industries/saas" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                    SaaS & Technology
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/industries/ecommerce" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                    E-Commerce
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/industries/hospitality" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                    Hospitality
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/industries/professional-services" className="font-sans text-sm opacity-60 hover:opacity-100 transition-opacity" style={{ transitionDuration: "0.2s" }}>
+                    Professional Services
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-mono text-xs uppercase tracking-wider opacity-40 mb-3">
                 Resources
               </p>
               <ul className="space-y-2">
